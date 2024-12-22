@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: CRGO HIBISCUS , GUDHAL Seed -->
+        <div class="product">
+            <a href="e1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/plant-seed/a/a/j/5-dioart-mix-colour-hibiscus-exotic-flower-seeds-for-home-garden-original-imaguacabghmcfhv.jpeg?q=90" alt="CRGO HIBISCUS , GUDHAL Seed">
+            </a>
+            <div class="product-details">
+                <a href="e1.html">
+                    <div class="product-header">1. CRGO HIBISCUS , GUDHAL Seed</div>
+                </a>
+                <div class="rating">4.0★ &nbsp; 311 Ratings & 1 Review</div>
+                <div class="product-price">₹160</div>
+                <div class="product-discount">73% off</div>
+                <div>Seed Type: Flower<br>Suitable For: Indoor, Outdoor<br>Organic Plant Seed</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    So beautiful.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 4 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    So beautiful.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Audbhidhi Ranunculus Purple Flower Bulbs for Home Gardening Seed -->
+        <div class="product">
+            <a href="e2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kxdl3m80/plant-seed/4/o/d/5-ab-new-027-audbhidhi-original-imag9ugbgyzgad7m.jpeg?q=90" alt="Audbhidhi Ranunculus Purple Flower Bulbs for Home Gardening Seed">
+            </a>
+            <div class="product-details">
+                <a href="e2.html">
+                    <div class="product-header">2. Audbhidhi Ranunculus Purple Flower Bulbs for Home Gardening Seed</div>
+                </a>
+                <div class="rating">3.4★ &nbsp; 45 Ratings & 2 Reviews</div>
+                <div class="product-price">₹249</div>
+                <div class="product-discount">72% off</div>
+                <div>Seed Type: Flower<br>Suitable For: Outdoor<br>Organic Plant Seed</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Don't waste your money</span><br>
+                    Very bad, the plant hasn't grown yet.<br>
+                    <span>Sujata Suman thakur</span> | Certified Buyer | 10 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Don't waste your money</span><br>
+                    Very bad, the plant hasn't grown yet.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Audbhidhi Hippeastrum/Amaryllis lily Mix Summer Seeds for Home Garden Combo Flower Bulbs Seed -->
+        <div class="product">
+            <a href="e3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kxnl6kw0/plant-seed/w/j/k/10-ab-new-0152-audbhidhi-original-imaga24xqh8yg8ew.jpeg?q=90" alt="Audbhidhi Hippeastrum/Amaryllis lily Mix Summer Seeds for Home Garden Combo Flower Bulbs Seed">
+            </a>
+            <div class="product-details">
+                <a href="e3.html">
+                    <div class="product-header">3. Audbhidhi Hippeastrum/Amaryllis lily Mix Summer Seeds for Home Garden Combo Flower Bulbs Seed</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 25 Ratings & 5 Reviews</div>
+                <div class="product-price">₹236</div>
+                <div class="product-discount">52% off</div>
+                <div>Seed Type: Flower<br>Suitable For: Outdoor<br>Organic Plant Seed</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Beautiful and got it in good condition.<br>
+                    <span>Pitor Chandra Rabha</span> | Certified Buyer | Jun, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Beautiful and got it in good condition.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Paudha Exotic Petunia Double Mix Seed -->
+        <div class="product">
+            <a href="e4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/shopsy-plant-seed/m/h/w/83-aza-6005-qausain-original-imah386rbtvbyep4.jpeg?q=90" alt="Paudha Exotic Petunia Double Mix Seed">
+            </a>
+            <div class="product-details">
+                <a href="e4.html">
+                    <div class="product-header">4. Paudha Exotic Petunia Double Mix Seed</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 40 Ratings & 1 Review</div>
+                <div class="product-price">₹153</div>
+                <div class="product-discount">69% off</div>
+                <div>Seed Type: Flower<br>Suitable For: Indoor, Outdoor<br>Organic Plant Seed</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Seeds were not germinated. It's quite a wastage of money, better things to request people always buy near your retail shop.<br>
+                    <span>Siba sankar Patra</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Seeds were not germinated. It's quite a wastage of money, better things to request people always buy near your retail shop.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Paudha Exotic Chrysanthemum Mix Seed -->
+        <div class="product">
+            <a href="e5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kxqg2a80/plant-seed/c/m/w/10-xcx-666-xolda-original-imaga4tg4hhvuyqr.jpeg?q=90" alt="Paudha Exotic Chrysanthemum Mix Seed">
+            </a>
+            <div class="product-details">
+                <a href="e5.html">
+                    <div class="product-header">5. Paudha Exotic Chrysanthemum Mix Seed</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 2 Ratings & 1 Review</div>
+                <div class="product-price">₹153</div>
+                <div class="product-discount">69% off</div>
+                <div>Seed Type: Flower<br>Suitable For: Indoor, Outdoor<br>Organic Plant Seed</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Germination process behind, 5/6 there's is one seed germination. Waste of money because the seeds who grow have poor growth, very slow. Bad experience.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Aug, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Germination process behind, 5/6 there's is one seed germination. Waste of money because the seeds who grow have poor growth, very slow. Bad experience.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

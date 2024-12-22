@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 (Updated) -->
+        <div class="product">
+            <a href="epn1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/d/d/r/z152bkpn1ky-ujji-original-imah5hbvqzftgqkz.jpeg?q=70&crop=false" alt="Product 1">
+            </a>
+            <div class="product-details">
+                <a href="epn1.html">
+                    <div class="product-header">1. UJJi Name Print Combo in Pen with Stylus for Touch Keychain and Pen Gift Set</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 345 Ratings & 47 Reviews</div>
+                <div class="product-price">₹219</div>
+                <div class="product-discount">78% off</div>
+                <div>Body Color: Black<br>Made of Aluminium<br>Solid Body Type</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Product is really good....I like it very much...<br>
+                    <span>Pavan Kumar</span> | Certified Buyer 6 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Awesome 👍 I loved it...must buy ......<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 3 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 (New) -->
+        <div class="product">
+            <a href="epn2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/l/z/m/a16trnpn1kybstbro-ujji-original-imah4kxw7jwxq2tj.jpeg?q=70&crop=false" alt="Product 2">
+            </a>
+            <div class="product-details">
+                <a href="epn2.html">
+                    <div class="product-header">2. UJJi Tiranga Flag Pen & Bst Bro Engraved Keyring Pen Gift Set</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 75 Ratings & 1 Review</div>
+                <div class="product-price">₹272</div>
+                <div class="product-discount">72% off</div>
+                <div>Body Color: Multicolor<br>Made of Aluminium<br>Solid Body Type</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good 👍<br>
+                    <span>Jagpal Singh Blhara</span> | Certified Buyer 3 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good 👍<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 2 weeks ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 (New) -->
+        <div class="product">
+            <a href="epn3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/d/q/j/z51bkpn6ky-ujji-original-imah6rxsbmwb3hks.jpeg?q=70&crop=false" alt="Product 3">
+            </a>
+            <div class="product-details">
+                <a href="epn3.html">
+                    <div class="product-header">3. UJJi Name Customized Golden Gel Filler Brass Material Pen Gift Set</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 213 Ratings & 27 Reviews</div>
+                <div class="product-price">₹298</div>
+                <div class="product-discount">70% off</div>
+                <div>Body Color: Black<br>Made of Brass<br>Solid Body Type</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Actually Attractive Looking<br>
+                    <span>Manoj Kumar</span> | Certified Buyer 5 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Just I loved it, super nice pen<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 3 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 (New) -->
+        <div class="product">
+            <a href="epn4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/t/m/u/a153bkpn1ky1chadv-ujji-original-imah4kxx5xmv4tjn.jpeg?q=70&crop=false" alt="Product 4">
+            </a>
+            <div class="product-details">
+                <a href="epn4.html">
+                    <div class="product-header">4. UJJi 3in1 Advocate Logo Set with Slim Design Ball Pen, Keychain and ATM Card Holder Pen Gift Set</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 33 Ratings & 1 Review</div>
+                <div class="product-price">₹388</div>
+                <div class="product-discount">61% off</div>
+                <div>Body Color: Black<br>Made of Aluminium<br>Solid Body Type</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Very nice<br>
+                    <span>Priti Thakur</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Very nice<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 1 week ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 (New) -->
+        <div class="product">
+            <a href="epn5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/x/p/r/z51bkpn6kyy-ujji-original-imah5hbvf8ucfwsu.jpeg?q=70&crop=false" alt="Product 5">
+            </a>
+            <div class="product-details">
+                <a href="epn5.html">
+                    <div class="product-header">5. UJJi Name Customized Golden Gel Filler Brass Material Pen Gift Set</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 88 Ratings & 6 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">70% off</div>
+                <div>Body Color: Black<br>Made of Brass<br>Solid Body Type</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Pen is very good I gifted to my sister as a marriage gift she got excited. They printed both names with love symbol between them. Excellent<br>
+                    <span>Althaf Md</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Fair</span><br>
+                    This is a good pen for gifting girlfriend<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 2 weeks ago
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

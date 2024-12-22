@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: EKAN Fedora Hats -->
+        <div class="product">
+            <a href="fh1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jrdt8cw0/hat/6/r/p/58-fedora-men-black-1-g3e-men-fedora-58-black-fedora-men-black-original-imaf4f7nnacmqexn.jpeg?q=70&crop=false" alt="EKAN Fedora Hats">
+            </a>
+            <div class="product-details">
+                <a href="fh1.html">
+                    <div class="product-header">1. EKAN Fedora Hats</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 1,534 Ratings & 10 Reviews</div>
+                <div class="product-price">₹280</div>
+                <div class="product-discount">40% off</div>
+                <div>Ideal For: Men & Women<br>Fabric: Cotton Blend<br>Type: Fedora Hats</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Not good.<br>
+                    <span>Dibakar Dravir</span> | Certified Buyer 7 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Not good.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: SYGA Fancy Round Cap -->
+        <div class="product">
+            <a href="fh2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/hat/5/f/4/straw-hats-for-baby-girls-pink-medium-1-fancyroundcap-pink-original-imahf3khbpke6ey3.jpeg?q=70&crop=false" alt="SYGA Fancy Round Cap">
+            </a>
+            <div class="product-details">
+                <a href="fh2.html">
+                    <div class="product-header">2. SYGA Fancy Round Cap</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 171 Ratings & 4 Reviews</div>
+                <div class="product-price">₹399</div>
+                <div class="product-discount">57% off</div>
+                <div>Ideal For: Women<br>Fabric: Linen, Cotton<br>Type: Fancy Round Cap</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Very nice 👍👍👍👍👍<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Nov, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Ps Pilot Cricket Panama Hat -->
+        <div class="product">
+            <a href="fh3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/hat/y/a/y/cricket-hat-white-medium-medium-1-hat-38-white-na-ps-pilot-original-imahfpwjhhg9faxh.jpeg?q=70&crop=false" alt="Ps Pilot Cricket Panama Hat">
+            </a>
+            <div class="product-details">
+                <a href="fh3.html">
+                    <div class="product-header">3. Ps Pilot Cricket Panama Hat</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 5 Ratings & 2 Reviews</div>
+                <div class="product-price">₹369</div>
+                <div class="product-discount">58% off</div>
+                <div>Ideal For: Men & Women<br>Fabric: Cotton<br>Type: Cricket Panama Hat</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good, but a little bit tight.<br>
+                    <span>Birendra Nath Chatterjee</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good, but a little bit tight.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: SYGA Fancy Round Cap -->
+        <div class="product">
+            <a href="fh4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/hat/x/i/p/straw-hats-for-baby-girlsmilkwhite-medium-1-fancyroundcap-original-imahf3kjezqkmyky.jpeg?q=70&crop=false" alt="SYGA Fancy Round Cap">
+            </a>
+            <div class="product-details">
+                <a href="fh4.html">
+                    <div class="product-header">4. SYGA Fancy Round Cap</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 95 Ratings & 5 Reviews</div>
+                <div class="product-price">₹373</div>
+                <div class="product-discount">60% off</div>
+                <div>Ideal For: Women<br>Fabric: Linen, Cotton<br>Type: Fancy Round Cap</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Does the job</span><br>
+                    It's not white.<br>
+                    <span>Santhiaji1</span> | Certified Buyer 10 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Does the job</span><br>
+                    It's not white.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: SHIVMEDICOS Men's Jute Hat -->
+        <div class="product">
+            <a href="fh5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/hat/e/m/6/medium-cowboy-grey-hat-1-cowboy-hat-cowboy-grey-hat-shivmedicos-original-imagzuggywyks4yy.jpeg?q=70&crop=false" alt="SHIVMEDICOS Men's Jute Hat">
+            </a>
+            <div class="product-details">
+                <a href="fh5.html">
+                    <div class="product-header">5. SHIVMEDICOS Men's Jute Hat, Fashionable Men Goa Beach Caps</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 6 Ratings & 1 Review</div>
+                <div class="product-price">₹269</div>
+                <div class="product-discount">55% off</div>
+                <div>Ideal For: Men & Women<br>Fabric: JUTE<br>Type: Men's Jute Hat, Fashionable Men Goa Beach Caps</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Nice.<br>
+                    <span>Sourav Dutta</span> | Certified Buyer 9 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Nice.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

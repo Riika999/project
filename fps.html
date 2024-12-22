@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: PILOT V5 (Blue- 5) Roller Ball Pen -->
+        <div class="product">
+            <a href="fps1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/x/e/4/-original-imah4ydpmsfz349c.jpeg?q=70&crop=false" alt="PILOT V5 (Blue- 5) Roller Ball Pen">
+            </a>
+            <div class="product-details">
+                <a href="fps1.html">
+                    <div class="product-header">1. PILOT V5 (Blue- 5) Roller Ball Pen</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 1,592 Ratings & 99 Reviews</div>
+                <div class="product-price">₹339</div>
+                <div class="product-discount">3% off</div>
+                <div>Body Color: Blue<br>Made of Plastic<br>Body Type: Solid</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Very good pen, very smooth writing, good flow for ink. Thanks to Flipkart.<br>
+                    <span>Shaikh Rafioddin Alimoddin</span> | Certified Buyer | Mar, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Smooth and lightweight ... Go for it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: SMART WORLD Ball Pen Pen Gift Set -->
+        <div class="product">
+            <a href="fps2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/k6dxocw0/pen/s/r/v/smart-world-brown-4in1-pen-gift-set-with-diary-keychain-business-original-imafzu8dbfatymeh.jpeg?q=70&crop=false" alt="SMART WORLD Ball Pen Gift Set">
+            </a>
+            <div class="product-details">
+                <a href="fps2.html">
+                    <div class="product-header">2. SMART WORLD Ball Pen Pen Gift Set</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 32 Ratings & 4 Reviews</div>
+                <div class="product-price">₹699</div>
+                <div class="product-discount">30% off</div>
+                <div>Body Color: Brown<br>Made of Metal<br>Body Type: Solid</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Perfect for a gift. Loving it.<br>
+                    <span>Moosa Mohamed</span> | Certified Buyer | Jun, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Product is the same as it is displayed in the images. The quality of the product is reliable and awesome.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Techfab Regular Whiteboard -->
+        <div class="product">
+            <a href="fps3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/whiteboard-duster/t/o/p/regular-whiteboard-2x2-ft-one-side-white-marker-and-back-side-original-imah2fuw3ehhxz3f.jpeg?q=70&crop=false" alt="Techfab Regular Whiteboard">
+            </a>
+            <div class="product-details">
+                <a href="fps3.html">
+                    <div class="product-header">3. Techfab Regular Whiteboard 2X2 ft.</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 2,668 Ratings & 353 Reviews</div>
+                <div class="product-price">₹507</div>
+                <div class="product-discount">66% off</div>
+                <div>Pack of Whiteboards<br>Whiteboard Type: Regular<br>Whiteboard Height: 600 mm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Me and my son are so happy with this product. I use it for online teaching and my baby uses it for reading. Size is also good, price is nice.<br>
+                    <span>Roshani Srivastava</span> | Certified Buyer | May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Thank you Flipkart. Good quality.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: PARKER 9000017249 Ball Pen -->
+        <div class="product">
+            <a href="fps4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/pen/s/c/g/parker-9000017249-2-original-imaejgvvmzychmjj.jpeg?q=70&crop=false" alt="PARKER 9000017249 Ball Pen">
+            </a>
+            <div class="product-details">
+                <a href="fps4.html">
+                    <div class="product-header">4. PARKER 9000017249 Ball Pen</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 115 Ratings & 11 Reviews</div>
+                <div class="product-price">₹740</div>
+                <div class="product-discount">No discount</div>
+                <div>Body Color: Black<br>Made of: Plastic<br>Body Type: Solid</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Utterly Disappointed</span><br>
+                    It is an ink pen, not a ball pen.<br>
+                    <span>Santosh Teron</span> | Certified Buyer | Apr, 2017
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Utterly Disappointed</span><br>
+                    It is an ink pen, not a ball pen.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: PILOT V7 (Blue- 4, Black-1) Roller Ball Pen -->
+        <div class="product">
+            <a href="fps5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/pen/5/3/n/-original-imah4ydphudg9gvz.jpeg?q=70&crop=false" alt="PILOT V7 (Blue- 4, Black-1) Roller Ball Pen">
+            </a>
+            <div class="product-details">
+                <a href="fps5.html">
+                    <div class="product-header">5. PILOT V7 (Blue- 4, Black-1) Roller Ball Pen</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 1,066 Ratings & 62 Reviews</div>
+                <div class="product-price">₹350</div>
+                <div class="product-discount">No discount</div>
+                <div>Body Color: Multicolor<br>Made of: Plastic<br>Body Type: Solid</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    It's a nice pen set. You get 5 pens here. V7 has a 0.7 mm nib which is quite smooth and heavy writing. It is a good pen for slow writing and making notes ❤👍<br>
+                    <span>Shantanu Singh Bhati</span> | Certified Buyer | May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Great deal! The pens were in a good condition. Worth buying.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

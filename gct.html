@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Cadbury Dairy Milk Fruit & Nut Chocolate Bars -->
+        <div class="product">
+            <a href="gct1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/chocolate/b/l/n/-original-imah4jxtnphcnk8j.jpeg?q=70&crop=false" alt="Cadbury Dairy Milk Fruit & Nut Chocolate Bars">
+            </a>
+            <div class="product-details">
+                <a href="gct1.html">
+                    <div class="product-header">1. Cadbury Dairy Milk Fruit & Nut Chocolate Bars</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 420,342 Ratings & 837 Reviews</div>
+                <div class="product-price">₹490</div>
+                <div class="product-discount">9% off</div>
+                <div>Milk Chocolate<br>Plain Flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Nice chocolate taste with smooth texture....<br>
+                    Cadbury chocolate has a special taste of its own...<br>
+                    It tastes great and the price too is good...<br>
+                    <span>Biplab</span> | Certified Buyer | Jan, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    So ... good..go for it definitely<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Tosca Muso Gold Chocolate- Center Filled Milk -->
+        <div class="product">
+            <a href="gct2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/chocolate/4/k/r/60-muso-gold-chocolate-truffle-center-filled-milk-chocolates-box-original-imahf4hsmysjqzw6.jpeg?q=90" alt="Tosca Muso Gold Chocolate- Center Filled Milk (60 pcs in a Box)">
+            </a>
+            <div class="product-details">
+                <a href="gct2.html">
+                    <div class="product-header">2. Tosca Muso Gold Chocolate- Center Filled Milk (60 pcs in a Box)</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 6,349 Ratings & 383 Reviews</div>
+                <div class="product-price">₹198</div>
+                <div class="product-discount">33% off</div>
+                <div>Milk Chocolate<br>Plain Flavor<br>Gourmet</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Nice chocolate very tasty😇😇💛💛🖤🖤<br>
+                    <span>Subransu Gamer Gamer</span> | Certified Buyer | Oct, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Huge disappointment.. pathetic taste<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: SNICKERS Core Bars -->
+        <div class="product">
+            <a href="gct3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/chocolate/5/p/o/-original-imah77ntfqp9cyuk.jpeg?q=90" alt="SNICKERS Core Bars">
+            </a>
+            <div class="product-details">
+                <a href="gct3.html">
+                    <div class="product-header">3. SNICKERS Core Bars</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 342 Ratings & 7 Reviews</div>
+                <div class="product-price">₹400</div>
+                <div class="product-discount">20% off</div>
+                <div>Milk Chocolate<br>Peanut Flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Good very tasty chocolate<br>
+                    <span>Jose K James</span> | Certified Buyer | Jun, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    Flipkart first one best one always. Good taste.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Kinder JOY Blue Fudges -->
+        <div class="product">
+            <a href="gct4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/chocolate/3/n/c/-original-imah76bvyzhmd8cz.jpeg?q=90" alt="Kinder JOY Blue Fudges">
+            </a>
+            <div class="product-details">
+                <a href="gct4.html">
+                    <div class="product-header">4. Kinder JOY Blue Fudges</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 6,790 Ratings & 194 Reviews</div>
+                <div class="product-price">₹337</div>
+                <div class="product-discount">15% off</div>
+                <div>Milk Chocolate<br>Plain Flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    Kinder joy chocolate is so delicious..😍😍<br>
+                    <span>Biplab</span> | Certified Buyer | Mar, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Good awesome product 🥰<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Snickers Value Pack Peanut Filled Chocolates Bars -->
+        <div class="product">
+            <a href="gct5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/chocolate/d/y/d/-original-imah2fdggyapwmpz.jpeg?q=90" alt="Snickers Value Pack Peanut Filled Chocolates Bars">
+            </a>
+            <div class="product-details">
+                <a href="gct5.html">
+                    <div class="product-header">5. Snickers Value Pack Peanut Filled Chocolates Bars, Loaded with Nougat & Caramel</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 1,676 Ratings & 74 Reviews</div>
+                <div class="product-price">₹412</div>
+                <div class="product-discount">23% off</div>
+                <div>Milk Chocolate<br>Peanut Flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Very good product very valuable<br>
+                    <span>Neelam Vijaya Lakshmi</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    The Original classic snickers. Taste good.<br>
+                    The size of each bar is good enough to keep you full for a long time.<br>
+                    Delivered in a good condition.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
