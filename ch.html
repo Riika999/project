@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: EKAN Fedora Hats -->
+        <div class="product">
+            <a href="ch1.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/c/4/f/rosalind-top-handle-women-s-tote-handbag-with-shoulder-strap-12-original-imah3h3fnnnrgpxa.jpeg?q=70&crop=false" alt="EKAN Fedora Hats">
+            </a>
+            <div class="product-details">
+                <a href="ch1.html">
+                    <div class="product-header">1. EKAN Fedora Hats</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 1,534 Ratings & 10 Reviews</div>
+                <div class="product-price">₹280</div>
+                <div class="product-discount">40% off</div>
+                <div>Ideal For: Men & Women<br>Fabric: Cotton Blend<br>Type: Fedora Hats</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Not good.<br>
+                    <span>Dibakar Dravir</span> | Certified Buyer 7 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Not good.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Women Green Sling Bag - Extra Spacious -->
+        <div class="product">
+            <a href="ch2.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/j/h/d/classical-hand-sling-bag-12-5-handbag82-sling-bag-exotic-9-original-imahyhurjmqteyrz.jpeg?q=70&crop=false" alt="Women Green Sling Bag - Extra Spacious">
+            </a>
+            <div class="product-details">
+                <a href="ch2.html">
+                    <div class="product-header">2. Women Green Sling Bag - Extra Spacious</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 7,524 Ratings & 567 Reviews</div>
+                <div class="product-price">₹1,379</div>
+                <div class="product-discount">54% off</div>
+                <div>Ideal For: Women<br>Type: Sling Bag, Extra Spacious</div>
+                <div>Available Offers: <br>
+                    Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card<br>
+                    Bank Offer 10% off up to ₹750 on HDFC Bank Credit Card EMI on 3 months tenure.<br>
+                    Bank Offer 10% off up to ₹1,000 on HDFC Bank Credit Card EMI on 6 and 9 months tenure.<br>
+                    +11 more offers
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Very nice product!<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Nov, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Excellent quality and spacious.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: ENSAC Women Red Shoulder Bag -->
+        <div class="product">
+            <a href="ch3.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/l/j/d/waterproof-jute-shoulder-bags-10-jute-owl-01-shoulder-bag-ensac-original-imah3bj2whhgfzah.jpeg?q=70&crop=false" alt="ENSAC Women Red Shoulder Bag">
+            </a>
+            <div class="product-details">
+                <a href="ch3.html">
+                    <div class="product-header">3. ENSAC Women Red Shoulder Bag</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 9,735 Ratings & 465 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">40% off</div>
+                <div>For Women<br>Material: Canvas, Jute<br>Closure: Zip</div>
+                <div>Most Helpful Review: <br>
+                    <span>5★ Best in the market!</span><br>
+                    Awesome look, excellent quality, girls go for it👍👍👍<br>
+                    <span>amarjot Angel</span> | Certified Buyer Sep, 2022
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Nice product... Give stylish look...good space<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: SCRUMBLER Women Brown Satchel -->
+        <div class="product">
+            <a href="ch4.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/f/w/q/real-leather-satchel-for-women-22-brown-small-croco-satchel-original-imah7yyhwmenwmqz.jpeg?q=70&crop=false" alt="SCRUMBLER Women Brown Satchel">
+            </a>
+            <div class="product-details">
+                <a href="ch4.html">
+                    <div class="product-header">4. SCRUMBLER Women Brown Satchel</div>
+                </a>
+                <div class="rating">4.6★ &nbsp; 78 Ratings & 4 Reviews</div>
+                <div class="product-price">₹1,969</div>
+                <div class="product-discount">67% off</div>
+                <div>For Women<br>Material: Genuine Leather<br>Closure: Zip</div>
+                <div>Most Helpful Review: <br>
+                    <span>5★ Worth every penny</span><br>
+                    Perfect size. Very premium quality bag, leather and zipper are very good. Awesome👍<br>
+                    <span>Mohd Ameen Kidwai</span> | Certified Buyer 3 months ago
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Amazing quality bag.... Very beautiful and elegant<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: ZOUK Women Multicolor Handbag -->
+        <div class="product">
+            <a href="ch5.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/e/d/2/jute-and-vegan-leather-office-bag-for-women-for-15-6-inch-laptop-original-imah5ghwhsrasmey.jpeg?q=70&crop=false" alt="ZOUK Women Multicolor Handbag">
+            </a>
+            <div class="product-details">
+                <a href="ch5.html">
+                    <div class="product-header">5. ZOUK Women Multicolor Handbag</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 3,765 Ratings & 194 Reviews</div>
+                <div class="product-price">₹1,499</div>
+                <div class="product-discount">69% off</div>
+                <div>For Women<br>Material: Jute<br>Closure: Zip</div>
+                <div>Most Helpful Review: <br>
+                    <span>5★ Just wow!</span><br>
+                    Best quality, good colour, I love it 😍<br>
+                    <span>Flipkart M naga sowjanya</span> | Certified Buyer Mar, 2022
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    The bag is absolutely perfect but I want to give you a little advice, if this bag was a little smaller and had 3 to 4 pockets inside the bag and one pocket outside.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: BRuSTRO Stitched Bound Artists Sketch Book -->
+        <div class="product">
+            <a href="as1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/sketch-pad/y/t/h/80-stitched-bound-artists-sketch-book-a5-size-160-pages-110-gsm-original-imagrdgvqgmy2erf.jpeg?q=90" alt="BRuSTRO Stitched Bound Artists Sketch Book">
+            </a>
+            <div class="product-details">
+                <a href="as1.html">
+                    <div class="product-header">1. BRuSTRO Stitched Bound Artists Sketch Book, A5 Size, 160 Pages, 110 GSM Sketch Pad</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 1,311 Ratings & 128 Reviews</div>
+                <div class="product-price">₹339</div>
+                <div class="product-discount">No discount</div>
+                <div>Color: White<br>110 GSM<br>Dimensions: 5 x 8 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Good choice</span><br>
+                    Its pages are so thick and good for sketching. I definitely recommend it 💜💜<br>
+                    <span>Pintu Gupta</span> | Certified Buyer | Apr, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Dude ngl, the products came okay just few little bends in edges. Comes with an Elastic band for closure, thick and light rough page which is good for sketching...<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: VARIETY A/5 ARTIST SKETCH BOOK -->
+        <div class="product">
+            <a href="as2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kmax8y80/sketch-pad/g/f/0/50-a-5-artist-sketch-book-140gsm-50-sheets-pack-of-2-2-5-8-original-imagf8p5zy28pf9n.jpeg?q=90" alt="VARIETY A/5 ARTIST SKETCH BOOK">
+            </a>
+            <div class="product-details">
+                <a href="as2.html">
+                    <div class="product-header">2. VARIETY A/5 ARTIST SKETCH BOOK 140GSM 50 SHEETS PACK OF 2 Sketch Pad</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 443 Ratings & 6 Reviews</div>
+                <div class="product-price">₹205</div>
+                <div class="product-discount">48% off</div>
+                <div>Color: White Page<br>140 GSM<br>Dimensions: 8 x 5 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good quality of paper loved it☺❤<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jun, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    The product is good but the front page is not same. Page quality is pretty good, they are A5 size and suitable for every color, paint etc. THIS PRODUCT IS...<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: BRuSTRO Wire Bound Artists Sketch Book -->
+        <div class="product">
+            <a href="as3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/sketch-pad/d/i/v/120-wire-bound-artists-sketch-book-a3-size-1-17-12-brustro-original-imagrdgsgeqjyghh.jpeg?q=90" alt="BRuSTRO Wire Bound Artists Sketch Book">
+            </a>
+            <div class="product-details">
+                <a href="as3.html">
+                    <div class="product-header">3. BRuSTRO Wire Bound Artists Sketch Book, A3 Size Sketch Pad</div>
+                </a>
+                <div class="rating">4.6★ &nbsp; 538 Ratings & 70 Reviews</div>
+                <div class="product-price">₹753</div>
+                <div class="product-discount">No discount</div>
+                <div>Color: White<br>160 GSM<br>Dimensions: 12 x 17 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Excellent quality pages and big size. Really love it ❤ Thank you Brusto and Flipkart ❤<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Oct, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    I really satisfied, very worth for money, must buy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: PerDay Artists Spiral Bound Sketch Book A4 Size For Painting Water Color Drawing Sketch Pad -->
+        <div class="product">
+            <a href="as4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/sketch-pad/o/k/t/40-artists-spiral-bound-sketch-book-a4-size-for-painting-water-original-imagsgs8gauzzkqf.jpeg?q=70&crop=false" alt="PerDay Artists Spiral Bound Sketch Book A4 Size">
+            </a>
+            <div class="product-details">
+                <a href="as4.html">
+                    <div class="product-header">4. PerDay Artists Spiral Bound Sketch Book A4 Size For Painting Water Color Drawing Sketch Pad</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 4 Ratings & 2 Reviews</div>
+                <div class="product-price">₹139</div>
+                <div class="product-discount">65% off</div>
+                <div>Color: Multicolor<br>150 GSM<br>Dimensions: 8 x 11 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Good quality product</span><br>
+                    Paper quality is not good 😠😠😡😠😡😠😡😠😡<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Good quality product</span><br>
+                    Paper quality is not good 😠😠😡😠😡<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: BRuSTRO Artists' Sketch Book Wiro Bound A4 -->
+        <div class="product">
+            <a href="as5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/sketch-pad/l/9/9/60-artists-sketch-book-wiro-bound-a4-160-gsm-120-pages-acid-free-original-imah562btrn7mrbj.jpeg?q=70&crop=false" alt="BRuSTRO Artists' Sketch Book Wiro Bound A4">
+            </a>
+            <div class="product-details">
+                <a href="as5.html">
+                    <div class="product-header">5. BRuSTRO Artists' Sketch Book Wiro Bound A4 - 160 GSM , 120 pages Acid free Sketch Pad</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 345 Ratings & 27 Reviews</div>
+                <div class="product-price">₹510</div>
+                <div class="product-discount">14% off</div>
+                <div>Color: Black<br>160 GSM<br>Dimensions: 21 x 30 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Love the paper quality. It's a little rough; I like smooth papers more, but I like it. It's really a value for money sketchpad. Go for it.<br>
+                    <span>Arpan Chakraborty</span> | Certified Buyer | Jun, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Very Excellent, Happy to Buy.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

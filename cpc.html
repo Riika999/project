@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <!-- Link the image and product name to cpc1.html -->
+            <a href="cpc1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/d/r/z/acrylic-personalized-customized-gift-best-friends-reel-photo-original-imagxhksyk3xucqa.jpeg?q=70&crop=false" alt="Product 1">
+            </a>
+            <div class="product-details">
+                <!-- Link the product name to cpc1.html -->
+                <a href="cpc1.html" class="product-header">1. AG CRAFTS Wood Wall Photo Frame</a>
+                <div class="product-info">9 Ratings & 1 Reviews</div>
+                <div class="product-price">₹657 <span class="product-discount">78% off</span></div>
+                <div>3 Photos Accommodated<br>White Color<br>Frame Material: Wood</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="rating">5★ Awesome</div>
+                    <div class="content">Quality is good, but plastic film provided instead of glass.<br>
+                        <span>Avisek Mondal</span> | Certified Buyer 4 months ago
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">5★ Awesome</div>
+                    <div class="content">Quality is good, but plastic film provided instead of glass.<br>
+                        <span>Avisek Mondal</span> | Certified Buyer 4 months ago
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 2 -->
+        <div class="product">
+            <!-- Link the image to cpc2.html -->
+            <a href="cpc2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/q/5/3/customized-photo-frame-personal-photo-collage-wall-decor-photo-original-imah78chnrjgtyj2.jpeg?q=70&crop=false" alt="Product 2">
+            </a>
+            <div class="product-details">
+                <!-- Link the product name to cpc2.html -->
+                <a href="cpc2.html" class="product-header">2. New Yashika Enterprises Wood Frame</a>
+                <div class="product-info">1,459 Ratings & 197 Reviews</div>
+                <div class="product-price">₹259 <span class="product-discount">48% off</span></div>
+                <div>13 Photos Accommodated<br>White, Black Color<br>Frame Material: Wood</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="rating">5★ Awesome</div>
+                    <div class="content">It's very good and unique gift <span class="emoji">🎁</span><br>
+                        <span>Nikku Singh</span> | Certified Buyer 11 months ago
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">4★ Good quality product</div>
+                    <div class="content">It is just awesome, I really liked it so much.<br>
+                        <span>Flipkart Customer</span> | Certified Buyer 3 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 3 -->
+        <div class="product">
+            <!-- Link the image to cpc3.html -->
+            <a href="cpc3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/x/x/k/single-customized-13-19inch-photo-frames-with-customized-gift-original-imagxuy2fuufpqth.jpeg?q=70&crop=false" alt="Product 3">
+            </a>
+            <div class="product-details">
+                <!-- Link the product name to cpc3.html -->
+                <a href="cpc3.html" class="product-header">3. HAPPY ARTS & CRAFTS Wood Wall Frame</a>
+                <div class="product-info">104 Ratings & 27 Reviews</div>
+                <div class="product-price">₹639 <span class="product-discount">60% off</span></div>
+                <div>1 Photo Accommodated<br>Black Color<br>Frame Material: Wood</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="rating">5★ Excellent</div>
+                    <div class="content">Superb photo frame. Quality is very good.<br>
+                        <span>Shivani Parwal</span> | Certified Buyer 9 months ago
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">5★ Terrific</div>
+                    <div class="content">Very nice, awesome gift! Must buy.<br>
+                        <span>Flipkart Customer</span> | Certified Buyer 5 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 4 -->
+        <div class="product">
+            <!-- Link the image to cpc4.html -->
+            <a href="cpc4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/d/7/q/magic-mirror-photo-frame-with-light-photos-gift-personalized-original-imah7dchzxww3tfa.jpeg?q=70&crop=false" alt="Product 4">
+            </a>
+            <div class="product-details">
+                <!-- Link the product name to cpc4.html -->
+                <a href="cpc4.html" class="product-header">4. street haat Plastic Table Photo Frame</a>
+                <div class="product-info">37 Ratings & 2 Reviews</div>
+                <div class="product-price">₹300 <span class="product-discount">69% off</span></div>
+                <div>1 Photo Accommodated<br>White Color<br>Frame Material: Plastic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="rating">5★ Terrific</div>
+                    <div class="content">Very interesting product.<br>
+                        <span>Mr. Ariya Bhowmick</span> | Certified Buyer Sep, 2023
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">5★ Terrific</div>
+                    <div class="content">Very interesting product.<br>
+                        <span>Mr. Ariya Bhowmick</span> | Certified Buyer Sep, 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 5 -->
+        <div class="product">
+            <!-- Link the image to cpc5.html -->
+            <a href="cpc5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kp5sya80/normal-photo-frame/k/l/k/mm52021-magic-mirror-swastik-systems-original-imag3gtnc2ygug4v.jpeg?q=70&crop=false" alt="Product 5">
+            </a>
+            <div class="product-details">
+                <!-- Link the product name to cpc5.html -->
+                <a href="cpc5.html" class="product-header">5. VUF Glass Wall Photo Frame</a>
+                <div class="product-info">27 Ratings & 2 Reviews</div>
+                <div class="product-price">₹350 <span class="product-discount">64% off</span></div>
+                <div>1 Photo Accommodated<br>White Color<br>Frame Material: Glass</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="rating">5★ Fabulous!</div>
+                    <div class="content">Amazing product, same as image. Fully satisfied.<br>
+                        <span>Flipkart Customer</span> | Certified Buyer Jun, 2022
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">1★ Did not meet expectations</div>
+                    <div class="content">Worst product. Had to gift it to someone but could not.<br>
+                        <span>Manyata Bajaj</span> | Certified Buyer 6 months ago
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+</body>
+</html>

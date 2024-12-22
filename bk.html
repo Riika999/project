@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: RAJJA Cake Decorating Kits -->
+        <div class="product">
+            <a href="bk1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/kitchen-tool-set/g/o/p/green-combo-rajja-original-imagsgkuxzq63tq7.jpeg?q=90" alt="RAJJA Cake Decorating Kits">
+            </a>
+            <div class="product-details">
+                <a href="bk1.html">
+                    <div class="product-header">1. RAJJA Cake Decorating Kits Cake Turntable, 12 Numbered Cake Decorating Tips Kitchen Tool Set</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 658 Ratings & 58 Reviews</div>
+                <div class="product-price">₹499</div>
+                <div class="product-discount">66% off</div>
+                <div>Type: Baking Tools, Spatula, Brush<br>Made of: Plastic, Steel<br>Inclusions: 31</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    I baked this cake with the help of these materials..<br>
+                    <span>Ananya Bhattacharjee</span> | Certified Buyer | Dec, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    The cake is baked and decorated through these items❤️<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: RAJJA Cake Decorating Tools, Big Combo for Cake Making -->
+        <div class="product">
+            <a href="bk2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/kitchen-tool-set/y/e/x/combo56-rajja-original-imah6zr4ekkqeheh.jpeg?q=90" alt="RAJJA Cake Decorating Tools, Big Combo for Cake Making">
+            </a>
+            <div class="product-details">
+                <a href="bk2.html">
+                    <div class="product-header">2. RAJJA Cake Decorating Tools, Big Combo for Cake Making Item kit, Multicolor, Plastic Kitchen Tool Set</div>
+                </a>
+                <div class="rating">4.8★ &nbsp; 824 Ratings & 83 Reviews</div>
+                <div class="product-price">₹1,234</div>
+                <div class="product-discount">38% off</div>
+                <div>Type: Baking Tools, Spatula, Brush<br>Made of: Plastic, Aluminium, Silicone<br>Pack of: 9</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Good product and all products are usually used daily. Nice one for all.<br>
+                    <span>Bhavesh Kanetiya</span> | Certified Buyer | Dec, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Horrible</span><br>
+                    Worst product, and now Flipkart is not accepting its return.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Sekyo Carepal Pro Kids Smart Watch -->
+        <div class="product">
+            <a href="bk3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/khnqqa80-0/kitchen-tool-set/e/t/g/large-combo-shree-enterpriseee-original-imafxmtfaheqxbz8.jpeg?q=90" alt="Sekyo Carepal Pro Kids Smart Watch">
+            </a>
+            <div class="product-details">
+                <a href="bk3.html">
+                    <div class="product-header">3. Sekyo Carepal Pro Kids Smart Watch with Video Call, Live GPS Location, Class Mode SOS Smartwatch</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 658 Ratings & 14 Reviews</div>
+                <div class="product-price">₹4,785</div>
+                <div class="product-discount">31% off</div>
+                <div>With Call Function<br>Touchscreen<br>Safety & Security, Fitness & Outdoor, Watchphone, Health & Medical, Notifier</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Very good product for our children. Live location when you want to talk call it. I love this watch<br>
+                    <span>Maninder Singh Maan</span> | Certified Buyer | Sep, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Very nice, my son is so happy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: CAKESHOP Cake All In One Combo Kitchen Tool Set -->
+        <div class="product">
+            <a href="bk4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kq5iykw0/kitchen-tool-set/p/j/p/all-in-one-cake-combo-cakeshop-original-imag487zqfxtbxss.jpeg?q=90" alt="CAKESHOP Cake All In One Combo Kitchen Tool Set">
+            </a>
+            <div class="product-details">
+                <a href="bk4.html">
+                    <div class="product-header">4. CAKESHOP Cake All In One Combo Kitchen Tool Set</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 13 Ratings & 3 Reviews</div>
+                <div class="product-price">₹1,149</div>
+                <div class="product-discount">68% off</div>
+                <div>Type: Blender, Knife, Spatula, Baking Tools, Brush, Whisk<br>Made of: Plastic, Steel, Aluminium, Silicone<br>Inclusions: 3 set Cake Mould, 1 Cake Turn Table/Stand, 6 Measuring Spoon Set, 12 Cake Decorating Nozzle Set, 3 pcs Cake Knife, Electric Hand Beater, Silicon Brush and Spatula Set, 1 Cake Smoother</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Good items<br>
+                    <span>Abdulla M.A.</span> | Certified Buyer | 7 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Good items<br>
+                    <span>Abdulla M.A.</span> | Certified Buyer | 7 months ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Denish Cake Decorating Kits -->
+        <div class="product">
+            <a href="bk5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kkimfm80/kitchen-tool-set/v/5/x/ake-combo-set-of-6-denish-original-imafzumzmb9gcyzb.jpeg?q=90" alt="Denish Cake Decorating Kits">
+            </a>
+            <div class="product-details">
+                <a href="bk5.html">
+                    <div class="product-header">5. Denish Cake Decorating Kits 12 Piece Cake Decorating nozzles set with Silicone Icing Bag and Coupler, Cake Making Revolving Turn Table, 3-in-1 Multi-Function Stainless Steel Cake Icing Spatula Knife Set and Plastic Dough Bench Scraper Cake Cutter, and Silicone Basting Brush and spatula Palette Knife Combo, and 8 pcs Measuring Cup, Multicolor Kitchen Tool Set</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 160 Ratings & 7 Reviews</div>
+                <div class="product-price">₹599</div>
+                <div class="product-discount">40% off</div>
+                <div>Type: Knife, Spatula, Brush, Baking Tools, Cooking Spoon<br>Pack of: 29<br>Made of: Plastic, Steel, Silicone</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    I think you are going for the right choice. This product is fabulous... It is the same and I can say better than the picture❤️❤️.<br>
+                    Please buy it and make yummy cakes...<br>
+                    <span>Avni Chandila</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    I think you are going for the right choice. This product is fabulous... It is the same and I can say better than the picture❤️❤️.<br>
+                    Please buy it and make yummy cakes...<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

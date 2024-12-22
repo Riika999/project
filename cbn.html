@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: SBCOLLECTION UNISEX WaterProof Mountain Rucksack -->
+        <div class="product">
+            <a href="cbn1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/backpack/y/f/b/12-unisex-waterproof-mountain-rucksack-hiking-trekking-camping-original-imah79xhszpzqvfb.jpeg?q=90" alt="SBCOLLECTION UNISEX WaterProof Mountain Rucksack">
+            </a>
+            <div class="product-details">
+                <a href="cbn1.html">
+                    <div class="product-header">1. SBCOLLECTION UNISEX WaterProof Mountain Rucksack/Hiking/Trekking/Camping Bag/Travel 60 L Backpack</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 674 Ratings & 19 Reviews</div>
+                <div class="product-price">₹491</div>
+                <div class="product-discount">75% off</div>
+                <div>Capacity: 60 L<br>Dimensions: 18 x 21 inch (W x H)<br>4 Compartments<br>Without Laptop Sleeve</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Local quality. Very bad quality.<br>
+                    <span>Rohit Maddheshiya</span> | Certified Buyer | 4 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Absolute rubbish!</span><br>
+                    Not waterproof, not quality. I did not like the product.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Fast Fashion 30L Laptop Backpack -->
+        <div class="product">
+            <a href="cbn2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kzzw5u80/backpack/f/8/q/casual-unisex-travel-bag-office-messenger-school-backpack-fft-original-imagbwfjyxr27wdf.jpeg?q=90" alt="Fast Fashion 30L Laptop Backpack">
+            </a>
+            <div class="product-details">
+                <a href="cbn2.html">
+                    <div class="product-header">2. Fast Fashion 30L Laptop Backpack Medium Bagpack school college laptop travel bag office bag 30 L Laptop Backpack</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 2,630 Ratings & 2,965 Reviews</div>
+                <div class="product-price">₹329</div>
+                <div class="product-discount">83% off</div>
+                <div>Capacity: 30 L<br>Dimensions: 13 x 18 inch (W x H)<br>5 Compartments<br>With Laptop Sleeve</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    The product is awesome, sufficient number of spaces, sufficient number of chains, very good and durable material. Money worth product 👍🏻<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | May, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Unsatisfactory</span><br>
+                    Very bad, after some time the bag tore 😏😏😏😏😏🥺<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: SBCOLLECTION Water Resistance fabric Laptop Backpack -->
+        <div class="product">
+            <a href="cbn3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/backpack/b/i/1/18-water-resistance-fabric-suitable-for-higher-grade-school-original-imah7kuezzhf5wgs.jpeg?q=90" alt="SBCOLLECTION Water Resistance fabric Laptop Backpack">
+            </a>
+            <div class="product-details">
+                <a href="cb3.html">
+                    <div class="product-header">3. SBCOLLECTION Water Resistance fabric Suitable for Higher Grade School /College / Office Bags. 30 L Laptop Backpack</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 1,460 Ratings & 90 Reviews</div>
+                <div class="product-price">₹329</div>
+                <div class="product-discount">78% off</div>
+                <div>Capacity: 30 L<br>Dimensions: 7 x 14 inch (W x H)<br>5 Compartments<br>With Laptop Sleeve</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    On-time delivery, with good packaging ☺️ can store a lot of things inside this 😁<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Apr, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    This product is very beautiful and so nice.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Fast look Expandable Travel Rucksack -->
+        <div class="product">
+            <a href="cbn4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/backpack/3/k/m/-original-imagrh35n7hgpvrz.jpeg?q=90" alt="Fast look Expandable Travel Rucksack">
+            </a>
+            <div class="product-details">
+                <a href="cbn4.html">
+                    <div class="product-header">4. Fast look Expandable Travel Rucksack for Outdoor Sport Camping Hiking Trekking Bag-Black 60 L Backpack</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 1,251 Ratings & 31 Reviews</div>
+                <div class="product-price">₹529</div>
+                <div class="product-discount">59% off</div>
+                <div>Capacity: 60 L<br>Dimensions: 14.5 x 28.5 inch (W x H)<br>1 Compartment<br>Without Laptop Sleeve</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    This product is very good 😊<br>
+                    <span>Sunil K.c</span> | Certified Buyer | Mar, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Awesome 🤩 thanks Flipkart<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: SBCOLLECTION SlpashProf Daily Commuter Backpack -->
+        <div class="product">
+            <a href="cbn5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/backpack/9/s/6/slpashprof-daily-commuter-office-school-college-business-unisex-original-imafz9nxhkfbgxwf.jpeg?q=90" alt="SBCOLLECTION SlpashProf Daily Commuter Backpack">
+            </a>
+            <div class="product-details">
+                <a href="cbn5.html">
+                    <div class="product-header">5. SBCOLLECTION SlpashProf Daily Commuter Office / School / College / Business / Unisex Travel 40 L Laptop Backpack</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 656 Ratings & 26 Reviews</div>
+                <div class="product-price">₹319</div>
+                <div class="product-discount">84% off</div>
+                <div>Capacity: 40 L<br>Dimensions: 14 x 21 inch (W x H)<br>5 Compartments<br>With Laptop Sleeve</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    But color changes, but good quality small bag.<br>
+                    <span>Rahul Suryawanshi</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Good product. Thanks Flipkart ⚡⚡<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

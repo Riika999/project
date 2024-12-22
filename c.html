@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Nutri Guide Organic Green Coffee Beans for Weight Loss -->
+        <div class="product">
+            <a href="c1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/ky65wnk0/coffee/f/1/5/400-organic-green-coffee-beans-for-weight-loss-unroasted-beans-original-imagagjbyyyvhked.jpeg?q=90" alt="Nutri Guide Organic Green Coffee Beans">
+            </a>
+            <div class="product-details">
+                <a href="c1.html">
+                    <div class="product-header">1. Nutri Guide Organic Green Coffee Beans for Weight Loss (Unroasted Beans) Instant Coffee</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 4433 Ratings & 49 Reviews</div>
+                <div class="product-price">₹519</div>
+                <div class="product-discount">34% off</div>
+                <div>Form Factor: Beans<br>Container Type: Plastic Bottle<br>Organic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    This coffee beans is marvellous for the person for pre workout tea as also bed time tea ...guys trust me I gonna easily lose weight from this tea.<br>
+                    <span>Dhruv Mittal</span> | Certified Buyer | Jan, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Does the job</span><br>
+                    The product is okay but not amazing.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Coffee Day Roasted Coffee Beans -->
+        <div class="product">
+            <a href="c2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/coffee/n/h/s/1-coffee-day-roasted-coffee-beans-1kg-pouch-1-coffee-beans-original-imah5g4z8jer8zaq.jpeg?q=90" alt="Coffee Day Roasted Coffee Beans">
+            </a>
+            <div class="product-details">
+                <a href="c2.html">
+                    <div class="product-header">2. Coffee Day Roasted Coffee Beans, 1kg</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 472 Ratings & 4 Reviews</div>
+                <div class="product-price">₹950</div>
+                <div class="product-discount">No discount</div>
+                <div>Container Type: Pouch<br>Organic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Very good but little bit expensive.<br>
+                    <span>Mohit Kumar</span> | Certified Buyer | May, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Very good but little bit expensive.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Nutrovibe Green Coffee Beans for Weight Loss -->
+        <div class="product">
+            <a href="c3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/coffee/q/o/7/400-green-coffee-beans-for-weight-loss-green-coffee-pouch-2-original-imags9v2gzgv4zpe.jpeg?q=90" alt="Nutrovibe Green Coffee Beans">
+            </a>
+            <div class="product-details">
+                <a href="c3.html">
+                    <div class="product-header">3. Nutrovibe Green Coffee Beans for Weight Loss Green Coffee Coffee Beans</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 4733 Ratings & 98 Reviews</div>
+                <div class="product-price">₹329</div>
+                <div class="product-discount">44% off</div>
+                <div>Form Factor: Beans<br>Container Type: Pouch<br>Organic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Very effective for belly fat reduction... Fast weight loss with some exercise...<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Apr, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Good for weight loss. I lost 3kg in a month. I used to drink it twice a day & 30 minutes exercise.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Nutri Guide Green Coffee Beans for Weight Loss -->
+        <div class="product">
+            <a href="c4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/coffee/q/o/7/400-green-coffee-beans-for-weight-loss-green-coffee-pouch-2-original-imags9v2gzgv4zpe.jpeg?q=90" alt="Nutri Guide Green Coffee Beans">
+            </a>
+            <div class="product-details">
+                <a href="c4.html">
+                    <div class="product-header">4. Nutri Guide Green Coffee Beans for Weight Loss (Unroasted Beans) Instant Coffee</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 4142 Ratings & 38 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">No discount</div>
+                <div>Form Factor: Beans<br>Container Type: Pouch<br>Organic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Mind blowing product!!! It gives real sense of green coffee. Best for weight loss. Good taste, best in the market. Very good for health & weight loss.<br>
+                    <span>Prince Kumar</span> | Certified Buyer | Oct, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Absolute rubbish!</span><br>
+                    Green coffee bean is very poor quality... please don't buy this product... totally waste of money 😡<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: KAYABOOST Green Coffee Beans for Weight Loss/Fat Loss -->
+        <div class="product">
+            <a href="c5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/l5h2xe80/coffee/b/m/o/200-green-coffee-beans-for-weight-loss-fat-lose-plastic-bottle-1-original-imagg5eznhgquvgs.jpeg?q=90" alt="KAYABOOST Green Coffee Beans for Weight Loss/Fat Loss">
+            </a>
+            <div class="product-details">
+                <a href="c5.html">
+                    <div class="product-header">5. KAYABOOST Green Coffee Beans for Weight Loss/Fat Loss</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 166 Ratings & 6 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">40% off</div>
+                <div>Form Factor: Beans<br>Container Type: Plastic Bottle<br>Organic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Good product I am very satisfied.<br>
+                    <span>Ramesh M</span> | Certified Buyer | Nov, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Good product I am very satisfied.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

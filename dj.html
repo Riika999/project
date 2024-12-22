@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: eWools Full Sleeve Solid Women Jacket -->
+        <div class="product">
+            <a href="dj1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/jacket/q/0/k/xl-no-jack5-onion-ewools-original-imah5pjtfnj5f2q7.jpeg?q=70&crop=false" alt="eWools Full Sleeve Solid Women Jacket">
+            </a>
+            <div class="product-details">
+                <a href="dj1.html">
+                    <div class="product-header">1. eWools Full Sleeve Solid Women Jacket</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 4409 Ratings & 17 Reviews</div>
+                <div class="product-price">₹475</div>
+                <div class="product-discount">84% off</div>
+                <div>Pattern: Solid<br>Suitable For: Western Wear<br>Fabric: Nylon</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Superb jacket, I'm so happy.<br>
+                    <span>Divya Kashayap</span> | Certified Buyer 29 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Delightful</span><br>
+                    Superb product quality is awesome👍👏👏 worth it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: FUNDAY FASHION Full Sleeve Solid Women Denim Jacket -->
+        <div class="product">
+            <a href="dj2.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jacket/t/c/z/l-sys-4163-funday-fashion-original-imafzz8hjrrshu9f-bb.jpeg?q=70&crop=false" alt="FUNDAY FASHION Full Sleeve Solid Women Denim Jacket">
+            </a>
+            <div class="product-details">
+                <a href="dj2.html">
+                    <div class="product-header">2. FUNDAY FASHION Full Sleeve Solid Women Denim Jacket</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 8577 Ratings & 537 Reviews</div>
+                <div class="product-price">₹399</div>
+                <div class="product-discount">73% off</div>
+                <div>Pattern: Solid<br>Suitable For: Western Wear<br>Fabric: Denim</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Very good product😍🤞<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Nov, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Nice jacket.... Fits awesome👍<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: KIRMANI Full Sleeve Washed Girls Denim Jacket -->
+        <div class="product">
+            <a href="dj3.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shrug/d/p/4/12-13-years-s23-kirmani-original-imagquu39tg7ctng.jpeg?q=70&crop=false" alt="KIRMANI Full Sleeve Washed Girls Denim Jacket">
+            </a>
+            <div class="product-details">
+                <a href="dj3.html">
+                    <div class="product-header">3. KIRMANI Full Sleeve Washed Girls Denim Jacket</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 137 Ratings & 4 Reviews</div>
+                <div class="product-price">₹385</div>
+                <div class="product-discount">67% off</div>
+                <div>Pattern: Washed<br>Suitable For: Western Wear<br>Fabric: Denim</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    It is very good quality 👌<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 10 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    It is very good quality 👌<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: embark Full Sleeve Solid Women Denim Jacket -->
+        <div class="product">
+            <a href="dj4.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jacket/h/u/1/free-no-rb109-dark-blue-embark-original-imagrg3kdfa5zezy.jpeg?q=70&crop=false" alt="embark Full Sleeve Solid Women Denim Jacket">
+            </a>
+            <div class="product-details">
+                <a href="dj4.html">
+                    <div class="product-header">4. embark Full Sleeve Solid Women Denim Jacket</div>
+                </a>
+                <div class="rating">4★ &nbsp; 436 Ratings & 4 Reviews</div>
+                <div class="product-price">₹585</div>
+                <div class="product-discount">16% off</div>
+                <div>Pattern: Solid<br>Suitable For: Western Wear<br>Fabric: Denim</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Size is not perfect.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 7 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Size is not perfect.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: ARTORE Full Sleeve Washed Women Denim Jacket -->
+        <div class="product">
+            <a href="dj5.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jacket/5/l/f/l-1-no-sc-1113-light-thaga-monkey-fiery-falcon-original-imahyaknz4fb4wtg.jpeg?q=70&crop=false" alt="ARTORE Full Sleeve Washed Women Denim Jacket">
+            </a>
+            <div class="product-details">
+                <a href="dj5.html">
+                    <div class="product-header">5. ARTORE Full Sleeve Washed Women Denim Jacket</div>
+                </a>
+                <div class="rating">3.2★ &nbsp; 295 Ratings & 3 Reviews</div>
+                <div class="product-price">₹349</div>
+                <div class="product-discount">65% off</div>
+                <div>Pattern: Washed<br>Suitable For: Western Wear<br>Fabric: Denim</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Very poor</span><br>
+                    Nothing to say cause product it's not mine.<br>
+                    <span>Moron Death</span> | Certified Buyer Dec, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Very poor</span><br>
+                    Nothing to say cause product it's not mine.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Satyam Kraft Artificial Dried Pampas Grass -->
+        <div class="product">
+            <a href="df1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/g/o/u/3-artificial-dried-pampas-grass-for-wedding-home-decoration-off-original-imah7fr8karey7he.jpeg?q=90" alt="Satyam Kraft Artificial Dried Pampas Grass">
+            </a>
+            <div class="product-details">
+                <a href="df1.html">
+                    <div class="product-header">1. Satyam Kraft Artificial Dried Pampas Grass For Wedding, Home Decoration - (Off White) 3pcs White Dried Sticks Artificial Flower</div>
+                </a>
+                <div class="rating">4.35★ &nbsp; 535 Ratings & 20 Reviews</div>
+                <div class="product-price">₹399</div>
+                <div class="product-discount">66% off</div>
+                <div>Type: Dried Sticks<br>Flower Material: Fabric<br>Length: 41 cm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Thinner than what shown in pic but quality is okay.<br>
+                    <span>Anamika Om</span> | Certified Buyer | Oct, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    Great choice 🔥🔥 but price is high.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: 99 Home Decor Multicolor Artificial Leaves -->
+        <div class="product">
+            <a href="df2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/b/h/f/50-artificial-leaves-potpourri-99-home-decor-original-imagq7fhwqamsfyy.jpeg?q=90" alt="99 Home Decor Multicolor Artificial Leaves">
+            </a>
+            <div class="product-details">
+                <a href="df2.html">
+                    <div class="product-header">2. 99 Home Decor Multicolor Artificial Leaves For Decoration/Table Decor/Vase Filler (Pack Of 6) Multicolor Dried Twigs Artificial Flower</div>
+                </a>
+                <div class="rating">4.25★ &nbsp; 425 Ratings & 2 Reviews</div>
+                <div class="product-price">₹376</div>
+                <div class="product-discount">58% off</div>
+                <div>Type: Dried Twigs<br>Flower Material: Wood<br>Length: 2 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Not recommended at all</span><br>
+                    Small quantity.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 3 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Not recommended at all</span><br>
+                    Small quantity.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: R H lifestyle Light Yellow Dried Flowers -->
+        <div class="product">
+            <a href="df3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/f/7/u/1-dried-flowers-for-resin-art-pressed-flower-r-h-lifestyle-original-imah7hm6qg5afmsn.jpeg?q=90" alt="R H lifestyle Light Yellow Dried Flowers">
+            </a>
+            <div class="product-details">
+                <a href="df3.html">
+                    <div class="product-header">3. R H lifestyle Light Yellow Dried Flowers for Resin Art Pressed Flower Mini Rose for Art Craft Yellow Daisy, Sunflower Artificial Flower</div>
+                </a>
+                <div class="rating">4.12★ &nbsp; 123 Ratings & 1 Review</div>
+                <div class="product-price">₹342</div>
+                <div class="product-discount">61% off</div>
+                <div>Type: Daisy, Sunflower<br>Flower Material: Wood<br>Length: 7 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Fan.<br>
+                    <span>Nidhi Julka</span> | Certified Buyer | 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Fan.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: FinesseDecor TEENA Artificial Flower -->
+        <div class="product">
+            <a href="df4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/x/m/o/2-2-stick-roses-18-inches-each-finessedecor-original-imah32yubb8e8qdg.jpeg?q=90" alt="FinesseDecor TEENA Artificial Flower Red, Green Rose">
+            </a>
+            <div class="product-details">
+                <a href="df4.html">
+                    <div class="product-header">4. FinesseDecor TEENA Artificial Flower Red, Green Rose Artificial Flower</div>
+                </a>
+                <div class="rating">4.19★ &nbsp; 194 Ratings & 5 Reviews</div>
+                <div class="product-price">₹231</div>
+                <div class="product-discount">53% off</div>
+                <div>Type: Rose<br>Flower Material: Fabric<br>Length: 20 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Awesome look beautiful. So that's why I wanna decide to buy 2 more bunch.<br>
+                    <span>Naghma Sheikh</span> | Certified Buyer | 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Looks like real rose flowers.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Satyam Kraft 2 Pcs Artificial Flower Faux Monstera Bunch -->
+        <div class="product">
+            <a href="df5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/r/w/n/2-sk-2202-a-satyam-kraft-original-imah7f7tzm7yqzfq.jpeg?q=90" alt="Satyam Kraft 2 Pcs Artificial Flower Faux Monstera Bunch">
+            </a>
+            <div class="product-details">
+                <a href="df5.html">
+                    <div class="product-header">5. Satyam Kraft 2 Pcs Artificial Flower Faux Monstera Bunch for Gifting, Home Decor Green Dried Sticks Artificial Flower</div>
+                </a>
+                <div class="rating">3.91★ &nbsp; 1,526 Ratings & 114 Reviews</div>
+                <div class="product-price">₹256</div>
+                <div class="product-discount">78% off</div>
+                <div>Type: Dried Sticks<br>Flower Material: Fabric<br>Length: 38 cm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    This Plant is doing great in a pot I made.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jun, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Good purchase according to the price.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

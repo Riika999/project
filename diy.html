@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="diy.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/w/l/j/tcff-0087-7running-horses-1-tcff-0087-taani-creations-original-imah5e2bzqe8vjhy.jpeg?q=70&crop=false" alt="SS ENTERPRISE Rose Scented Candle">
+            </a>
+            <div class="product-details">
+                <a href="diy1.html">
+                    <div class="product-header">1. SS ENTERPRISE Rose Scented Candle</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 168 Ratings & 6 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">76% off</div>
+                <div>Pack of 2<br>Fragrance: Rose<br>Burn Time: 4 hr</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Good but I felt it's small<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 5 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Just okay</span><br>
+                    Nice but smell is not good.<br>
+                    <span>Sumitra Shanker</span> | Certified Buyer 16 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="diy2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kupuljk0/painting/f/5/k/14-1-fap-325-8x12-frizzy-arts-original-imag7sbez47fbcvn.jpeg?q=70&crop=false" alt="Taani Creations Wood Wall Photo Frame">
+            </a>
+            <div class="product-details">
+                <a href="diy2.html">
+                    <div class="product-header">2. taani creations Wood Wall P...</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 12 Ratings & 1 Reviews</div>
+                <div class="product-price">₹249</div>
+                <div class="product-discount">72% off</div>
+                <div>1 Photo Accommodated<br>Multicolor<br>Frame Material: Wood</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Nice frame<br>
+                    <span>Ketan Rana</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Nice frame<br>
+                    <span>Ketan Rana</span> | Certified Buyer 1 month ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="diy3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kupuljk0/painting/f/5/k/14-1-fap-325-8x12-frizzy-arts-original-imag7sbez47fbcvn.jpeg?q=70&crop=false" alt="Taani Creations Wood Wall Photo Frame">
+            </a>
+            <div class="product-details">
+                <a href="diy3.html">
+                    <div class="product-header">3. taani creations Wood Wall P...</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 12 Ratings & 1 Reviews</div>
+                <div class="product-price">₹249</div>
+                <div class="product-discount">72% off</div>
+                <div>1 Photo Accommodated<br>Multicolor<br>Frame Material: Wood</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Nice frame<br>
+                    <span>Ketan Rana</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Nice frame<br>
+                    <span>Ketan Rana</span> | Certified Buyer 1 month ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="diy4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/normal-photo-frame/o/1/a/diy-steel-grid-photo-frame-for-wall-clip-holder-multi-functional-original-imah48zfqfzfdmxv.jpeg?q=70&crop=false" alt="SPACE ORGANISER Steel Wall Photo Frame">
+            </a>
+            <div class="product-details">
+                <a href="diy4.html">
+                    <div class="product-header">4. SPACE ORGANISER Steel Wall Photo Frame</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 55 Ratings & 2 Reviews</div>
+                <div class="product-price">₹230</div>
+                <div class="product-discount">67% off</div>
+                <div>4 Photos Accommodated<br>Black Color<br>Frame Material: Steel</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Just okay</span><br>
+                    Too short 😞<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Aug, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Just okay</span><br>
+                    Too short 😞<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Aug, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="diy5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/album/y/1/a/26-albumspinkroses-4-6-104photos-4-pa-albumspinkroses-4-6-original-imahywuhp92fzuyb.jpeg?q=70&crop=false" alt="SEHAZ ARTWORKS AlbumsPinkRoses_4*6_104Photos Album">
+            </a>
+            <div class="product-details">
+                <a href="diy5.html">
+                    <div class="product-header">5. SEHAZ ARTWORKS AlbumsPinkRo...</div>
+                </a>
+                <div class="rating">4★ &nbsp; 13,174 Ratings & 865 Reviews</div>
+                <div class="product-price">₹279</div>
+                <div class="product-discount">65% off</div>
+                <div>4 Photos per Page<br>Photo Size Supported: 4x6<br>26 Pages</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Best product and well packed<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Dec, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    I like it 👍 thanks Flipkart<br>
+                    <span>Flipkart Customer</span> | Certified Buyer
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

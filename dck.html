@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: MAGHROLA Kids Jewelry Making Kit -->
+        <div class="product">
+            <a href="dck1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/art-craft-kit/r/a/m/3-kids-jewelry-making-kit-colorful-beadsdiy-bracelets-plastic-original-imah39rhprqbphcs.jpeg?q=90" alt="MAGHROLA Kids Jewelry Making Kit Colorful Beads for Kids Crafts">
+            </a>
+            <div class="product-details">
+                <a href="dck1.html">
+                    <div class="product-header">1. MAGHROLA Kids Jewelry Making Kit Colorful Beads DIY Bracelets Plastic Beads for Kids Crafts</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 84 Ratings & 3 Reviews</div>
+                <div class="product-price">₹399</div>
+                <div class="product-discount">60% off</div>
+                <div>Ideal For: Girls<br>Non-toxic<br>Material: Beads</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Great Product thanks for Flipkart 😊<br>
+                    <span>Mohd Shahjad</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Great Product thanks for Flipkart 😊<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: sneki DIY (40+Slime) Multicolor Putty Toy Slime -->
+        <div class="product">
+            <a href="dck2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/art-craft-kit/o/v/p/3-diy-40-slime-multicolor-putty-toy-slime-making-activator-glue-original-imaggdkrbbxnmaex.jpeg?q=90" alt="sneki DIY (40+Slime) Multicolor Putty Toy Slime Making Activator Glue Kit Set for Kids">
+            </a>
+            <div class="product-details">
+                <a href="dck2.html">
+                    <div class="product-header">2. sneki DIY (40+Slime) Multicolor Putty Toy Slime Making Activator Glue Kit Set for Kids</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 256 Ratings & 17 Reviews</div>
+                <div class="product-price">₹409</div>
+                <div class="product-discount">48% off</div>
+                <div>Ideal For: Boys and Girls<br>Non-toxic<br>Material: Slime Activator, Slime Glue, Sparkly Charms, Water Beads</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Product is average and acceptable<br>
+                    <span>Mahesh Anandakuttan</span> | Certified Buyer | 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Product is average and acceptable<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Imagimake Fabulous Craft Kit -->
+        <div class="product">
+            <a href="dck3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kyyqpow0/art-craft-kit/p/r/r/5-fabulous-craft-kit-creative-toy-and-diy-set-for-kids-5-years-original-imagb2yfgmmpyrwz.jpeg?q=90" alt="Imagimake Fabulous Craft Kit- Creative Toy and DIY Set for Kids">
+            </a>
+            <div class="product-details">
+                <a href="dck3.html">
+                    <div class="product-header">3. Imagimake Fabulous Craft Kit - Creative Toy and DIY Set for Kids - 5 Years and Over</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 81 Ratings & 5 Reviews</div>
+                <div class="product-price">₹1,199</div>
+                <div class="product-discount">14% off</div>
+                <div>Ideal For: Boys and Girls<br>Material: Foam, Paper<br>Age: 5+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Best gift for 6 year girl<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Nice product, my niece is very happy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Fevicryl DIY Art of India Lippan Kit -->
+        <div class="product">
+            <a href="dck4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/art-craft-kit/8/x/q/14-diy-art-of-india-lippan-kit-gift-for-artists-students-original-imah2fd5cqw5as9p.jpeg?q=90" alt="Fevicryl DIY Art of India Lippan Kit, Gift for Artists, Students, Children">
+            </a>
+            <div class="product-details">
+                <a href="dck4.html">
+                    <div class="product-header">4. Fevicryl DIY Art of India Lippan Kit, Gift for Artists, Students, Children</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 70 Ratings & 4 Reviews</div>
+                <div class="product-price">₹459</div>
+                <div class="product-discount">34% off</div>
+                <div>Ideal For: Boys and Girls<br>Age: 14+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    It's a very good product, some of the mirrors are a little broken, but the overall quality is very good.<br>
+                    <span>Mun Ghosh</span> | Certified Buyer | 11 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    It was amazing 👏 😍 but molded quality was not good 😐<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 3 months ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Imagimake Stamp Art - Garden -->
+        <div class="product">
+            <a href="dck5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/art-craft-kit/1/m/x/3-stamp-art-garden-diy-kids-art-set-for-boys-and-girls-3-years-original-imaghku3rxdzhwpy.jpeg?q=90" alt="Imagimake Stamp Art - Garden - DIY Kids Art Set">
+            </a>
+            <div class="product-details">
+                <a href="dck5.html">
+                    <div class="product-header">5. Imagimake Stamp Art - Garden - DIY Kids Art Set - for Boys and Girls 3 Years+</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 420 Ratings & 1 Review</div>
+                <div class="product-price">₹399</div>
+                <div>Ideal For: Boys and Girls<br>Age: 3+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Fair</span><br>
+                    Average.<br>
+                    <span>Safna Gafoor</span> | Certified Buyer | 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Fair</span><br>
+                    Average.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: DecorTwist Brass Pipal Leaf Design Bookmark -->
+        <div class="product">
+            <a href="bc1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/bookmark/d/l/l/brass-pipal-leaf-design-1-school-supplies-page-holder-charm-gift-original-imah4axddspap2we.jpeg?q=70&crop=false" alt="DecorTwist Brass Pipal Leaf Design Bookmark">
+            </a>
+            <div class="product-details">
+                <a href="bc1.html">
+                    <div class="product-header">1. DecorTwist Brass Pipal Leaf Design Bookmark</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 110 Ratings & 4 Reviews</div>
+                <div class="product-price">₹265</div>
+                <div class="product-discount">70% off</div>
+                <div>Type: Bookmark<br>Theme: School Supplies, Page Holder, Charm Gift for Readers & Book Lovers, Teachers<br>Color: Gold</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    A very unique bookmark made of metal. Everyone is asking about it.<br>
+                    <span>Vikas Verma</span> | Certified Buyer | 4 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    A very unique bookmark made of metal. Everyone is asking about it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: TOWNBUS Magnetic Bookmark Page Clip -->
+        <div class="product">
+            <a href="bc2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/bookmark/w/6/g/magnetic-bookmark-6-stylish-women-page-clip-townbus-original-imagyxh5j8pkyv8h.jpeg?q=70&crop=false" alt="TOWNBUS Magnetic Bookmark Page Clip">
+            </a>
+            <div class="product-details">
+                <a href="bc2.html">
+                    <div class="product-header">2. TOWNBUS Magnetic Bookmark Page Clip</div>
+                </a>
+                <div class="rating">4.8★ &nbsp; 22 Ratings & 2 Reviews</div>
+                <div class="product-price">₹184</div>
+                <div class="product-discount">29% off</div>
+                <div>Type: Page Clip<br>Theme: Stylish Women<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Excellent quality and packing too.<br>
+                    <span>Sandhya Shinde</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Excellent quality and packing too.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: RINKON Bookmarks For Book Lovers Set Of 12 Pcs -->
+        <div class="product">
+            <a href="bc3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/l4yi7bk0/bookmark/z/p/f/bookmarks-for-book-lovers-set-of-12-pcs-designed-animals-theme-original-imagfqpyqt9v75ht.jpeg?q=70&crop=false" alt="RINKON Bookmarks For Book Lovers Set Of 12 Pcs Designed Animals Theme">
+            </a>
+            <div class="product-details">
+                <a href="bc3.html">
+                    <div class="product-header">3. RINKON Bookmarks For Book Lovers Set Of 12 Pcs Designed Animals Theme</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 157 Ratings & 7 Reviews</div>
+                <div class="product-price">₹137</div>
+                <div class="product-discount">72% off</div>
+                <div>Type: Bookmark<br>Theme: Animals<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Same as shown in the picture. Go for it.<br>
+                    <span>Priyanka</span> | Certified Buyer | Jul, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Bad quality</span><br>
+                    Not up to the mark, give a second thought before buying.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Adbee Sticky Note with Ruler Clear Self-Sticky Annotation, Waterproof Translucent Bookmark -->
+        <div class="product">
+            <a href="bc4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/bookmark/z/c/r/sticky-note-1-school-office-with-ruler-clear-self-sticky-original-imagxcamx6gzfhtb.jpeg?q=70&crop=false" alt="Adbee Sticky Note with Ruler Clear Self-Sticky Annotation, Waterproof Translucent Bookmark">
+            </a>
+            <div class="product-details">
+                <a href="bc4.html">
+                    <div class="product-header">4. Adbee Sticky Note with Ruler Clear Self-Sticky Annotation, Waterproof Translucent Bookmark</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 10 Ratings & 1 Review</div>
+                <div class="product-price">₹157</div>
+                <div class="product-discount">68% off</div>
+                <div>Type: with Ruler Clear Self-Sticky Annotation, Waterproof Translucent<br>Theme: School & Office<br>Color: Blue Shaded</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Bookmarks in very nice colours, beautiful, useful, adhesion is also good. Ordered items arrived exactly as described and in photos.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Bookmarks in very nice colours, beautiful, useful, adhesion is also good. Ordered items arrived exactly as described and in photos.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Papboo Set of Thirty Paperback Bookmark -->
+        <div class="product">
+            <a href="bc5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/bookmark/9/e/o/set-of-thirty-30-designer-paperback-papboo-original-imaggg2x9dyq5qv7.jpeg?q=70&crop=false" alt="Papboo Set of Thirty Paperback Bookmark">
+            </a>
+            <div class="product-details">
+                <a href="bc5.html">
+                    <div class="product-header">5. Papboo Set of Thirty Paperback Bookmark</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 47 Ratings & 4 Reviews</div>
+                <div class="product-price">₹254</div>
+                <div class="product-discount">36% off</div>
+                <div>Type: Paperback<br>Theme: Designer<br>Color: Set of Thirty</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    Nice product at this price.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 9 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    They are really looking awesome and also they are so good.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
