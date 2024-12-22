@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="h1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/candle/y/m/f/rose-home-decor-rose-scented-candle-church-spa-candle-restaurant-original-imah3g25v2ygn3x4.jpeg?q=90" alt="SS ENTERPRISE Rose Scented Candle">
+            </a>
+            <div class="product-details">
+                <a href="h1.html">
+                    <div class="product-header">1. SS ENTERPRISE Rose Scented Candle</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 168 Ratings & 6 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">76% off</div>
+                <div>Pack of 2<br>Fragrance: Rose<br>Burn Time: 4 hr</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Good but I felt it's small<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 5 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Just okay</span><br>
+                    Nice but smell is not good.<br>
+                    <span>Sumitra Shanker</span> | Certified Buyer 16 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="h2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/candle/w/6/7/yes-home-decor-premium-ladoo-candle-hand-poured-motichur-laddoo-original-imahycrk2s2gahhw.jpeg?q=90" alt="Parkash Candles Premium Laddoo Candle">
+            </a>
+            <div class="product-details">
+                <a href="h2.html">
+                    <div class="product-header">2. Parkash Candles Premium Laddoo Candle</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 42 Ratings & 4 Reviews</div>
+                <div class="product-price">₹219</div>
+                <div class="product-discount">78% off</div>
+                <div>Pack of 6<br>Fragrance: Unscented<br>Burn Time: 20 hr</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    The size is good and the smell is aesthetic.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 20 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="h3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/candle/1/t/4/rose-home-decor-rose-jar-candle-1-ctjar-rose-ecraftindia-original-imah4zz8wq3akgdf.jpeg?q=90" alt="eCraftIndia Rose Jar Candle">
+            </a>
+            <div class="product-details">
+                <a href="h3.html">
+                    <div class="product-header">3. eCraftIndia Rose Jar Candle</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 1,339 Ratings & 88 Reviews</div>
+                <div class="product-price">₹169</div>
+                <div class="product-discount">51% off</div>
+                <div>Pack of 1<br>Fragrance: Rose<br>Burn Time: 14 hr</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    It’s amazing! Fragrance is good, nice packaging.<br>
+                    <span>Shraddha</span> | Certified Buyer Mar, 2022
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="h4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/candle/p/x/k/floral-home-decor-scented-candles-for-home-decor-fragrance-original-imahyanrufgqqmrq.jpeg?q=90" alt="Indoblaze Scented Candles">
+            </a>
+            <div class="product-details">
+                <a href="h4.html">
+                    <div class="product-header">4. Indoblaze Scented Candles For Home Decor</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 1,186 Ratings & 88 Reviews</div>
+                <div class="product-price">₹269</div>
+                <div class="product-discount">66% off</div>
+                <div>Pack of 6<br>Fragrance: Floral<br>Burn Time: 7 hr</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Best quality, nice fragrance.<br>
+                    <span>Kanchan Sahu</span> | Certified Buyer May, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="h5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/candle/o/k/n/unscented-home-decor-water-sensor-eco-friendly-led-e-diya-warm-original-imah5bxtfzfhhwqq.jpeg?q=90" alt="AKV'S Water Sensor Eco-Friendly LED E-Diya">
+            </a>
+            <div class="product-details">
+                <a href="h5.html">
+                    <div class="product-header">5. AKV'S Water Sensor Eco-Friendly LED E-Diya</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 92 Ratings & 8 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">85% off</div>
+                <div>Pack of 12<br>Fragrance: Unscented<br>Color: Brown</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Some lights are not working. Very poor quality.<br>
+                    <span>Madhumitha</span> | Certified Buyer 2 days ago
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

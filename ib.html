@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Experiencing the Holy Spirit -->
+        <div class="product">
+            <a href="ib1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kfoapow0/book/8/0/9/experiencing-the-holy-spirit-original-imafw2u7uehfuwak.jpeg?q=70&crop=false" alt="Experiencing the Holy Spirit">
+            </a>
+            <div class="product-details">
+                <a href="ib1.html">
+                    <div class="product-header">1. Experiencing the Holy Spirit</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 109 Ratings & 8 Reviews</div>
+                <div class="product-price">₹176</div>
+                <div class="product-discount">28% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: General Press India</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Dnt think just go for it..it's absolutely original and best.<br>
+                    <span>Nirmal Rai</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    Good and brief description. Easy to understand.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: One Day Life Will Change -->
+        <div class="product">
+            <a href="ib2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/b/9/m/one-day-life-will-change-a-story-of-love-and-inspiration-to-win-original-imagsqczhqkusyhp.jpeg?q=70&crop=false" alt="One Day Life Will Change">
+            </a>
+            <div class="product-details">
+                <a href="ib2.html">
+                    <div class="product-header">2. One Day Life Will Change: A Story of Love and Inspiration</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 74 Ratings & 3 Reviews</div>
+                <div class="product-price">₹139</div>
+                <div class="product-discount">30% off</div>
+                <div>Language: Tamil<br>Binding: Paperback<br>Publisher: Fingerprint! Publishing</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Amazing story 👏 worth to buy this book. I read it in a single sitting.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 5 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Amazing story 👏 worth to buy this book. I read it in a single sitting.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: World's Best Inspirational Books to Change Your Life -->
+        <div class="product">
+            <a href="ib3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kqidx8w0/book/9/t/0/world-s-best-inspirational-books-to-change-your-life-original-imag4ggaejmet7hd.jpeg?q=70&crop=false" alt="World's Best Inspirational Books to Change Your Life">
+            </a>
+            <div class="product-details">
+                <a href="ib3.html">
+                    <div class="product-header">3. World's Best Inspirational Books to Change Your Life</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 1,399 Ratings & 130 Reviews</div>
+                <div class="product-price">₹379</div>
+                <div class="product-discount">36% off</div>
+                <div>Language: English<br>Binding: Hardcover<br>Publisher: Prakash Books</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Quality of paper is very good. Delivery boy was so humble. Fast delivery, Thanks Flipkart.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Apr, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Excellent. But the page quality could have been a little better.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: How to Use the Power of Prayer -->
+        <div class="product">
+            <a href="ib4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/f/v/q/how-to-use-the-power-of-prayer-deluxe-hardbound-edition-original-imagkf7zxjkpfxg4.jpeg?q=70&crop=false" alt="How to Use the Power of Prayer">
+            </a>
+            <div class="product-details">
+                <a href="ib4.html">
+                    <div class="product-header">4. How to Use the Power of Prayer</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 6 Ratings & 1 Reviews</div>
+                <div class="product-price">₹281</div>
+                <div class="product-discount">13% off</div>
+                <div>Language: English<br>Binding: Hardcover<br>Publisher: General Press India</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Inspirational Book.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jan, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Inspirational Book.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Autobiography of a Yogi -->
+        <div class="product">
+            <a href="ib5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/i/w/i/autobiography-of-a-yogi-original-imah3zzhgas53bzd.jpeg?q=70&crop=false" alt="Autobiography of a Yogi">
+            </a>
+            <div class="product-details">
+                <a href="ib5.html">
+                    <div class="product-header">5. Autobiography of a Yogi</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 56 Ratings & 3 Reviews</div>
+                <div class="product-price">₹238</div>
+                <div class="product-discount">20% off</div>
+                <div>Language: Malayalam<br>Binding: Paperback<br>Publisher: Fingerprint! Publishing</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Worthless</span><br>
+                    Lots of spelling mistakes.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Sep, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Worthless</span><br>
+                    Lots of spelling mistakes.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

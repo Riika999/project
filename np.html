@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 6: Brothers Creation Wooden Mom's Kitchen Wall Hanging Name Plate -->
+        <div class="product">
+            <a href="np1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/name-plate/c/p/s/bcn-15-brothers-creation-original-imahfwqcbfddzzsk.jpeg?q=70&crop=false">
+            </a>
+            <div class="product-details">
+                <a href="np1.html">
+                    <div class="product-header">1. Brothers Creation Wooden Mom's Kitchen Wall Hanging Name Plate</div>
+                </a>
+                <div class="rating">4.23★ &nbsp; 328 Ratings & 29 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">80% off</div>
+                <div>Material: Wooden<br>Mounting: Hanging Screw<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Really too good, thanks Flipkart<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Apr, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Awesome product, thank you Flipkart! 😍<br>
+                    <span>Karishma Singh</span> | Certified Buyer 11 months ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7: Parikshit Sublimation Plastic Wall Name Plate Holder -->
+        <div class="product">
+            <a href="np2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/name-plate/h/y/w/acrylic-wall-name-plate-holder-clear-sign-holder-frame-with-original-imah3g4t8dfwmfmm.jpeg?q=70&crop=false" alt="Parikshit Sublimation Plastic Wall Name Plate Holder">
+            </a>
+            <div class="product-details">
+                <a href="np2.html">
+                    <div class="product-header">2. Parikshit Sublimation Plastic Wall Name Plate Holder</div>
+                </a>
+                <div class="rating">4.31★ &nbsp; 6 Ratings & 2 Reviews</div>
+                <div class="product-price">₹447</div>
+                <div class="product-discount">9% off</div>
+                <div>Material: Plastic<br>Mounting: Wall Mount Self Adhesive Tape<br>Color: Multicolor, Clear</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Excellent product and nice finish with self adhesive. Thanks to Flipkart<br>
+                    <span>PARTHA SARATHY</span> | Certified Buyer Nov, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Excellent product and nice finish with self adhesive. Thanks to Flipkart<br>
+                    <span>PARTHA SARATHY</span> | Certified Buyer Nov, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8: SANKHALA CREATION Wooden Home Beautiful Wooden Wall Hanging For Home Wall Decoration Item Name Plate -->
+        <div class="product">
+            <a href="np3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/wall-decoration/7/4/v/positive-quote-decorative-wooden-wall-hanger-for-home-decor-1-wh-original-imah22fzp3gqx8cv.jpeg?q=70&crop=false" alt="SANKHALA CREATION Wooden Home Beautiful Wooden Wall Hanging">
+            </a>
+            <div class="product-details">
+                <a href="np3.html">
+                    <div class="product-header">3. SANKHALA CREATION Wooden Home Beautiful Wooden Wall Hanging Name Plate</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 41 Ratings & 1 Review</div>
+                <div class="product-price">₹269</div>
+                <div class="product-discount">70% off</div>
+                <div>Material: Wooden<br>Mounting: Hanging Screw<br>Color: Multicolor, White</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Very small<br>
+                    <span>Amarjyoti Rajbongshi</span> | Certified Buyer Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Very small<br>
+                    <span>Amarjyoti Rajbongshi</span> | Certified Buyer Oct, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 9: Levin Stainless Steel Place Name Plate -->
+        <div class="product">
+            <a href="np4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/k612pow0/emergency-sign/z/c/u/stainless-steel-self-adhesive-push-and-pull-sign-board-message-original-imafbb5gbfshtwbd.jpeg?q=70&crop=false" alt="Levin Stainless Steel Place Name Plate">
+            </a>
+            <div class="product-details">
+                <a href="np4.html">
+                    <div class="product-header">4. Levin Stainless Steel Place Name Plate</div>
+                </a>
+                <div class="rating">4.24★ &nbsp; 47 Ratings & 1 Review</div>
+                <div class="product-price">₹200</div>
+                <div class="product-discount">49% off</div>
+                <div>Material: Stainless Steel<br>Mounting: Adhesive Mount<br>Color: Multicolor, Silver</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Inferior quality<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Apr, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Inferior quality<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Apr, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 10: Mystica Glass Modern Name Plate -->
+        <div class="product">
+            <a href="np5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/name-plate/p/a/l/my-np-mb-d1-01-mystica-original-imah5ugzct3xbwuw.jpeg?q=70&crop=false" alt="Mystica Glass Modern Name Plate">
+            </a>
+            <div class="product-details">
+                <a href="np5.html">
+                    <div class="product-header">5. Mystica Glass Modern Name Plate</div>
+                </a>
+                <div class="rating">4.41★ &nbsp; 139 Ratings & 18 Reviews</div>
+                <div class="product-price">₹949</div>
+                <div class="product-discount">36% off</div>
+                <div>Material: Glass<br>Mounting: Wall Mount<br>Color: Multicolor, White</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Superb work, worth the money<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Jun, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Soo good and shiny, love the glow ✨✨✨✨✨✨✨✨✨✨✨✨✨<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Jun, 2022
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

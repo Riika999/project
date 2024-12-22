@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: OLEVS Multifunctional Chrono Tourbillion Dual Strap Black Analog Watch -->
+        <div class="product">
+            <a href="lw1.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/k6tniq80/watch/y/z/r/black-chronograph-full-stainless-steel-30m-water-resistant-original-imafp6gkeb2pdz6n.jpeg?q=70&crop=false" alt="OLEVS Multifunctional Chrono Tourbillion Dual Strap Black Analog Watch">
+            </a>
+            <div class="product-details">
+                <a href="lw1.html">
+                    <div class="product-header">1. OLEVS Multifunctional Chrono Tourbillion Dual Strap Black Analog Watch</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 4,295 Ratings & 23 Reviews</div>
+                <div class="product-price">₹2,990</div>
+                <div class="product-discount">16% off</div>
+                <div>Watch Movement: Quartz<br>Display Type: Analog<br>Strap: Silver, 316L Stainless Steel</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    It's very beautiful, I loved it, thank you Flipkart.<br>
+                    <span>Varsha Patil</span> | Certified Buyer Nov, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    I really love this product and I feel it's worth the price.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: NIBOSI Analog Watch -->
+        <div class="product">
+            <a href="lw2.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/l12h1u80/watch/o/k/0/1-luxury-stylish-party-wear-premium-chronograph-nibosi-men-original-imagcpryewbhntsp.jpeg?q=70&crop=false" alt="NIBOSI Analog Watch">
+            </a>
+            <div class="product-details">
+                <a href="lw2.html">
+                    <div class="product-header">2. NIBOSI Analog Watch - For Men</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 4,408 Ratings & 45 Reviews</div>
+                <div class="product-price">₹2,590</div>
+                <div class="product-discount">48% off</div>
+                <div>Display Type: Analog<br>Strap: Black</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Product is just awesome. Bands are well polished. It looks elegant when you wear it.<br>
+                    <span>Atri Bhattacharya</span> | Certified Buyer Oct, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Don't waste your money</span><br>
+                    After three months, it's not working.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: KNACK Rosraiik Analog Watch -->
+        <div class="product">
+            <a href="lw3.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/l47cu4w0/watch/2/o/l/2-mgbrc002-combo-new-generation-rose-gold-magnet-strap-watch-and-original-imagf5dahvcnx5qn.jpeg?q=70&crop=false" alt="KNACK Rosraiik Analog Watch - For Girls">
+            </a>
+            <div class="product-details">
+                <a href="lw3.html">
+                    <div class="product-header">3. KNACK Rosraiik Analog Watch - For Girls</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 9,783 Ratings & 769 Reviews</div>
+                <div class="product-price">₹2,290</div>
+                <div class="product-discount">84% off</div>
+                <div>Watch Movement: Quartz<br>Display Type: Analog<br>Strap: Gold, Steel Strap</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    I really like the product. It's amazing. I am satisfied, but I don't have an idea how long it works. But for anyone who wants to stay updated with fashion, this is the best option.<br>
+                    <span>Meera Pawar</span> | Certified Buyer Sep, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    The time is stopping sometimes.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Dhyani Analog Watch -->
+        <div class="product">
+            <a href="lw4.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/watch/m/l/c/2-exclusive-magnet-black-red-12-dot-dial-watch-combo-for-girls-original-imagh8gr6cngujkp.jpeg?q=70&crop=false" alt="Dhyani Analog Watch - For Girls">
+            </a>
+            <div class="product-details">
+                <a href="lw4.html">
+                    <div class="product-header">4. Dhyani Analog Watch - For Girls</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 115 Ratings & 4 Reviews</div>
+                <div class="product-price">₹289</div>
+                <div class="product-discount">80% off</div>
+                <div>Display Type: Analog<br>Strap: Black</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Don't waste your money</span><br>
+                    Waste of money 😞💰<br>
+                    <span>Rehmat Khan</span> | Certified Buyer 25 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Don't waste your money</span><br>
+                    Same review as above.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Benling Skeleton Dial Automatic Watch -->
+        <div class="product">
+            <a href="lw5.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/watch/6/9/a/1-discover-series-skeleton-automatic-dial-luxury-watch-with-original-imah3g2cvyhztnsf.jpeg?q=70&crop=false" alt="Benling Skeleton Dial Automatic Watch">
+            </a>
+            <div class="product-details">
+                <a href="lw5.html">
+                    <div class="product-header">5. Benling Skeleton Dial Automatic Watch Magnificent Diamonds - Luxury Watch for Men</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 523 Ratings & 2 Reviews</div>
+                <div class="product-price">₹4,999</div>
+                <div class="product-discount">50% off</div>
+                <div>Watch Movement: Automatic<br>Display Type: Analog<br>Strap: Black</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Brilliant watch.<br>
+                    <span>Hanzala Naseem</span> | Certified Buyer 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

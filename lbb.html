@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: LEGO NINJAGO Egalt the Master Dragon Hero Toy 71809 -->
+        <div class="product">
+            <a href="lbb1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/block-construction/m/i/c/ninjago-egalt-the-master-dragon-hero-toy-71809-532-pieces-lego-original-imagwgybvvpbfkuc.jpeg?q=90" alt="LEGO NINJAGO Egalt the Master Dragon Hero Toy 71809">
+            </a>
+            <div class="product-details">
+                <a href="lbb1.html">
+                    <div class="product-header">1. LEGO NINJAGO Egalt the Master Dragon Hero Toy 71809 (532 Pieces)</div>
+                </a>
+                <div class="rating">4.6★ &nbsp; 52 Ratings & 1 Reviews</div>
+                <div class="product-price">₹4,549</div>
+                <div class="product-discount">35% off</div>
+                <div>Skillset: Analysis & Critical Thinking<br>Non-Battery Operated<br>Age: 8+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    Genuine product<br>
+                    <span>SIDDHARTH SEKHANI</span> | Certified Buyer | 6 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    Genuine product<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: SR Toys 119 Pcs Architect Series 3 in 1 Racing Car and Truck Lego Building Blocks -->
+        <div class="product">
+            <a href="lbb2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/block-construction/q/a/t/119-pcs-architect-series-3-in-1-racing-car-and-truck-lego-original-imagqhzdfxygwduc.jpeg?q=90" alt="SR Toys 119 Pcs Architect Series 3 in 1 Racing Car and Truck Lego Building Blocks">
+            </a>
+            <div class="product-details">
+                <a href="lbb2.html">
+                    <div class="product-header">2. SR Toys 119 Pcs Architect Series 3 in 1 Racing Car and Truck Lego Building Blocks</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 18 Ratings & 4 Reviews</div>
+                <div class="product-price">₹499</div>
+                <div class="product-discount">50% off</div>
+                <div>Skillset: Analysis & Critical Thinking, Attention Span Building<br>Non-Battery Operated<br>Age: 6+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Just like the photo. Lego dupe. Lighter on the pocket<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 1 day ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Just like the photo. Lego dupe. Lighter on the pocket<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: RVM Toys 129 Pcs Architect Series 3 in 1 Bike Motorbike -->
+        <div class="product">
+            <a href="lbb3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/jupu7ww0/block-construction/j/a/e/129-pcs-architect-series-3-in-1-bike-motorbike-happy-giftmart-original-imaffrfzdjkssxvf.jpeg?q=90" alt="RVM Toys 129 Pcs Architect Series 3 in 1 Bike Motorbike">
+            </a>
+            <div class="product-details">
+                <a href="lbb3.html">
+                    <div class="product-header">3. RVM Toys 129 Pcs Architect Series 3 in 1 Bike Motorbike</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 185 Ratings & 19 Reviews</div>
+                <div class="product-price">₹497</div>
+                <div class="product-discount">61% off</div>
+                <div>Skillset: Attention Span Building, Analysis & Critical Thinking<br>Non-Battery Operated<br>Age: 6+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    My son is loving it. Nice one comparable to Lego Blocks.<br>
+                    <span>DEVIPRASAD SADASIVUNI</span> | Certified Buyer | May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    This product is quite complicated for 7 yrs child also. They get bored and annoyed searching parts. Also the assembled bike is delicate. Best plastic quality.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: LEGO Speed Champions Valkyrie AMR Pro & Aston Martin Vantage GT3 (592 Blocks) -->
+        <div class="product">
+            <a href="lbb4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/block-construction/u/f/n/aston-martin-valkyrie-amr-proand-aston-lego-original-imagh3d7wmwqxbxg.jpeg?q=90" alt="LEGO Speed Champions Valkyrie AMR Pro & Aston Martin Vantage GT3 (592 Blocks)">
+            </a>
+            <div class="product-details">
+                <a href="lbb4.html">
+                    <div class="product-header">4. LEGO Speed Champions Valkyrie AMR Pro & Aston Martin Vantage GT3 (592 Blocks)</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 40 Ratings & 3 Reviews</div>
+                <div class="product-price">₹4,949</div>
+                <div class="product-discount">10% off</div>
+                <div>Skillset: Analysis & Critical Thinking<br>Non-Battery Operated<br>Age: 9+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Amazing Car! I loved the build quality. There are many new techniques used such as upside-down building and interesting techniques on the Vantage GT3.<br>
+                    <span>Harsh Rattan</span> | Certified Buyer | 10 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Loved building these beauties.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: LEGO Minecraft The Deep Dark Battle 21246 Building Toy Set (584 Pieces) -->
+        <div class="product">
+            <a href="lbb5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/block-construction/i/m/t/minecraft-the-deep-dark-battle-21246-building-toy-set-584-pieces-original-imagvtf6bybkrrz7.jpeg?q=90" alt="LEGO Minecraft The Deep Dark Battle 21246 Building Toy Set (584 Pieces)">
+            </a>
+            <div class="product-details">
+                <a href="lbb5.html">
+                    <div class="product-header">5. LEGO Minecraft The Deep Dark Battle 21246 Building Toy Set (584 Pieces)</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 9 Ratings & 2 Reviews</div>
+                <div class="product-price">₹4,874</div>
+                <div class="product-discount">25% off</div>
+                <div>Skillset: Analysis & Critical Thinking<br>Non-Battery Operated<br>Age: 8+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    This was better than I thought it would be, especially the warden, he is so much better in person than in the actual pictures. Highly recommend this if you are a fan of Minecraft.<br>
+                    <span>umesh kumar</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    This was better than I thought it would be, especially the warden, he is so much better in person than in the actual pictures. Highly recommend this if you are a fan of Minecraft.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

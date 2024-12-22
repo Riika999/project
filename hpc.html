@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 - Updated with new product details -->
+        <div class="product">
+            <a href="hpc1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/l1nwnm80/coaster/r/j/x/6-3225-welno-international-original-imagd6gsuzrhhgzj.jpeg?q=70&crop=false" alt="welno international Square Wood Coaster Set">
+            </a>
+            <div class="product-details">
+                <a href="hpc1.html">
+                    <div class="product-header">1. welno international Square Wood Coaster Set</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 52 Ratings & 1 Reviews</div>
+                <div class="product-price">₹449</div>
+                <div class="product-discount">10% off</div>
+                <div>Shape: Square<br>Material: Wood<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Good quality.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer May, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Good quality.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer May, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 - Updated with new product details -->
+        <div class="product">
+            <a href="hpc2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/coaster/t/d/f/6-gkd000584-gift-kya-de-original-imahyq3znfys8snf.jpeg?q=70&crop=false" alt="GIFT KYA DE Square Reversible Wood Coaster Set">
+            </a>
+            <div class="product-details">
+                <a href="hpc2.html">
+                    <div class="product-header">2. GIFT KYA DE Square Reversible Wood Coaster Set</div>
+                </a>
+                <div class="rating">4.6★ &nbsp; 38 Ratings & 5 Reviews</div>
+                <div class="product-price">₹329</div>
+                <div class="product-discount">67% off</div>
+                <div>Shape: Square<br>Material: Wood<br>Color: Pink, Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Nice color, design and texture.<br>
+                    <span>Sumeet Agarwal</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    Love the quality and design.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 - Updated with new product details -->
+        <div class="product">
+            <a href="hpc3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/table-placemat/j/n/n/12-ctktc06594-kuber-industries-original-imah62cxbpamnw3a.jpeg?q=70&crop=false" alt="KUBER INDUSTRIES Rectangular Pack of 12 Table Placemat">
+            </a>
+            <div class="product-details">
+                <a href="hpc3.html">
+                    <div class="product-header">3. KUBER INDUSTRIES Rectangular Pack of 12 Table Placemat</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 163 Ratings & 17 Reviews</div>
+                <div class="product-price">₹414</div>
+                <div class="product-discount">40% off</div>
+                <div>Shape: Rectangular<br>Material: PVC<br>Color: Brown</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Quality and all is perfect, but I got a different color design.<br>
+                    <span>Neha Tripathi</span> | Certified Buyer Feb, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Adds grace to your dining table, good material.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 - Updated with new product details -->
+        <div class="product">
+            <a href="hpc4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/l44hyfk0/coaster/e/6/q/6-silicone-trivet-mats-non-slip-hot-pad-holders-trivets-for-pans-original-imagf3943sckfgvg.jpeg?q=70&crop=false" alt="Spatlus Hexagon Reversible PVC Coaster Set">
+            </a>
+            <div class="product-details">
+                <a href="hpc4.html">
+                    <div class="product-header">4. Spatlus Hexagon Reversible PVC Coaster Set</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 13 Ratings & 1 Reviews</div>
+                <div class="product-price">₹475</div>
+                <div class="product-discount">47% off</div>
+                <div>Shape: Hexagon<br>Material: PVC<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    Is very fabulous, very nice. I like it so much, worth the money.<br>
+                    <span>Flipkart Shabana</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    Is very fabulous, very nice. I like it so much, worth the money.<br>
+                    <span>Flipkart Shabana</span> | Certified Buyer 1 month ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 - Updated with new product details -->
+        <div class="product">
+            <a href="hpc5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/coaster/i/f/p/4-ctktc014520-kuber-industries-original-imah4wd7bjcejwzd.jpeg?q=70&crop=false" alt="KUBER INDUSTRIES Square Bamboo Coaster Set">
+            </a>
+            <div class="product-details">
+                <a href="hpc5.html">
+                    <div class="product-header">5. KUBER INDUSTRIES Square Bamboo Coaster Set</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 85 Ratings & 2 Reviews</div>
+                <div class="product-price">₹415</div>
+                <div class="product-discount">48% off</div>
+                <div>Shape: Square<br>Material: Bamboo<br>Color: Brown</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Beautiful coaster set for keeping hot utensils over it. Size is very big, I am very happy with it 👌👌.<br>
+                    <span>Devansh Gupta</span> | Certified Buyer Jun, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Beautiful coaster set for keeping hot utensils over it. Size is very big, I am very happy with it 👌👌.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

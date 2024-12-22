@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: PunnkFunnk Kids Calling Smart Watch -->
+        <div class="product">
+            <a href="ks1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/3/b/f/34-blue-kidswatch-q18-android-ios-punnkfunnk-yes-original-imah4d8znhhb2b82.jpeg?q=70&crop=false" alt="PunnkFunnk Kids Calling Smart Watch">
+            </a>
+            <div class="product-details">
+                <a href="ks1.html">
+                    <div class="product-header">1. PunnkFunnk Kids Calling Smart Watch With 4G Support, Live Location, Safe Zone & Camera Smartwatch</div>
+                </a>
+                <div class="rating">3.3★ &nbsp; 334 Ratings & 2 Reviews</div>
+                <div class="product-price">₹1,339</div>
+                <div class="product-discount">66% off</div>
+                <div>With Call Function<br>Touchscreen<br>Notifier</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Not good</span><br>
+                    Display quality not good. Feels grainy..<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 9 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Poor quality product, battery charge does not last for more than 45 mins.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Sekyo Carepal Pro Kids Smart Watch -->
+        <div class="product">
+            <a href="ks2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/x/z/o/39-4-g-gaming-edition-android-ios-sekyo-yes-original-imah6gyhpsz7gzty.jpeg?q=70&crop=false" alt="Sekyo Carepal Pro Kids Smart Watch">
+            </a>
+            <div class="product-details">
+                <a href="ks2.html">
+                    <div class="product-header">2. Sekyo Carepal Pro Kids Smart Watch with Video Call, Live GPS Location, Class Mode SOS Smartwatch</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 658 Ratings & 14 Reviews</div>
+                <div class="product-price">₹4,785</div>
+                <div class="product-discount">31% off</div>
+                <div>With Call Function<br>Touchscreen<br>Safety & Security, Fitness & Outdoor, Watchphone, Health & Medical, Notifier</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Very good product for our children. Live location when you want to talk call it. I love this watch<br>
+                    <span>Maninder Singh Maan</span> | Certified Buyer | Sep, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Very nice, my son is so happy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Sekyo 4G Video Calling Smart Watch -->
+        <div class="product">
+            <a href="ks3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/q/k/o/36-wphone-4g-blue-android-ios-sekyo-yes-original-imah5hc3rrdg8zzr.jpeg?q=70&crop=false" alt="Sekyo 4G Video Calling Smart Watch">
+            </a>
+            <div class="product-details">
+                <a href="ks3.html">
+                    <div class="product-header">3. Sekyo 4G Video Calling Smart Watch for Kids, GPS Location Tracking, Camera, Safe Zone Smartwatch</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 732 Ratings & 10 Reviews</div>
+                <div class="product-price">₹3,390</div>
+                <div class="product-discount">15% off</div>
+                <div>With Call Function<br>Touchscreen<br>Watchphone, Safety & Security, Notifier</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Product is excellent and value for money.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    This product is nice and we got very good support after purchase. The support team repaired the watch in a significant time and delivered it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: GameSir KIDS Watch-1 SOS Call, Sim Call, 3 Types Game, Camera Smartwatch -->
+        <div class="product">
+            <a href="ks4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/a/d/j/34-kids-watch-10-android-ios-gamesir-yes-original-imagsw7b6qzqqa9w.jpeg?q=70&crop=false" alt="GameSir KIDS Watch-1 SOS Call, Sim Call, 3 Types Game, Camera Smartwatch">
+            </a>
+            <div class="product-details">
+                <a href="ks4.html">
+                    <div class="product-header">4. GameSir KIDS Watch-1 SOS Call, Sim Call, 3 Types Game, Camera (NO LBS & GPS) Smartwatch</div>
+                </a>
+                <div class="rating">3.4★ &nbsp; 34 Ratings & 1 Review</div>
+                <div class="product-price">₹1,399</div>
+                <div class="product-discount">53% off</div>
+                <div>Parental control, Dial, 2 way calls, SOS, Phone book, Flash Light, Voice Chat, Anti-lost, Alarm, Math Game, LBS+AGPS Location, IP67 Waterproof.</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Worst product.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Nov, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Worst product.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Tarido Teenagers LED Luxurious Fashion Silicone Digital Watch -->
+        <div class="product">
+            <a href="ks5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/h/g/1/35-swatch-watch-proprietary-os-tarido-no-original-imah3hf4s4yyanap.jpeg?q=70&crop=false" alt="Tarido Teenagers LED Luxurious Fashion Silicone Digital Watch">
+            </a>
+            <div class="product-details">
+                <a href="ks5.html">
+                    <div class="product-header">5. Tarido Teenagers LED Luxurious Fashion Silicone (Not Smart Watch) Digital Watch</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 429 Ratings & 14 Reviews</div>
+                <div class="product-price">₹349</div>
+                <div class="product-discount">82% off</div>
+                <div>Fitness & Outdoor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Ok satisfied good for kids.<br>
+                    <span>Anil kumar Gour</span> | Certified Buyer | 3 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Moderate</span><br>
+                    Problem in product and cheap quality 😞<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

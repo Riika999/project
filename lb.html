@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 - PROVOGUE Men Casual, Formal Black Artificial Leather Belt -->
+        <div class="product">
+            <a href="lb1.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/belt/w/d/9/one-size-mdl-htp-2-bl-sty-htp-2-bl-belt-provogue-original-imah4t3ugbmhjsjg.jpeg?q=70&crop=false" alt="Product 1">
+            </a>
+            <div class="product-details">
+                <a href="lb1.html">
+                    <div class="product-header">1. PROVOGUE Men Casual, Formal Black Artificial Leather Belt</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 3,372 Ratings & 243 Reviews</div>
+                <div class="product-price">₹149</div>
+                <div class="product-discount">16% off</div>
+                <div>Material: Artificial Leather<br>Occasion: Casual, Formal<br>Non-Reversible Belt</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Good quality Belt, I like it.<br>
+                    <span>Subhajit Chatterjee</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    Cheapest price...<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Recently
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 2 - KILLER Men Formal Brown Genuine Leather Belt -->
+        <div class="product">
+            <a href="lb2.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/belt/f/2/a/40-mdl-come-183-br-sty-come-183-br-genuine-leather-belt-for-men-original-imah3q25ayzueb5v.jpeg?q=70&crop=false" alt="KILLER Men Formal Brown Genuine Leather Belt">
+            </a>
+            <div class="product-details">
+                <a href="lb2.html">
+                    <div class="product-header">2. KILLER Men Formal Brown Genuine Leather Belt</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 2,781 Ratings & 145 Reviews</div>
+                <div class="product-price">₹371</div>
+                <div class="product-discount">16% off</div>
+                <div>Material: Genuine Leather<br>Occasion: Formal<br>Non-Reversible Belt</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Nice belt, good quality at affordable price<br>
+                    <span>Irfan Ali Khan</span> | Certified Buyer 4 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Bad quality</span><br>
+                    Don't buy this product, cheapest belt<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Recently
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 - KAEZRI Men Evening, Party, Formal, Casual Brown Genuine Leather Belt -->
+        <div class="product">
+            <a href="lb3.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/belt/p/m/q/28-gldnloop-na-gldnloop-belt-kaezri-original-imagzyhqbtnqehyv.jpeg?q=70&crop=false" alt="KAEZRI Men Evening, Party, Formal, Casual Brown Genuine Leather Belt">
+            </a>
+            <div class="product-details">
+                <a href="lb3.html">
+                    <div class="product-header">3. KAEZRI Men Evening, Party, Formal, Casual Brown Genuine Leather Belt</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 2,094 Ratings & 5,872 Reviews</div>
+                <div class="product-price">₹229</div>
+                <div class="product-discount">8% off</div>
+                <div>Material: Genuine Leather<br>Occasion: Evening, Party, Formal, Casual<br>Non-Reversible Belt</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    This product is awesome and leather quality super thank so much Flipkart 🌷🙋‍♂<br>
+                    <span>ANAND REDDY Samba Shiva</span> | Certified Buyer Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Good quality, good fitting, and good looks.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Recently
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 - Hayes London Men Black, Brown Genuine Leather Reversible Belt -->
+        <div class="product">
+            <a href="lb4.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/belt/g/a/h/32-italian-leather-reversible-fomral-belt-wild-reversible-belt-original-imah744nawh27wrt.jpeg?q=70&crop=false" alt="Hayes London Men Black, Brown Genuine Leather Reversible Belt">
+            </a>
+            <div class="product-details">
+                <a href="lb4.html">
+                    <div class="product-header">4. Hayes London Men Black, Brown Genuine Leather Reversible Belt</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 182 Ratings & 15 Reviews</div>
+                <div class="product-price">₹868</div>
+                <div class="product-discount">78% off</div>
+                <div>Material: Genuine Leather<br>Reversible Belt<br>Belt Width: 1.37 inches</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Value for money, genuine leather and fits perfectly.<br>
+                    <span>Amit Kumar</span> | Certified Buyer 6 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Delightful</span><br>
+                    Worth it, you can go for it without any doubt.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Recently
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 - Zoro United Men Formal, Casual, Party, Evening Black Artificial Leather Belt -->
+        <div class="product">
+            <a href="lb5.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/belt/p/6/o/one-size-vegan-leather-belt-zu-rab-105-s11-bk-belt-for-men-zoro-original-imagvhgdzyngpy57.jpeg?q=70&crop=false" alt="Zoro United Men Formal, Casual, Party, Evening Black Artificial Leather Belt">
+            </a>
+            <div class="product-details">
+                <a href="lb5.html">
+                    <div class="product-header">5. Zoro United Men Formal, Casual, Party, Evening Black Artificial Leather Belt</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 1,030 Ratings & 62 Reviews</div>
+                <div class="product-price">₹339</div>
+                <div class="product-discount">83% off</div>
+                <div>Material: Artificial Leather<br>Occasion: Formal, Casual, Party, Evening<br>Non-Reversible Belt</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Go for it. But just keep it in mind, it doesn't feel sturdy, so it can break on applying great pressure.<br>
+                    <span>Shubam Singh</span> | Certified Buyer 6 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    It is a very beautiful Belt and I like this belt.<br>
+                    <span>Subhendukumar Sahani</span> | Certified Buyer 4 days ago
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

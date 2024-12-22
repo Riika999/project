@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Weleet NATURAL COOKIES -->
+        <div class="product">
+            <a href="hc1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/ktvucnk0/cookie-biscuit/u/8/h/360-natural-cookies-ragi-multi-grain-diet-millet-banana-4-combo-original-imag74fgtwbpq6cz.jpeg?q=90" alt="Weleet NATURAL COOKIES">
+            </a>
+            <div class="product-details">
+                <a href="hc1.html">
+                    <div class="product-header">1. Weleet NATURAL COOKIES (RAGI, MULTI GRAIN, DIET MILLET & BANANA) 4 COMBO Assorted Biscuit</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 17,702 Ratings & 133 Reviews</div>
+                <div class="product-price">₹272</div>
+                <div class="product-discount">22% off</div>
+                <div>Type: Assorted<br>Quantity: 360 g<br>Base Flavor: Speciality</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    The cookies are too good, very nice and light.<br>
+                    <span>Khadija Shaikh</span> | Certified Buyer | Oct, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Good for a 6-month baby. Go for it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Wheafree Butter Sweet Cookies -->
+        <div class="product">
+            <a href="hc2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/cookie-biscuit/v/d/f/600-butter-sweet-cookies-gluten-free-pack-of-3-200g-each-3-original-imagpegytcavrucp.jpeg?q=90" alt="Wheafree Butter Sweet Cookies">
+            </a>
+            <div class="product-details">
+                <a href="hc2.html">
+                    <div class="product-header">2. Wheafree Butter Sweet Cookies - Gluten Free - Pack of 3 (200g each) Cookies Biscuit</div>
+                </a>
+                <div class="rating">4.9★ &nbsp; 493 Ratings & 5 Reviews</div>
+                <div class="product-price">₹405</div>
+                <div class="product-discount">53% off</div>
+                <div>Type: Cookies<br>Quantity: 600 g<br>Base Flavor: Butter</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Not too sweet, but a great gift for those with celiac. Taste is good.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jan, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Utterly Disappointed</span><br>
+                    Not good, low-quality material.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Sunfeast Mom's Magic Cookies -->
+        <div class="product">
+            <a href="hc3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/cookie-biscuit/r/5/j/934-4-cashew-almonds-934-4g-1-sunfeast-mom-s-magic-original-imagwekh58zcff8f.jpeg?q=90" alt="Sunfeast Mom's Magic Cashew Almonds Cookies">
+            </a>
+            <div class="product-details">
+                <a href="hc3.html">
+                    <div class="product-header">3. Sunfeast Mom's Magic Cashew Almonds Cookies Biscuit</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 59 Ratings & 9 Reviews</div>
+                <div class="product-price">₹260</div>
+                <div class="product-discount">No discount</div>
+                <div>Type: Cookies<br>Quantity: 934.4 g<br>Base Flavor: Almond, Cashew</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    This product is great!<br>
+                    <span>Kousik Khan</span> | Certified Buyer | 9 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Flipkart delivered it on time and in great condition.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Kailash Pista Cookies -->
+        <div class="product">
+            <a href="hc4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/klb78nk0/cookie-biscuit/g/e/h/400-pista-cookies-1-kailash-original-imagyggec2gdzy8t.jpeg?q=90" alt="Kailash Pista Cookies">
+            </a>
+            <div class="product-details">
+                <a href="hc4.html">
+                    <div class="product-header">4. Kailash Pista Cookies Cookies Biscuit</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 41,169 Ratings & 86 Reviews</div>
+                <div class="product-price">₹240</div>
+                <div class="product-discount">No discount</div>
+                <div>Type: Cookies<br>Quantity: 400 g<br>Base Flavor: Pista</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Delightful</span><br>
+                    Very tasty, so yummy!<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Feb, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Nice</span><br>
+                    Good pista cookies, but after opening the package, it should be kept in the fridge.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: MidBreak Pista Delight Sugar Free Biscuits -->
+        <div class="product">
+            <a href="hc5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/cookie-biscuit/9/l/l/pista-delight-sugar-free-biscuits-your-healthier-snacking-choice-original-imahf4zzgqhb6aqn.jpeg?q=90" alt="MidBreak Pista Delight Sugar Free Biscuits">
+            </a>
+            <div class="product-details">
+                <a href="hc5.html">
+                    <div class="product-header">5. MidBreak Pista Delight Sugar Free Biscuits | Your Healthier Snacking Choice | Sugar Free Cookies Biscuit</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 46 Ratings & 4 Reviews</div>
+                <div class="product-price">₹436</div>
+                <div class="product-discount">19% off</div>
+                <div>Type: Cookies<br>Quantity: 600 g<br>Base Flavor: Pista</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    It's properly baked and great in taste.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    It's properly baked and great in taste.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

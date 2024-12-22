@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Green Spore Slimming Tea -->
+        <div class="product">
+            <a href="ht1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/o/l/w/60-slimming-tea-for-weight-loss-a-blend-of-natural-herbs-reduces-original-imah5zg4khh2he5k.jpeg?q=90" alt="Green Spore Slimming Tea">
+            </a>
+            <div class="product-details">
+                <a href="ht1.html">
+                    <div class="product-header">1. Green Spore Slimming Tea for Weight Loss | A Blend of Natural Herbs | Reduces Fat Accumulation | Lemon Grass, Amla, Cinnamon, Ginger Herbal Tea Pouch</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 358 Ratings & 13 Reviews</div>
+                <div class="product-price">₹279</div>
+                <div class="product-discount">30% off</div>
+                <div>Leaves Form<br>Pouch Container</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Incredibly good and efficient. I'm very glad I tried this product; it comes highly recommended. I am purchasing this for the second time. I gave up drinking ...
+                    <br><span>Naseem Ahamad</span> | Certified Buyer | 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    I am a firm believer in Ayurveda for many years, so I bought this health tea for my sister. She is very satisfied with this slimming tea as she is using it regularly...
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: BLUE TEA Belly Fat Tea -->
+        <div class="product">
+            <a href="ht2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/f/y/t/30-belly-fat-tea-butterfly-pea-dandelion-lemongrass-flatter-original-imagsjzgzgh9s9nh.jpeg?q=90" alt="BLUE TEA Belly Fat Tea">
+            </a>
+            <div class="product-details">
+                <a href="ht2.html">
+                    <div class="product-header">2. BLUE TEA Belly Fat Tea Butterfly Pea Dandelion Lemongrass Flatter Tummy Belly Fat Burned Ginger Herbal Tea Bags Pouch</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 727 Ratings & 33 Reviews</div>
+                <div class="product-price">₹401</div>
+                <div class="product-discount">10% off</div>
+                <div>Tea Bag Form<br>Pouch Container</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Better Taste, Herbal and Healthy Nice Products.<br>
+                    <span>Saurav Mishra</span> | Certified Buyer | Dec, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    Good product...better than green tea<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: DiaBliss Refreshing Herbal Lemon Tea -->
+        <div class="product">
+            <a href="ht3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/s/o/e/500-diabetic-friendly-lemon-tea-2-pouch-herbal-infusion-tea-original-imah26hz5dnzh765.jpeg?q=90" alt="DiaBliss Refreshing Herbal Lemon Tea">
+            </a>
+            <div class="product-details">
+                <a href="ht3.html">
+                    <div class="product-header">3. DiaBliss Refreshing Herbal Lemon Tea 500g Pouch - No Artificial Colors / Flavors Diabetic Friendly</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 192 Ratings & 14 Reviews</div>
+                <div class="product-price">₹243</div>
+                <div class="product-discount">10% off</div>
+                <div>Flavor: Lemon<br>Shelf Life: 12 Months<br>Container Type: Pouch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Fair</span><br>
+                    I am a regular user of Diabliss lemon tea premix. The product is good. Only concern is poor packaging. Received a damaged pack today. Requested to return the...
+                    <br><span>Sudip Kumar Sengupta</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Fair</span><br>
+                    I am a regular user of Diabliss lemon tea premix. The product is good. Only concern is poor packaging. Received a damaged pack today. Requested to return the...
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: CARE Ashwagandha Spiced Green Tea -->
+        <div class="product">
+            <a href="ht4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/n/a/l/25-ashwagandha-spiced-green-tea-1-box-herbal-tea-care-tea-bag-original-imah5hhr2zbznsze.jpeg?q=90" alt="CARE Ashwagandha Spiced Green Tea">
+            </a>
+            <div class="product-details">
+                <a href="ht4.html">
+                    <div class="product-header">4. CARE Ashwagandha Spiced Green Tea Black Pepper, Cardamom, Cinnamon, Cloves, Ginger, Tulsi Herbal Tea Bags Box</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 696 Ratings & 62 Reviews</div>
+                <div class="product-price">₹219</div>
+                <div class="product-discount">8% off</div>
+                <div>Tea Bag Form<br>Organic<br>Box Container</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    Proper in taste.. not like normal green tea ..it included ashwagandha and many ingredient that help me in losing weight and increased immunity. I'm addicted to it...
+                    <br><span>Priyanka Raj</span> | Certified Buyer | Dec, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    This product is amazing. Specially taste is awesome. Personally, I like it very much.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Jeena Sikho 32 Herbs Green Tea -->
+        <div class="product">
+            <a href="ht5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/ayurvedic/r/q/j/32-herbs-green-tea-30gm-1-jeena-sikho-original-imah46gdfgumneme.jpeg?q=90" alt="Jeena Sikho 32 Herbs Green Tea">
+            </a>
+            <div class="product-details">
+                <a href="ht5.html">
+                    <div class="product-header">5. Jeena Sikho 32 Herbs Green Tea, 30gm</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 39 Ratings & 2 Reviews</div>
+                <div class="product-price">₹294</div>
+                <div class="product-discount">10% off</div>
+                <div>Quantity: 30g<br>Form: Powder<br>Ayush License Number: pb-ay-632</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Very expensive product.<br>
+                    <span>Avanish Singh</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Very expensive product.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

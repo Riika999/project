@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Document</title>
+    <style>
+        /* Hover effect for navigation items */
+        .nav-lvl > a:hover {
+            color: #ff6600;
+            text-decoration: underline;
+        }
+
+        /* Show mega-dropdown on hover */
+        .nav-lvl:hover .mega-dropdown {
+            display: flex;
+        }
+
+        /* Mega-dropdown styling */
+        .mega-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            z-index: 10;
+            flex-wrap: wrap;
+        }
+
+        .mega-dropdown div {
+            margin: 10px;
+        }
+
+        /* Smooth hover transitions */
+        .nav-lvl > a {
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        /* Highlight hovered dropdown items */
+        .mega-dropdown h4:hover {
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        /* Set consistent image sizes */
+        .mega-dropdown img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+  <div id="main-container">
+    <!-- Logo Section -->
+    <div id="logo">
+        <h1>toh<span>fa4u</span></h1>
+        <p id="slogan">PERFECT GIFTS, PERFECT MOMENTS</p>
+    </div>
+
+    <!-- Search Bar Section -->
+    <div id="search-bar">
+        <form id="search" action="/search">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input id="inputsearch" type="text" placeholder="Search for items and brands">
+            </div>
+            <button id="searchbtn" type="submit">SEARCH</button>
+        </form>
+        <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt34a8699231b452d4/reminders_icon_black.svg" alt="Reminder Icon" id="reminder-icon">
+        <div class="dropdown">
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt88337dc20d1d8278/5e178293942caf0fc36b77ab/Header-Icon-PWA-profile.svg" alt="Profile Icon" id="pro">
+            <div class="dropdown-content">
+                <a href="SignUp.html">My Account</a>
+                <a href="">My Orders</a>
+                <a href="SignIn.html">Sign In</a>
+                <a href="">Sign Out</a>
+            </div>
+        </div>
+        <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltd7f3af8e242d37c1/5e1782936430b50f03d6ccc3/Header-Icon-PWA-truck.svg?height=25&width=44" alt="Delivery Icon" id="dil">
+        <img onclick="cartt()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt7888ec93d3d5c1ec/5e17829300c38f0f022d3646/Header-Icon-PWA-bag.svg?height=25&width=44" alt="Cart Icon" id="add">
+    </div>
+</div>
+
+<style>
+    /* General Reset */
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* Main Container */
+    #main-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background: #f0f0f0; /* Light grayish-black background */
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Logo Styling */
+    #logo h1 {
+        margin: 0;
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: #2d4753; /* Darker blue color */
+        letter-spacing: 1px;
+    }
+
+    #logo h1 span {
+        font-style: italic;
+        color: #395b6b; /* Darker shade for contrast */
+    }
+
+    /* Keep the slogan in one line */
+    #slogan {
+        margin: 0;
+        font-size: 1rem;
+        color: #555;
+        white-space: nowrap;
+        font-weight: 600;
+    }
+
+    /* Search Bar Styling */
+    #search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex: 1;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border: 2px solid #4e6d7d; /* Light blue border for a clean look */
+        border-radius: 50px;
+        padding: 15px 20px;
+        width: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .search-container:hover {
+        border-color: #2d4753; /* Darker blue border on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .search-icon {
+        font-size: 22px;
+        color: #4e6d7d;
+        margin-right: 12px;
+    }
+
+    #inputsearch {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #333;
+    }
+
+    #searchbtn {
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background: #4e6d7d;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    #searchbtn:hover {
+        background: #395b6b;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Icons Styling */
+    #reminder-icon, #dil, #add, #pro {
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #reminder-icon:hover, #dil:hover, #add:hover, #pro:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f7f7f7;
+    }
+</style>
+
+    <div id="nav">
+      <div class="nav-lvl">
+        <a href="" class="tilt">PERSONALISED GIFTS</a>
+        <div class="mega-dropdown">
+
+       <div>
+        <h5><a href="eng.html" style="text-decoration: none; color: #333;">ENGRAVED JEWELRY</a></h5>
+        <h5><a href="cpc.html" style="text-decoration: none; color: #333;">CUSTOMISED PHOTO CALENDAR</a></h5>
+        <h5><a href="mtb.html" style="text-decoration: none; color: #333;">MONOGRAMMED TOTE BAG</a></h5>
+        <h5><a href="pc.html" style="text-decoration: none; color: #333;">PHONE CASE</a></h5>
+        <h5><a href="np.html" style="text-decoration: none; color: #333;">NAME PLATE</a></h5>
+        <h5><a href="epn.html" style="text-decoration: none; color: #333;">ENGRAVED PEN SET</a></h5>
+        <h5><a href="lb.html" style="text-decoration: none; color: #333;">LEATHER WALLET</a></h5>
+        <h5><a href="epc.html" style="text-decoration: none; color: #333;">EMBROIDER PILLOW CASES</a></h5>
+
+       </div>
+       
+       <div>
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/318809947/ZX/QY/SJ/90754190/43-500x500.jpg" alt="">
+       </div>
+
+       <div>
+       <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/318805794/FY/DR/LR/90754190/18-500x500.jpg" alt="">
+       
+       </div>
+
+
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">HANDMADE</a>
+        <div class="mega-dropdown">
+            <div>
+              <h5><a href="m.html" style="text-decoration: none; color: #333;">MITTENS</a></h5>
+              <h5><a href="h.html" style="text-decoration: none; color: #333;">HANDAMDE CANDLE</a></h5>
+              <h5><a href="diy.html" style="text-decoration: none; color: #333;">DIY PHOTO</a></h5>
+              <h5><a href="hb.html" style="text-decoration: none; color: #333;">HANDWOVEN BASKET</a></h5>
+              <h5><a href="hsb.html" style="text-decoration: none; color: #333;">HANDMADE SOAP BARS</a></h5>
+              <h5><a href="cb.html" style="text-decoration: none; color: #333;">CUSTOM BOOKMARKS</a></h5>
+              <h5><a href="oas.html" style="text-decoration: none; color: #333;">ORIGAMI ART SET</a></h5>
+              <h5><a href="hpc.html" style="text-decoration: none; color: #333;">HANDMADE PAINTED COASTER</a></h5>
+        
+       
+    </div>
+
+       <div>
+        <img src="https://st.depositphotos.com/1852855/3606/i/450/depositphotos_36062695-stock-photo-gift-box.jpg" alt="">
+       </div>
+       <div>
+        <img src="https://img.freepik.com/free-photo/close-up-hands-holding-gift_23-2148769782.jpg" alt="">
+       </div>
+    </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">FASHION</a>
+        <div class="mega-dropdown">
+         <div>
+          <h5><a href="sc.html" style="text-decoration: none; color: #333;">SILK CARE</a></h5>
+          <h5><a href="lb.html" style="text-decoration: none; color: #333;">LEATHER BELT</a></h5>
+          <h5><a href="ds.html" style="text-decoration: none; color: #333;">DESIGNER SUNGLASSES</a></h5>
+          <h5><a href="lw.html" style="text-decoration: none; color: #333;">LUXURY WATCH</a></h5>
+          <h5><a href="fh.html" style="text-decoration: none; color: #333;">FASHIONABLE HAT</a></h5>
+          <h5><a href="wg.html" style="text-decoration: none; color: #333;">WOOLEN GLOVE</a></h5> 
+          <h5><a href="dj.html" style="text-decoration: none; color: #333;">DENIM JACKET</a></h5>
+          <h5><a href="ch.html" style="text-decoration: none; color: #333;">CLASSIC HANDBAG</a></h5>
+            
+
+         </div>
+         
+         <div>
+           <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-scented-peach-blossom-gift-set-281412-m.jpg" alt="">
+          </div>
+          <div>
+           <img src="https://www.shutterstock.com/image-illustration/autumn-clothes-hanging-on-rack-600nw-2516676539.jpg" alt="">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">SATIONARY</a>
+        <div class="mega-dropdown">
+          <div>
+            <h5><a href="fps.html" style="text-decoration: none; color: #333;">FANCY PEN SET</a></h5>
+            <h5><a href="pcn.html" style="text-decoration: none; color: #333;">POETRY COLLECTION</a></h5>
+            <h5><a href="rb.html" style="text-decoration: none; color: #333;">RECIPE BOOK</a></h5>
+            <h5><a href="ib.html" style="text-decoration: none; color: #333;">INSPIRATIONAL BOOK</a></h5>
+            <h5><a href="b.html" style="text-decoration: none; color: #333;">BOOKEND</a></h5>
+            <h5><a href="bc.html" style="text-decoration: none; color: #333;">BOOKMARK COLLECTION</a></h5>
+            <h5><a href="as.html" style="text-decoration: none; color: #333;">ARTIST SKETCHBOOK</a></h5>
+            <h5><a href="shg.html" style="text-decoration: none; color: #333;">SELF HELP GUIDE</a></h5>
+            
+            
+          </div>
+
+          
+
+          <div>
+            <img src="https://img.freepik.com/premium-photo/different-school-supplies-isolated_185193-18770.jpg?semt=ais_hybrid" alt="">
+           </div>
+           <div>
+            <img src="https://thelovestore.in/wp-content/uploads/2023/08/360_F_520003024_YdgVid2Rvagen0GioiC6BFzbpZ1sEXJd.jpg" alt="">
+           </div>
+
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">FOR KIDS</a>
+        <div class="mega-dropdown">
+            <div>
+              <h5><a href="lbb.html" style="text-decoration: none; color: #333;">LEGO BUILDING BLOCK</a></h5>
+              <h5><a href="ebg.html" style="text-decoration: none; color: #333;">EDUCATIONAL BOARD GAMES</a></h5>
+              <h5><a href="pt.html" style="text-decoration: none; color: #333;">PLUSH TAGS</a></h5>
+              <h5><a href="dck.html" style="text-decoration: none; color: #333;">DIY CRAFT KITS</a></h5>
+              <h5><a href="ps.html" style="text-decoration: none; color: #333;">PUCCLE SET</a></h5>
+              <h5><a href="psn.html" style="text-decoration: none; color: #333;">PAINTING SET</a></h5>
+              <h5><a href="cbn.html" style="text-decoration: none; color: #333;">COLOURFUL BACKPACK</a></h5>
+              <h5><a href="ks.html" style="text-decoration: none; color: #333;">KIDS SMARTWATCH</a></h5>
+               
+                
+                
+             </div>
+              
+             <div>
+               <img src="https://media.istockphoto.com/id/1203079056/photo/portrait-of-amazed-curious-adorable-little-boy-peeking-inside-gift-box-unpacking-present-with.jpg?s=612x612&w=0&k=20&c=0G21nnQtkbLbab3UEL4uTTNN89y2x7H0BVIaJUlDyM0=" alt="">
+              </div>
+              <div>
+               <img src="https://media.product.which.co.uk/prod/images/ar_16to9_400x225/6402501e283f-lead-kids-gift-guide.jpg" alt="">
+              </div>
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="#">FLOWERS</a>
+        <div class="mega-dropdown">
+            <div>
+              <h5><a href="r.html" style="text-decoration: none; color: #333;">ROSES</a></h5>
+              <h5><a href="mf.html" style="text-decoration: none; color: #333;">MIXED FLOWER</a></h5> 
+              <h5><a href="e.html" style="text-decoration: none; color: #333;">EXOTIC FLOWER</a></h5> 
+              <h5><a href="cf.html" style="text-decoration: none; color: #333;">CARNATION</a></h5>  
+              <h5><a href="l.html" style="text-decoration: none; color: #333;">LILY</a></h5>
+              <h5><a href="o.html" style="text-decoration: none; color: #333;">ORCHIDS</a></h5>
+              <h5><a href="df.html" style="text-decoration: none; color: #333;">DRY FLOWER</a></h5> 
+              <h5><a href="g.html" style="text-decoration: none; color: #333;">GERBERA</a></h5> 
+                
+                
+               </div>
+               <div>
+                 <img src="https://d3edcl142d7grd.cloudfront.net/flowers-n-gifts/vendordata/resized/og-jumbo-surprise-gifts1.jpg" alt="">
+                </div>
+                <div>
+                 <img src="https://media.istockphoto.com/id/951105418/photo/very-nice-young-woman-holding-a-colourful-fresh-blossoming-flower-bouquet-of-different-sorts.jpg?s=612x612&w=0&k=20&c=emRNuMDnrdFVf1G4xLcZVAd_nwOlpJ43xaUyMtqB8z0=" alt="">
+                </div>
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">EDIBLES</a>
+        <div class="mega-dropdown">
+            <div>
+              <h5><a href="gct.html" style="text-decoration: none; color: #333;">GOURMET CHOCOLATE TRUFFERS</a></h5> 
+              <h5><a href="c.html" style="text-decoration: none; color: #333;">COFFEE BEANS</a></h5>
+              <h5><a href="tc.html" style="text-decoration: none; color: #333;">TEA COLLECTION</a></h5> 
+              <h5><a href="ff.html" style="text-decoration: none; color: #333;">FRESH FRUIT</a></h5> 
+              <h5><a href="bk.html" style="text-decoration: none; color: #333;">BAKING KIT</a></h5> 
+              <h5><a href="p.html" style="text-decoration: none; color: #333;">POPCORN SET</a></h5>
+              <h5><a href="ht.html" style="text-decoration: none; color: #333;">HERBAL TEA</a></h5>
+              <h5><a href="hc.html" style="text-decoration: none; color: #333;">HANDMADE COOKIES</a></h5> 
+                
+                
+               </div>
+               
+               <div>
+                 <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/fruit_nut_chocolate_chequers-1ba82c4.jpg?quality=90&resize=556,505" alt="">
+                </div>
+                <div>
+                 <img src="https://www.hickoryfarms.com/dw/image/v2/AAOA_PRD/on/demandware.static/-/Sites-Web-Master-Catalog/default/dw1a03e48e/images/products/hickory-farms-deck-the-halls-holiday-gift-basket-002964-m1.jpg?sw=556&sh=680&sm=fit" alt="">
+                </div>
+        </div>
+      </div>
+      <div class="nav-lvl">
+        <a href="">HOME DECOR</a>
+        <div class="mega-dropdown">
+            <div>
+              <h5><a href="scn.html" style="text-decoration: none; color: #333;">SCENTED CANDLE</a></h5> 
+              <h5><a href="dws.html" style="text-decoration: none; color: #333;">DECORATIVE WALL SET</a></h5>   
+              <h5><a href="ttp.html" style="text-decoration: none; color: #333;">TABLE TOP PLANT</a></h5> 
+              <h5><a href="tp.html" style="text-decoration: none; color: #333;">THROW PILLOW</a></h5>   
+              <h5><a href="eng.html" style="text-decoration: none; color: #333;">PHOTO FRAME</a></h5>
+              <h5><a href="wc.html" style="text-decoration: none; color: #333;">WALL CLOCKS</a></h5> 
+              <h5><a href="fl.html" style="text-decoration: none; color: #333;">FAIRY LIGHT</a></h5> 
+              <h5><a href="sb.html" style="text-decoration: none; color: #333;">STORAGE BASKET</a></h5> 
+                
+        
+              </div>
+
+
+              <div>
+               <img src="https://cdn.shopify.com/s/files/1/2690/0106/files/IMG_0422_1_edit_14a37513-2edf-40d2-8d87-8901e6d0ef3d_480x480.jpg?v=1715240304" alt="">
+              </div>
+              <div>
+               <img src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/0002_DSCF8097_aa2f1192-63eb-4089-b8e9-b0f1ce7054e9_480x480.jpg?v=1707366676" alt="">
+              </div>
+        </div>
+      </div>
+      
+              
+
+        </div>
+      </div>
+     
+   </div>
+    <script>
+        let hideTimeout;
+
+// Function to show a dropdown
+const showDropdown = (dropdown) => {
+    clearTimeout(hideTimeout);
+    dropdown.style.display = 'flex';
+};
+
+// Function to hide a dropdown
+const hideDropdown = (dropdown) => {
+    hideTimeout = setTimeout(() => {
+        dropdown.style.display = 'none';
+    }, 150); // Reduced delay for faster interaction
+};
+
+// Add hover effects to navigation items
+document.querySelectorAll('.nav-lvl').forEach(navItem => {
+    const dropdown = navItem.querySelector('.mega-dropdown');
+
+    if (dropdown) {
+        navItem.addEventListener('mouseenter', () => showDropdown(dropdown));
+        navItem.addEventListener('mouseleave', () => hideDropdown(dropdown));
+        dropdown.addEventListener('mouseenter', () => showDropdown(dropdown));
+        dropdown.addEventListener('mouseleave', () => hideDropdown(dropdown));
+    }
+});
+
+// Handle dropdown item clicks
+document.querySelectorAll('.mega-dropdown h4').forEach(item => {
+    item.addEventListener('click', () => {
+        alert(`You clicked on: ${item.textContent}`);
+    });
+});
+
+// Add hover effects to main navigation links
+document.querySelectorAll('.nav-lvl > a').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.color = '#ff6600';
+        link.style.textDecoration = 'underline';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.color = '';
+        link.style.textDecoration = '';
+    });
+});
+
+// Example cart button functionality
+const cartt = () => {
+    alert('Cart button clicked!');
+};
+
+// Add a smooth scrolling effect to all links (optional improvement)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
+
+      <div class="flower-img-div">
+        <h1>SEND EXCLUSIVE GIFT</h1>
+
+        <div onclick="attach()" class="flower-img">
+          <div style="text-align: center; margin: 20px;">
+            <a href="lw.html" style="text-decoration: none; color: black;">
+                <img 
+                    src="https://assets.ajio.com/medias/sys_master/root/20230526/mRtB/647042c5d55b7d0c630eb240/-473Wx593H-465540449-orange-MODEL.jpg" 
+                    alt="Product Image"
+                    style="width: 260px; height: 284px; transition: transform 0.3s ease;" 
+                    onmouseover="this.style.transform='scale(1.05)'" 
+                    onmouseout="this.style.transform='scale(1)'"
+                >
+                <h2 style="margin: 0; color: black;">Wrist Watch</h2>
+            </a>
+        </div>
+        
+        
+          
+        <div style="text-align: center; margin: 20px;">
+          <a href="fps.html" style="text-decoration: none; color: black;">
+              <img 
+                  src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/28549904/2024/3/28/24d3b596-99b3-45c1-8e77-93da10bb5ae71711616317756Stationery1.jpg" 
+                  alt="Product Image" 
+                  style="width: 260px; height: 284px; transition: transform 0.3s ease;" 
+                  onmouseover="this.style.transform='scale(1.05)'" 
+                  onmouseout="this.style.transform='scale(1)'"
+              >
+              <h2 style="margin: 0;">Stationary Kit</h2>
+          </a>
+      </div>
+      
+          
+      <div style="text-align: center; margin: 20px;">
+        <a href="ps.html" style="text-decoration: none; color: black;">
+            <img 
+                src="https://img.freepik.com/premium-photo/design-teddy-bear_931878-372847.jpg" alt="Fun & Joy Cute Soft Pink Teddy Bear With Heart Balloon" 
+                alt="Product Image" 
+                style="width: 260px; height: 284px; transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='scale(1.05)'" 
+                onmouseout="this.style.transform='scale(1)'"
+            >
+            <h2 style="margin: 0;">Teddy Bear</h2>
+        </a>
+    </div>
+    
+    
+          
+    <div style="text-align: center; margin: 20px;">
+      <a href="r.html" style="text-decoration: none; color: black;">
+          <img 
+              src="https://www.elen.in/wp-content/uploads/2022/09/XPS-FLW-211-1.jpg" 
+              alt="Product Image" 
+              style="width: 260px; height: 284px; transition: transform 0.3s ease;" 
+              onmouseover="this.style.transform='scale(1.05)'" 
+              onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2 style="margin: 0;">Flowers</h2>
+      </a>
+  </div>
+  
+  
+          
+  <div style="text-align: center; margin: 20px;">
+    <a href="scn.html" style="text-decoration: none; color: black;">
+        <img 
+            src="https://img.freepik.com/premium-photo/useful-stylish-candle-centerpieces-isolated-white-background_787273-29412.jpg" 
+            alt="Product Image" 
+            style="width: 260px; height: 284px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+        >
+        <h2 style="margin: 0;">Candle</h2>
+    </a>
+</div>
+
+
+        </div>
+      </div>
+
+      <div onclick="attach()" id="scrollmenu">
+        <div style="text-align: center; margin: 20px;">
+          <a href="np.html" style="text-decoration: none; color: inherit;">
+              <img 
+                  src="https://homedecorkart.com/wp-content/uploads/2024/05/01-647.jpg" 
+                  alt="Product Image" 
+                  style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+                  onmouseover="this.style.transform='scale(1.05)'" 
+                  onmouseout="this.style.transform='scale(1)'"
+              >
+              <h2>NAME PLATE</h2>
+          </a>
+      </div>
+      
+        
+        
+        
+        <div style="text-align: center; margin: 20px;">
+          <a href="lb.html" style="text-decoration: none; color: inherit;">
+          <img 
+            src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29203530/2024/4/25/530005e2-1883-437c-a34d-811847188fde1714062589431Belts1.jpg" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>LEATHER BELTS</h2>
+        </a>
+        </div>
+        
+        
+        
+        <div style="text-align: center; margin: 20px;">
+          <a href="cpc.html" style="text-decoration: none; color: inherit;">
+          <img 
+            src="https://rukminim2.flixcart.com/image/750/900/kb5eikw0/painting/w/h/c/5130-12x12-corssframe-poster-n-frames-original-imafskjhvmmpzxdg.jpeg?q=20&crop=false" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>WOODEN PHOTO FRAME</h2>
+          </a>
+        </div>
+        
+        
+        <div style="text-align: center; margin: 20px;">
+          <a href="gct.html" style="text-decoration: none; color: inherit;">
+          <img 
+            src="https://images.stockcake.com/public/1/5/c/15c60f22-574e-48f2-90be-372d8dd8fc80_large/elegant-chocolate-assortment-stockcake.jpg" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>CHOCOLATE</h2>
+        </a>
+        </div>
+        
+
+        <div style="text-align: center; margin: 20px;">
+          <a href="cbn.html" style="text-decoration: none; color: inherit;">
+          <img 
+            src="https://images.meesho.com/images/products/181059705/hf6nm_512.webp" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>BAG FOR KID</h2>
+        </a>
+        </div>
+        
+
+        <div style="text-align: center; margin: 20px;">
+          <img 
+            src="https://yummycake.in/wp-content/uploads/2016/11/send-birthday-gifts-online-yummycake-1.jpg" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>CAKE GIFT</h2>
+        </div>
+        
+        
+        <div style="text-align: center; margin: 20px;">
+          <img 
+            src="https://orbiz.in/cdn/shop/products/28.jpg?v=1672210988" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>CUSTOMIZED MUG</h2>
+        </div>
+        <div style="text-align: center; margin: 20px;">
+          <img 
+            src="https://yellowchimes.com/cdn/shop/products/41epLM7a5rL_d6c49f7b-a949-4aa1-8522-961cc8a46b97.jpg?v=1688687035" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>JEWELLERY</h2>
+        </div>
+        <div style="text-align: center; margin: 20px;">
+          <img 
+            src="https://m.media-amazon.com/images/I/71vxHguxOdL.jpg" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>PERFUME</h2>
+        </div>
+        
+        <div style="text-align: center; margin: 20px;">
+          <a href="ch.html" style="text-decoration: none; color: inherit;">
+          <img 
+            src="https://m.media-amazon.com/images/I/81mU58QkyfL._AC_UY1000_.jpg" 
+            alt="Product Image" 
+            style="width: 200px; height: 250px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'"
+          >
+          <h2>HANDBAG</h2>
+        </a>
+        </div>
+        
+        
+      </div>
+
+      <div class="event">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt29d3f3bc0810ec78/641dafd89a08934e5773ba9e/spring-bulb-event-tier-fy23-last-chance.jpg?quality=60&auto=webp&optimize={medium}" alt="">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt42bd2ef9247e4942/64148c292a3bd877a662a6f7/peonies-tier-fy23.jpg?quality=60&auto=webp&optimize={medium}" alt="">
+      </div>
+
+      <div class="gift">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt8b6b7c8f1d24a362/63f93aa52d6b5b6dac833a20/marketplace-gifts-and-more-zone-10-banner-spring-fy23.jpg?quality=70&auto=webp&optimize={medium}" alt="">
+      </div>
+
+      <div class="flower-img-div">
+        <h1>Explore Our Self-Care Essentials</h1>
+
+        <div onclick="attach()" class="flower-img">
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt83c25a21462cccea/63a61e2e9233961262fbbcfe/spa-gift-basket-silo-mk012144-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>Spa Gifts</h6>
+          </div>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt8ccd8ba5f57bb6c5/63a61e6a66600623830ad5b8/candle-gifts-lanterns-silo-mk021324-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>candles & Lanterns</h6>
+          </div>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt204357e08752a3bc/63a61ea27760ab1f00affbb1/gifts-under-25-silo-mk018491-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>Gifts Under $25</h6>
+          </div>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt0c60554654188a74/63a61ee81d30ec7c2c531c79/zen-gifts-for-relaxation-silo-mkq016474-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>Zen & Relaxation</h6>
+          </div>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt9f97ed604bf1a128/63a61f39609d40109bf54fe8/lavender-flowers-gifts-silo-155227-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>Lavender Gifts</h6>
+          </div>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt590656ac79c533bf/63a630b99233961262fbbd0a/cozy-comfort-gifts-silo-mk005330-260x284.jpg?quality=85&auto=webp&optimize={medium}" alt="">
+            <h6>Cozy Comfort</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <img onclick="atttach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt3690a6c493dd6a6a/63f93ad7325d0044fe5f8eb0/harry-and-david-gift-baskets-gourmet-food-tier-spring-fy23.jpg?quality=60&auto=webp&optimize={medium}" alt="">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltba5c5bb4aa42ed46/640247a0952945362ea1ac93/gifts-from-personalization-mall-tier-spring-fy23-v2.jpg?quality=60&auto=webp&optimize={medium}" alt="">
+      </div>
+
+      <div class="gift">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltf905a87a24f3679b/640249953b7399107f6bb47b/support-smile-farms-zone-10-banner-fy23.png?quality=70&auto=webp&optimize={medium}" alt="">
+      </div>
+
+      <div id="fetch-product">
+
+      </div>
+
+      <div class="gift">
+        <img onclick="attach()" src="https://images.contentstack.io/v3/assets/blt89dbf1c763ec00a6/bltfa36f70965e48481/6222b7ed6f0333490a0e7fd1/1400x200_IMCBnr_NonMem2.jpg?quality=80&auto=webp&optimze={medium}" alt="">
+      </div>
+
+      <div id="feedback">
+        <h1>Some of the Great Things Our Customers Say About Us</h1>
+        <div id="feedback-div">
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt4c9be4e2d955776a/602a81580aba282006983f75/hp-reviews-final-167891.png?quality=70&auto=webp&optimize={medium}" alt="">
+            <h3>Beautiful</h3>
+            <p>"I bought these for my Nana's
+              birthday she said they were
+              amazingly beautiful!"</p>
+              <span>-Pamela</span>
+          </div>
+          <hr>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt2b874f93791fce4a/62b09064482ba357e65ddbe8/web_icons_125x125_ocean_breeze_orchids.png?quality=70&auto=webp&optimize={medium}" alt="">
+            <h3>Best Flowers</h3>
+            <p>"These flowers are beautiful and
+              just as vibrant as the picture. One
+              of the most beautiful bouquets I
+              have ever seen!"</p>
+              <span>-Michelle</span>
+          </div>
+          <hr>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blte0c04d8be69858b7/6259b075b9aa584a4e32649f/web_icons_125x125_classic_budding_rose.png?quality=70&auto=webp&optimize={medium}" alt="">
+            <h3>Very Happy!</h3>
+            <p>"I love how the recipient can plant
+              the roses and enjoy them for a
+              long time. The plant is healthy and
+              the candlel ordered with it smells
+              great!"</p>
+              <span>-Betty</span>
+          </div>
+          <hr>
+          <div>
+            <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt854645311f2a8ec4/621cf518ba043c4a2c4a9a54/web_icons_125x125_Gourmet_Drizzled_Berries-v2.png?quality=70&auto=webp&optimize={medium}" alt="">
+            <h3>Sweet Anniversary</h3>
+            <p>"The strawberries arrived on time
+              and were fantastic as always.
+              Definitely made my anniversary a
+              lot sweeter!"</p>
+              <span>-Brian</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="payopt">
+        <h3>Shop now. Pay with Klarna. Learn more</h3>
+      </div>
+
+      <footer>
+
+        <div id="footer-flex">
+        <div>
+          <h3>MORE WAYS TO SHOP</h3>
+          <a href="">Flower Delivery Same Day</a>
+          <a href="">Flower Arrangements</a>
+          <a href="">Sympathy Flowers & Gifts</a>
+          <a href="">Roses</a>
+          <a href="">Birthday Flowers & Gifts</a>
+          <a href="">Flower Subscription</a>
+          <a href="">Plants</a>
+          <a href="">Gift Basket & Food</a>
+          <a href="">Easter Flowers</a>
+          <a href="">Mother's Day Flower</a>
+          <a href="">Internatinal flower delivery</a>
+          <a href="">Find a Local Florist</a>
+          <a href="">Corporate Gifts</a>
+          <a href="">Chocolate</a>
+          <a href="">Marketplace Sellers</a>
+          <a href="">Sitemap</a>
+        
+        </div>
+        <div>
+          <h3>CUSTOMER SERVICE</h3>
+          <a href="">Customer service</a>
+          <a href="">COVID-19 Update</a>
+          <a href="">eGift Cards</a>
+          <a href="">Contact Us</a>
+          <a href="">Do not sell my personal information</a>
+          <a href="">Allergy Warning</a>
+          <a href="">Funeral Advisor</a>
+          <a href="">Smile Guaratee</a>
+          
+
+        </div>
+        <div>
+          <h3>OUR STORES</h3>
+          <a href="">Store Locator</a>
+          <a href="">Francise Opportunities</a>
+          <a href="">Local DIY Events</a>
+
+          <h3>ACCOUNT LOGIN</h3>
+          <a href="">Sign In To Your Account</a>
+        </div>
+        <div>
+          <h3>CORPORATE</h3>
+          <a href="">About Us</a>
+          <a href="">Our Brand</a>
+          <a href="">Social Responsibilty</a>
+          <a href="">Carreers</a>
+          <a href="">News & Media</a>
+          <a href="">Investor</a>
+
+          <h3>AFFLIATE PROGRAM</h3>
+          <a href="">Beacome an Affliate</a>
+
+          <h3>OUR BLOGS</h3>
+          <a href="">Petal talk Blog</a>
+          <a href="">Julie's Corner</a>
+          <a href="">Jim's Corner</a>
+        </div>
+        <div>
+          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt787e53ec7675db95/5ee1016e26fd9f3b64a5abe7/social-icon-twitter.png" alt="">
+          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt71c1a01174910073/5ee101831579a83a8b80b9ad/social-icon-facebook.png" alt="">
+          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt78b7b39043ac2de3/5ee101965cffd6317204ad4a/social-icon-instagram.png" alt="">
+          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt6ae8236f023d5359/5ee101a4f2c45903a4be0b8b/social-icon-pinterest.png" alt="">
+          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltbd439ba082738790/5ee101b758284c442bf7faea/social-icon-youtube.png" alt="">
+        </div>
+
+      </div>
+
+      </footer>
+</body>
+
+<script>
+  let seach=document.getElementById("search")
+let inputseach=document.getElementById("inputsearch")
+
+fetch("https://bored-school-uniform-bull.cyclic.app/10flowers")
+
+.then(response=>response.json())
+.then(response=>{
+console.log(response)
+const productDiv=document.getElementById("fetch-product");
+
+renderproduct(response)
+function renderproduct(products){
+    productDiv.innerHTML="";
+
+    for(let product of products){
+        const productCard=document.createElement("div")
+
+        const productimg=document.createElement("img")
+        productimg.src=product.img;
+
+        const productname=document.createElement("h4")
+        productname.textContent=product.title;
+
+        
+
+        const productdetail=document.createElement("h6");
+        productdetail.textContent=product.rating;
+
+        const productprice=document.createElement("p")
+        productprice.textContent='$' +product.price;
+
+
+        productCard.append(productimg,productname, productdetail, productprice);
+
+        productDiv.append(productCard)
+
+    }
+}
+seach.addEventListener("submit", function(el){
+   el.preventDefault();
+
+   let btn=inputseach.value;
+   let data=response.filter((element)=>{
+    if(element.title.toUpperCase().includes(btn.toUpperCase())){
+        return true;
+    }else{
+        return false;
+    }
+   })
+
+   renderproduct(data)
+})
+
+})
+let drop=document.getElementsByClassName("nav-lvl")
+drop.addEventListener("click", onklick)
+
+function onklick(){
+  window.location.href="./product.html"
+}
+
+function attach(){
+  window.location.href="./product.html"
+}
+
+function cartt(){
+  window.location.href="./cart.html"
+}
+
+
+
+</script>
+</html>

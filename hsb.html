@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="hsb1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/soap/c/4/s/3-375-hand-made-rosewater-soap-pack-of-3-khadi-natural-original-imahyf4ag7fxyzhy.jpeg?q=70&crop=false" alt="KHADI NATURAL Organic Rosewater Soap Pack of 3">
+            </a>
+            <div class="product-details">
+                <a href="hsb1.html">
+                    <div class="product-header">1. KHADI NATURAL Organic Rosewater Soap Pack of 3 | Glycerine | Handmade Bathing Bars</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 1,617 Ratings & 101 Reviews</div>
+                <div class="product-price">₹162</div>
+                <div class="product-discount">40% off</div>
+                <div>Pack of: 1<br>Fragrance: Rose<br>For Men & Women</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Nice 👍🙂 I am happy with this product. Tq u Flipkart.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Jul, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Nice product. Love the smell. Really foamy.
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="hsb2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/soap/l/z/9/10-30-handmade-soap-combo-try-me-out-sample-set-for-soft-smooth-original-imah3ak8zqsx22za.jpeg?q=70&crop=false" alt="Soulflower Handmade Soap Combo">
+            </a>
+            <div class="product-details">
+                <a href="hsb2.html">
+                    <div class="product-header">2. Soulflower Handmade Soap Combo | Try Me Out Sample Set | For Soft, Smooth & Radiant Skin</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 1,929 Ratings & 166 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">60% off</div>
+                <div>Pack of: 10<br>Fragrance: Fruity, Aloe Vera, Orange, Turmeric, Lavender, Lemon, Apple, Coffee, Chocolate<br>For Men & Women</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ A great soap</span><br>
+                    This soap is SLS, Paraben or any artificial free and that is a great thing. Another thing I like about this soap is that you can actually see and feel the natural ingredients.<br>
+                    <span>Pragya Chaturvedi</span> | Certified Buyer Mar, 2014
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Waste of money!</span><br>
+                    Not a good soap. It's very thin, and one soap can only be used once.
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="hsb3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jusp3m80/soap/6/c/4/4-125-chaar-cool-bars-4-charcoal-soap-bar-the-man-company-original-imaffujmggkpbbfa.jpeg?q=70&crop=false" alt="THE MAN COMPANY Chaar Cool Bars (4 Charcoal soap bars)">
+            </a>
+            <div class="product-details">
+                <a href="hsb3.html">
+                    <div class="product-header">3. THE MAN COMPANY Chaar Cool Bars (4 Charcoal Soap Bars)</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 385 Ratings & 34 Reviews</div>
+                <div class="product-price">₹500</div>
+                <div class="product-discount">50% off</div>
+                <div>Pack of: 4<br>Fragrance: Charcoal<br>For Men</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    It's an amazing product....<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Dec, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Very Poor</span><br>
+                    Very very worst product. Please don't purchase this product.
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="hsb4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/soap/x/m/t/2-200-shikakai-reetha-amla-handmade-shampoo-bar-pack-of-2-kaaya-original-imah28k28t2carmx.jpeg?q=70&crop=false" alt="Kaaya Natural Shikakai, Reetha & Amla Handmade Shampoo Bar (Pack of 2)">
+            </a>
+            <div class="product-details">
+                <a href="hsb4.html">
+                    <div class="product-header">4. Kaaya Natural Shikakai, Reetha & Amla Handmade Shampoo Bar (Pack Of 2)</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 48 Ratings & 6 Reviews</div>
+                <div class="product-price">₹272</div>
+                <div class="product-discount">45% off</div>
+                <div>Pack of: 2<br>For Men & Women<br>Hair Soap For All Skin Types</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    I like this shampoo bar, it reduces my hair fall.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    I like this shampoo bar, it reduces my hair fall.
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="hsb5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/soap/x/a/x/6-750-aloe-vera-soap-for-nourishing-moisturizing-skin-125-g-pack-original-imagy2pu2mvpv2aq.jpeg?q=70&crop=false" alt="OZONE Aloe Vera Soap For Nourishing & Moisturizing Skin (Pack of 6)">
+            </a>
+            <div class="product-details">
+                <a href="hsb5.html">
+                    <div class="product-header">5. OZONE Aloe Vera Soap For Nourishing & Moisturizing Skin 125 G - PACK OF 6</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 591 Ratings & 122 Reviews</div>
+                <div class="product-price">₹382</div>
+                <div class="product-discount">15% off</div>
+                <div>Pack of: 6<br>For Men & Women<br>Body Soap For All Skin Types</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Superb 👌🏻👌🏻👌🏻👌🏻👌🏻<br>
+                    <span>Dr Sabeel Khan</span> | Certified Buyer Jun, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Bathroom smells really good after using this soap and body feels and remains fresh even after sweating.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

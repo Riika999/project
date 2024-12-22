@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="mtb1.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-hand-messenger-bag/e/u/1/live-every-moment-black-evleb19s-tote-eco-vibes-women-original-imah6mcyrz4khtra.jpeg?q=70&crop=false" alt="Product 1">
+            </a>
+            <div class="product-details">
+                <a href="mtb1.html">
+                    <div class="product-header">1. Eco Vibes Girls Black Tote</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 623 Ratings & 42 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">40% off</div>
+                <div>Material: Canvas<br>Closure: Zip</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Love the packaging and the product <span class="emoji">💜</span><br>
+                    <span>Jia Shukla</span> | Certified Buyer Aug, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Quality best and excellent product<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 3 days ago
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="mtb2.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/s/h/t/-original-imah5d3xkqnkffz6.jpeg?q=70&crop=false" alt="Product 2">
+            </a>
+            <div class="product-details">
+                <a href="mtb2.html">
+                    <div class="product-header">2. LAVIE Women Green Tote</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 113 Ratings & 4 Reviews</div>
+                <div class="product-price">₹949</div>
+                <div class="product-discount">81% off</div>
+                <div>Material: Synthetic Leather<br>Closure: Zip</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Very comfortable to carry.. I like it<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Quality is good, price is reasonable<br>
+                    <span>Suvercha Sharma</span> | Certified Buyer 1 day ago
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="mtb3.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/i/2/u/-original-imah4kg5gxmfqbws.jpeg?q=70&crop=false" alt="Product 3">
+            </a>
+            <div class="product-details">
+                <a href="mtb3.html">
+                    <div class="product-header">3. LAVIE Women Grey Tote</div>
+                </a>
+                <div class="rating">4★ &nbsp; 1,770 Ratings & 106 Reviews</div>
+                <div class="product-price">₹749</div>
+                <div class="product-discount">83% off</div>
+                <div>Material: Artificial Leather<br>Closure: Zip</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Very nice and spacious. Material is also good<br>
+                    <span>Darakhshan</span> | Certified Buyer May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Decent product</span><br>
+                    Quality of the material is good. Looks trendy<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 3 months ago
+                </div>
+            </div>
+        </div>
+        
+        <div class="product">
+            <a href="mtb4.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/p/s/w/-original-imah4ndyraskc763.jpeg?q=70&crop=false" alt="LAVIE Women Tan Tote">
+            </a>
+            <div class="product-details">
+                <a href="mtb4.html">
+                    <div class="product-header">4. LAVIE Women Tan Tote</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 172 Ratings & 8 Reviews</div>
+                <div class="product-price">₹1,089</div>
+                <div class="product-discount">78% off</div>
+                <div>For Women<br>Material: Synthetic Leather<br>Closure: Zip</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Lavie as always satisfies customer's taste and need. The peach colour golden metallic logo makes it super classy and unique. The capacity and spacious storage...<br>
+                    <span>Koyel</span> | Certified Buyer Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Expected a better product</span><br>
+                    Disappointed with the quality this time, threads started coming out, zipper not working properly<br>
+                    <span>Saurabh Thakkar</span> | Certified Buyer 3 months ago
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 7 -->
+        <div class="product">
+            <a href="mtb5.html">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/hand-messenger-bag/p/x/z/-original-imah4npgpnmqehnh.jpeg?q=70&crop=false" alt="LINO PERROS Women Green Tote">
+            </a>
+            <div class="product-details">
+                <a href="mtb5.html">
+                    <div class="product-header">5. LINO PERROS Women Green Tote</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 128 Ratings & 6 Reviews</div>
+                <div class="product-price">₹999</div>
+                <div class="product-discount">80% off</div>
+                <div>For Women<br>Material: PU<br>Closure: Zip</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Product is perfect in looks, very spacious with partitions, loved it.<br>
+                    <span>Anju Panjabi</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Product is perfect in looks, very spacious with partitions, loved it.<br>
+                    <span>Anju Panjabi</span> | Certified Buyer 2 months ago
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
