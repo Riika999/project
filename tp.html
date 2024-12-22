@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: MY ARMOR Height Adjustable Microfibre Solid Sleeping Pillow Pack of 2 -->
+        <div class="product">
+            <a href="tp1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/pillow/o/l/h/10-2-micro-fiber-sleeping-pillow-inner-cover-only-2-ma7-24-2-my-original-imah78qtfyhtmk2x.jpeg?q=90" alt="MY ARMOR Height Adjustable Microfibre Solid Sleeping Pillow Pack of 2">
+            </a>
+            <div class="product-details">
+                <a href="tp1.html">
+                    <div class="product-header">1. MY ARMOR Height Adjustable Microfibre Solid Sleeping Pillow Pack of 2</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 12,949 Ratings & 466 Reviews</div>
+                <div class="product-price">₹443</div>
+                <div class="product-discount">55% off</div>
+                <div>Filling Material: Microfibre<br>Size: 61 cm x 41 cm<br>Type: Sleeping Pillow</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Nice product</span><br>
+                    Looks good. First feel of the product is good and comfortable. Let's see if the fluffiness remains over time.<br>
+                    <span>Tushar Bhatnagar</span> | Certified Buyer | May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Simply awesome</span><br>
+                    Excellent product. The cover quality could be better, but for the price, it's nice. Very soft.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1 -->
+        <div class="product">
+            <a href="tp2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/pillow/w/o/5/6-velvet-motu-patlu-characters-cushion-decorative-throw-pillow-original-imahfrzkdzthxzzj.jpeg?q=90" alt="Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1">
+            </a>
+            <div class="product-details">
+                <a href="tp2.html">
+                    <div class="product-header">2. Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 15 Ratings & 1 Review</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">66% off</div>
+                <div>Filling Material: Microfibre<br>Size: 41 cm x 31 cm<br>Type: Sleeping Pillow</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Good</span><br>
+                    I thought it was a Motu Patlu cushion, but when it was delivered, it came as a Pokemon cushion. Quality is good.<br>
+                    Must buy for 3-5 year old kids.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Mar, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Good</span><br>
+                    I thought it was a Motu Patlu cushion, but when it was delivered, it came as a Pokemon cushion. Quality is good.<br>
+                    Must buy for 3-5 year old kids.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: HKZ-YG Cervical Contour Memory Foam Pillow, Stomached, Anti-Snoring, Side Sleepers Memory Foam Geometric Orthopaedic Pillow Pack of 1 -->
+        <div class="product">
+            <a href="tp3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/pillow/h/p/w/11-cervical-contour-memory-foam-pillow-stomached-anti-snoring-original-imah27p4fu9fazaa.jpeg?q=90" alt="HKZ-YG Cervical Contour Memory Foam Pillow, Stomached, Anti-Snoring, Side Sleepers Memory Foam Geometric Orthopaedic Pillow Pack of 1">
+            </a>
+            <div class="product-details">
+                <a href="tp3.html">
+                    <div class="product-header">3. HKZ-YG Cervical Contour Memory Foam Pillow, Stomached, Anti-Snoring, Side Sleepers Memory Foam Geometric Orthopaedic Pillow Pack of 1</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 11,488 Ratings & 328 Reviews</div>
+                <div class="product-price">₹439</div>
+                <div class="product-discount">70% off</div>
+                <div>Filling Material: Memory Foam<br>Size: 35 cm x 65 cm<br>Type: Orthopaedic Pillow</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    The memory foam quality is impressive, offering softness and a curvature that perfectly suits my sleeping position. Definitely worth buying.<br>
+                    <span>Mayank Ransurma</span> | Certified Buyer | 4 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    The product is really good. So far, there is no issue with the product. Must buy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: duroflex SNUGGLEDUAL Microfibre Solid Sleeping Pillow Pack of 2 -->
+        <div class="product">
+            <a href="tp4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/ktlu9ow0/pillow-protector/i/o/t/2-snugglepillow-duroflex-original-imag6x3xju2hesed.jpeg?q=90" alt="duroflex SNUGGLEDUAL Microfibre Solid Sleeping Pillow Pack of 2">
+            </a>
+            <div class="product-details">
+                <a href="tp4.html">
+                    <div class="product-header">4. duroflex SNUGGLEDUAL Microfibre Solid Sleeping Pillow Pack of 2</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 41,424 Ratings & 81 Reviews</div>
+                <div class="product-price">₹499</div>
+                <div class="product-discount">43% off</div>
+                <div>Filling Material: Microfibre<br>Size: 61 cm x 40 cm<br>Type: Sleeping Pillow</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Pillows are too good, superb quality. Go for it, guys.<br>
+                    <span>Harini N Nataraj</span> | Certified Buyer | Jul, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Poor quality...waste of money.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1 -->
+        <div class="product">
+            <a href="tp5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/pillow/s/j/j/6-velvet-bts-world-boy-cushion-decorative-throw-pillow-for-sofa-original-imahfrzhkjnvmvwq.jpeg?q=90" alt="Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1">
+            </a>
+            <div class="product-details">
+                <a href="tp5.html">
+                    <div class="product-header">5. Juzzii Microfibre Toons & Characters Sleeping Pillow Pack of 1</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 530 Ratings & 40 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">66% off</div>
+                <div>Filling Material: Microfibre<br>Size: 40 cm x 30 cm<br>Type: Sleeping Pillow</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Good quality product</span><br>
+                    I like this so much, it is really nice 💜<br>
+                    <span>Sreelakshmi Ashokan</span> | Certified Buyer | Aug, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Worth it, so nice and price is awesome.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

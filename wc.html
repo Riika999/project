@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: matiz Analog 20 cm X 20 cm Wall Clock -->
+        <div class="product">
+            <a href="wc1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/wall-clock/j/e/x/high-quality-quartz-decorative-classic-wall-clock-20-mt1202-20cm-original-imah7ktsgpvssbga.jpeg?q=90" alt="matiz Analog 20 cm X 20 cm Wall Clock">
+            </a>
+            <div class="product-details">
+                <a href="wc1.html">
+                    <div class="product-header">1. matiz Analog 20 cm X 20 cm Wall Clock</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 3,533 Ratings & 2,486 Reviews</div>
+                <div class="product-price">₹169</div>
+                <div class="product-discount">83% off</div>
+                <div>Size: 20 cm x 20 cm<br>Mechanism: Quartz<br>Frame Material: Plastic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    Little small but Good product in this price range<br>
+                    <span>Biswanath Sahoo</span> | Certified Buyer | Apr, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Very very nice product you you take this product 😀
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: AJANTA Analog 19 cm X 19 cm Wall Clock -->
+        <div class="product">
+            <a href="wc2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/wall-clock/b/z/e/7-inches-wall-clock-for-home-offces-bedroom-living-room-wall-original-imahyugsnjtpfuur.jpeg?q=90" alt="AJANTA Analog 19 cm X 19 cm Wall Clock">
+            </a>
+            <div class="product-details">
+                <a href="wc2.html">
+                    <div class="product-header">2. AJANTA Analog 19 cm X 19 cm Wall Clock</div>
+                </a>
+                <div class="rating">3.6★ &nbsp; 16,344 Ratings & 1,518 Reviews</div>
+                <div class="product-price">₹271</div>
+                <div class="product-discount">19% off</div>
+                <div>Size: 19 cm x 19 cm<br>Frame Material: Plastic<br>Clock Type: Analog</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Wonderful</span><br>
+                    It's a very nice but, it's very small size. Ok try this product<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Dec, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Product is good rate very reasonable
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: setu creation Analog 22 cm X 22 cm Wall Clock -->
+        <div class="product">
+            <a href="w3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/wall-clock/w/l/h/beautiful-designer-decorative-premium-lord-hanuman-ji-wall-clock-original-imah23zfszquebgc.jpeg?q=90" alt="setu creation Analog 22 cm X 22 cm Wall Clock">
+            </a>
+            <div class="product-details">
+                <a href="w3.html">
+                    <div class="product-header">3. setu creation Analog 22 cm X 22 cm Wall Clock</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 186 Ratings & 4 Reviews</div>
+                <div class="product-price">₹250</div>
+                <div class="product-discount">83% off</div>
+                <div>Size: 22 cm x 22 cm<br>Frame Material: Plastic<br>Clock Type: Analog</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Beautiful best quality<br>
+                    <span>S P</span> | Certified Buyer | 7 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Beautiful best quality
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Titan Analog 32 cm X 32 cm Wall Clock -->
+        <div class="product">
+            <a href="w4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/jzlldow0/wall-clock/a/v/g/wall-clock-w0032ga01-analog-titan-original-imafjksdn5jfnzpg.jpeg?q=90" alt="Titan Analog 32 cm X 32 cm Wall Clock">
+            </a>
+            <div class="product-details">
+                <a href="w4.html">
+                    <div class="product-header">4. Titan Analog 32 cm X 32 cm Wall Clock</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 243 Ratings & 24 Reviews</div>
+                <div class="product-price">₹1,976</div>
+                <div class="product-discount">40% off</div>
+                <div>Size: 32 cm x 32 cm<br>Mechanism: Silent<br>Frame Material: Glass</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Great product with good packaging<br>
+                    <span>Anirban Mitra</span> | Certified Buyer | Jan, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Budget friendly unique item
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: matiz Analog 20 cm X 20 cm Wall Clock -->
+        <div class="product">
+            <a href="w5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/wall-clock/y/c/m/high-quality-quartz-decorative-classic-wall-clock-mt1202-20cm-original-imagmxhwtehggqsv.jpeg?q=90" alt="matiz Analog 20 cm X 20 cm Wall Clock">
+            </a>
+            <div class="product-details">
+                <a href="w5.html">
+                    <div class="product-header">5. matiz Analog 20 cm X 20 cm Wall Clock</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 2,068 Ratings & 134 Reviews</div>
+                <div class="product-price">₹149</div>
+                <div class="product-discount">85% off</div>
+                <div>Size: 20 cm x 20 cm<br>Mechanism: Quartz<br>Frame Material: Plastic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Very Poor</span><br>
+                    It's not working on when I brought the product with in 3days<br>
+                    <span>Kote Gangadhar</span> | Certified Buyer | 8 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Very Poor</span><br>
+                    It's not working on when I brought the product with in 3days
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

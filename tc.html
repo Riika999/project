@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Flipkart Supermart Kadak Black Tea Pouch -->
+        <div class="product">
+            <a href="tc1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/h/s/y/-original-imahyugrxakafad3.jpeg?q=90" alt="Flipkart Supermart Kadak Black Tea Pouch">
+            </a>
+            <div class="product-details">
+                <a href="tc1.html">
+                    <div class="product-header">1. Flipkart Supermart Kadak Black Tea Pouch</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 205 Ratings & 28 Reviews</div>
+                <div class="product-price">₹60</div>
+                <div class="product-discount">No discount</div>
+                <div>Form Factor: Powder<br>Container Type: Pouch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Nice product and fast service<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Not recommended at all</span><br>
+                    Low quality tea powder, probably used tea powder.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Tata Tea Gold Aromatic Tea Pouch -->
+        <div class="product">
+            <a href="tc2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/a/i/6/-original-imah2tzrcphhbg7z.jpeg?q=90" alt="Tata Tea Gold Aromatic Tea Pouch">
+            </a>
+            <div class="product-details">
+                <a href="tc2.html">
+                    <div class="product-header">2. Tata Tea Gold Aromatic Tea Pouch</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 689 Ratings & 73 Reviews</div>
+                <div class="product-price">₹140</div>
+                <div class="product-discount">No discount</div>
+                <div>Form Factor: Leaves<br>Container Type: Pouch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Good product, best quality Tata Gold tea<br>
+                    <span>Roshan Ara</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Products price are very satisfying.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Tata Tea Premium Anokha Swad Tea Pouch -->
+        <div class="product">
+            <a href="tc3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/w/0/w/-original-imah4ngtcw6vgepk.jpeg?q=90" alt="Tata Tea Premium Anokha Swad Tea Pouch">
+            </a>
+            <div class="product-details">
+                <a href="tc3.html">
+                    <div class="product-header">3. Tata Tea Premium Anokha Swad Tea Pouch</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 36,073 Ratings & 2,775 Reviews</div>
+                <div class="product-price">₹120</div>
+                <div class="product-discount">14% off</div>
+                <div>Form Factor: Powder<br>Container Type: Pouch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Super fast delivery. Great tea. I love it.<br>
+                    <span>Gajendra Singh</span> | Certified Buyer | Dec, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Awesome... Thanks to Flipkart<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: SANCHA Botanical Collection Sampler Box | Immunity Tea Range | 16 Premium Assorted Tea Box -->
+        <div class="product">
+            <a href="tc4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kp5sya80/tea/p/e/l/22-5-botanical-collection-sampler-box-sampler-trial-pack-tea-original-imag3gjugyxzbgar.jpeg?q=90" alt="SANCHA Botanical Collection Sampler Box | Immunity Tea Range | 16 Premium Assorted Tea Box">
+            </a>
+            <div class="product-details">
+                <a href="tc4.html">
+                    <div class="product-header">4. SANCHA Botanical Collection Sampler Box | Immunity Tea Range | 16 Premium Assorted Tea Box</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 4 Ratings & 1 Reviews</div>
+                <div class="product-price">₹325</div>
+                <div class="product-discount">7% off</div>
+                <div>Form Factor: Pyramid Tea Bags<br>Container Type: Box</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Flavourful teas, beautiful aroma and taste<br>
+                    <span>Kalista Nisha</span> | Certified Buyer | Apr, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Flavourful teas, beautiful aroma and taste<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: SANCHA India Chai Collection Tea Gift Box | Healthy Gift | Festival Gift Box | Pack of 4 Spices Masala Tea Box -->
+        <div class="product">
+            <a href="tc5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/tea/8/a/j/200-india-chai-collection-tea-gift-box-healthy-gift-festival-original-imaggyf6ywfyyadt.jpeg?q=90" alt="SANCHA India Chai Collection Tea Gift Box | Healthy Gift | Festival Gift Box | Pack of 4 Spices Masala Tea Box">
+            </a>
+            <div class="product-details">
+                <a href="tc5.html">
+                    <div class="product-header">5. SANCHA India Chai Collection Tea Gift Box | Healthy Gift | Festival Gift Box | Pack of 4 Spices Masala Tea Box</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 18 Ratings & 4 Reviews</div>
+                <div class="product-price">₹1,100</div>
+                <div class="product-discount">No discount</div>
+                <div>Form Factor: Leaves<br>Container Type: Box</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    The turmeric chai is really awesome. It helps me in getting relief from body pain and refresh me always. Price is always reasonable ☺️.<br>
+                    <span>Sony Sahu</span> | Certified Buyer | Apr, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Very nice and fragrant tea from Sancha once again.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

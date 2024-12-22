@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: FRANKOPOLIS Woven Winter Women Gloves -->
+        <div class="product">
+            <a href="wg1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/glove/1/d/u/free-fs128b-women-full-finger-pink-firmed-string-original-imagstjghcf9nth2.jpeg?q=90" alt="FRANKOPOLIS Woven Winter Women Gloves">
+            </a>
+            <div class="product-details">
+                <a href="wg1.html">
+                    <div class="product-header">1. FRANKOPOLIS Woven Winter Women Gloves</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 108 Ratings & 5 Reviews</div>
+                <div class="product-price">₹324</div>
+                <div class="product-discount">78% off</div>
+                <div>Type: Winter<br>For: Women<br>Pattern: Woven</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Worst material..started deteriorating in a single use..total wastage of money..Never dare to buy..<br>
+                    <span>Davinder Singh</span> | Certified Buyer 6 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Worst material..started deteriorating in a single use..total wastage of money..Never dare to buy..<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: FIRSTLY Woven Winter Men & Women Gloves -->
+        <div class="product">
+            <a href="wg2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/glove/r/q/o/free-blue-gloves-firstly-original-imaghfvpeh6s2pw4.jpeg?q=90" alt="FIRSTLY Woven Winter Men & Women Gloves">
+            </a>
+            <div class="product-details">
+                <a href="wg2.html">
+                    <div class="product-header">2. FIRSTLY Woven Winter Men & Women Gloves</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 136 Ratings & 6 Reviews</div>
+                <div class="product-price">₹220</div>
+                <div class="product-discount">72% off</div>
+                <div>Type: Winter<br>For: Men & Women<br>Pattern: Woven</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Bad quality</span><br>
+                    Very bad product.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 2 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Bad quality</span><br>
+                    Very bad product.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: poshing Solid Winter Men & Women Gloves -->
+        <div class="product">
+            <a href="wg3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kxkqavk0/glove/g/l/n/m-woolen-stylish-ridding-multi-ware-poshing-original-imag9zvsqjhvdctw.jpeg?q=90" alt="poshing Solid Winter Men & Women Gloves">
+            </a>
+            <div class="product-details">
+                <a href="wg3.html">
+                    <div class="product-header">3. poshing Solid Winter Men & Women Gloves</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 389 Ratings & 33 Reviews</div>
+                <div class="product-price">₹198</div>
+                <div class="product-discount">52% off</div>
+                <div>Type: Winter<br>For: Men & Women<br>Pattern: Solid</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Waste of money waste of buying these product<br>
+                    <span>Flipkart Customer</span> | Certified Buyer 11 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Waste of money waste of buying these product<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: poshing Self Design Winter Men & Women Gloves -->
+        <div class="product">
+            <a href="wg4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/khdqnbk0/glove/l/b/m/free-woolen-handgloves-poshing-original-imafxfy5vyzvpgxn.jpeg?q=90" alt="poshing Self Design Winter Men & Women Gloves">
+            </a>
+            <div class="product-details">
+                <a href="wg4.html">
+                    <div class="product-header">4. poshing Self Design Winter Men & Women Gloves</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 148 Ratings & 5 Reviews</div>
+                <div class="product-price">₹195</div>
+                <div class="product-discount">60% off</div>
+                <div>Type: Winter<br>For: Men & Women<br>Pattern: Self Design</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Worthless</span><br>
+                    The product is not good at all.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Mar, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Very poor</span><br>
+                    Not good..<br>
+                    Waste of money<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: FIRMED STRING Self Design, Woven Winter Men & Women Gloves -->
+        <div class="product">
+            <a href="wg5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/glove/f/h/w/free-fs98-full-finger-glove-darkblue-firmed-string-original-imah3hfg2bftzaqg.jpeg?q=90" alt="FIRMED STRING Self Design, Woven Winter Men & Women Gloves">
+            </a>
+            <div class="product-details">
+                <a href="wg5.html">
+                    <div class="product-header">5. FIRMED STRING Self Design, Woven Winter Men & Women Gloves</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 279 Ratings & 17 Reviews</div>
+                <div class="product-price">₹298</div>
+                <div class="product-discount">80% off</div>
+                <div>Type: Winter<br>For: Men & Women<br>Pattern: Self Design, Woven</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Worthless</span><br>
+                    Not good very cheapest quality.<br>
+                    <span>Roushan Roy</span> | Certified Buyer 26 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Worthless</span><br>
+                    Not good very cheapest quality.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
