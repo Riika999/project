@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="sc1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/hair-oil/g/m/6/200-premium-ayurvedic-hair-oil-shampoo-combo-for-hair-growth-original-imagkpp8snzfjnfm.jpeg?q=70&crop=false" alt="Zulf Raj Premium Ayurvedic Hair Oil & Shampoo Combo">
+            </a>
+            <div class="product-details">
+                <a href="sc1.html">
+                    <div class="product-header">1. Zulf Raj Premium Ayurvedic Hair Oil & Shampoo Combo</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 4,346 Ratings & 64 Reviews</div>
+                <div class="product-price">₹207</div>
+                <div class="product-discount">20% off</div>
+                <div>For Men & Women<br>Suitable For All Hair Types<br>Applied For Anti-dandruff, Anti-hair Fall, Hair Growth, Healthy Scalp, Prevents Greying, Conditioning, Stress Relief, Nourishment</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Good quality ayurvedic hair oil and shampoo. It has made the hair shiny and smooth.<br>
+                    <span>Gaurav</span> | Certified Buyer Feb, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific</span><br>
+                    Very good product.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="sc2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/conditioner/m/q/y/-original-imagqkj54fpepe3p.jpeg?q=70&crop=false" alt="Man Matters Hair Conditioner">
+            </a>
+            <div class="product-details">
+                <a href="sc2.html">
+                    <div class="product-header">2. Man Matters Hair Conditioner</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 1,379 Ratings & 91 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div>For Deep Conditioning, Damage Repair, Conditioning, Nourishment & Moisturization, Dryness Care, Straightening & Smoothening<br>For Normal Hair, Damaged Hair, Colored Hair<br>Suitable For All Hair Types</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    I really like hair care range. The brand is really keeping their consistency. This is a good hair conditioner in an affordable range.<br>
+                    <span>Ankit Parekh</span> | Certified Buyer Aug, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Very effective and worth the price.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="sc3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cufflink-tie-pin/i/f/z/men-s-van-dyke-brown-italian-silk-tie-pocket-square-cufflink-original-imagpf6xu5sfzk9h.jpeg?q=70&crop=false" alt="LOUIS STITCH Silk Cufflink & Tie Pin Set">
+            </a>
+            <div class="product-details">
+                <a href="sc3.html">
+                    <div class="product-header">3. LOUIS STITCH Silk Cufflink & Tie Pin Set</div>
+                </a>
+                <div class="rating">4.8★ &nbsp; 8 Ratings & 1 Review</div>
+                <div class="product-price">₹1,299</div>
+                <div class="product-discount">74% off</div>
+                <div>Designed For: Men<br>Pattern: Self Design<br>Made of Silk</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Satisfied.<br>
+                    <span>Sonal Agrawal</span> | Certified Buyer 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Satisfied.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="sc4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cufflink-tie-pin/4/w/q/mens-italian-silk-necktie-suit-accessories-set-ls-tecm01-tie-original-imagt6xhsepdvz9b.jpeg?q=70&crop=false" alt="LOUIS STITCH Silk Tie & Cufflink">
+            </a>
+            <div class="product-details">
+                <a href="sc4.html">
+                    <div class="product-header">4. LOUIS STITCH Silk Tie & Cufflink</div>
+                </a>
+                <div class="rating">3.5★ &nbsp; 10 Ratings & 1 Review</div>
+                <div class="product-price">₹1,299</div>
+                <div class="product-discount">74% off</div>
+                <div>Designed For: Men<br>Pattern: Polka Print<br>Made of Silk</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Absolute rubbish!</span><br>
+                    Quality and material of the neck tie and pocket square is really pathetic.<br>
+                    <span>Anisur Khan</span> | Certified Buyer Mar, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Absolute rubbish!</span><br>
+                    Quality and material of the neck tie and pocket square is really pathetic.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="sc5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/talc/m/d/7/300-silk-plus-boro-neem-x-ice-talcum-powder-ghamori-loo-rakshak-original-imah27skqa8fh5rr.jpeg?q=70&crop=false" alt="Nimson Silk Plus & Boro Neem Talcum Powder">
+            </a>
+            <div class="product-details">
+                <a href="sc5.html">
+                    <div class="product-header">5. Nimson Silk Plus & Boro Neem & X-ice Talcum Powder</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 2,187 Ratings & 126 Reviews</div>
+                <div class="product-price">₹125</div>
+                <div class="product-discount">35% off</div>
+                <div>Ideal For: Men & Women<br>Plastic Container</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    So effective product in such a great price.<br>
+                    <span>Chandachaya Bora</span> | Certified Buyer 8 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Very Good and value for money.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

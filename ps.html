@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: DISNEY Mickey - 30 cm -->
+        <div class="product">
+            <a href="ps1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/stuffed-toy/z/k/a/-original-imagu3z2yavzd9sc.jpeg?q=90" alt="DISNEY Mickey - 30 cm">
+            </a>
+            <div class="product-details">
+                <a href="ps1.html">
+                    <div class="product-header">1. DISNEY Mickey - 30 cm</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 1,828 Ratings & 199 Reviews</div>
+                <div class="product-price">₹511</div>
+                <div class="product-discount">19% off</div>
+                <div>Character: Mickey Mouse<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Quality was good but sizes small.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Aug, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Nyc.. Disney Mickey Mouse 🥰 is a soft toy and quality product... My baby is so happy and satisfied ❤️.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: GoDazzl Bal Ganesh Ganpati Teddy Bear Soft Stuffed Plush Toy -->
+        <div class="product">
+            <a href="ps2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kkmwr680/stuffed-toy/h/u/z/bal-ganesh-ganpati-teddy-bear-soft-stuffed-plush-toy-kid-for-original-imafzx739dcfhbhy.jpeg?q=90" alt="GoDazzl Bal Ganesh Ganpati Teddy Bear Soft Stuffed Plush Toy">
+            </a>
+            <div class="product-details">
+                <a href="ps2.html">
+                    <div class="product-header">2. GoDazzl Bal Ganesh Ganpati Teddy Bear Soft Stuffed Plush Toy - 45 cm</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 791 Ratings & 68 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">62% off</div>
+                <div>Character: Bal Ganesha<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Owsam product very nice 👌👌👌👌<br>
+                    <span>SWARAJ PRAMANIK</span> | Certified Buyer | Nov, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Soooo cute and soooo beautiful Ganpati idol doll for my kid. Delivered very well, thanks to delivery person. I am sooo happy. Thank you doll maker.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: AVS Soft Mickey Mouse Toy Stuffed Animal -->
+        <div class="product">
+            <a href="ps3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/stuffed-toy/l/c/n/soft-mickey-mouse-toy-stuffed-animal-cute-toy-for-kids-red-60-original-imahygfua5hupknr.jpeg?q=90" alt="AVS Soft Mickey Mouse Toy Stuffed Animal">
+            </a>
+            <div class="product-details">
+                <a href="ps3.html">
+                    <div class="product-header">3. AVS Soft Mickey Mouse Toy Stuffed Animal Cute Toy for Kids (Red) - 60 cm</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 4 Ratings & 9 Reviews</div>
+                <div class="product-price">₹411</div>
+                <div class="product-discount">72% off</div>
+                <div>Character: Mickey Mouse<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    I'm in love with this product. Great 👍<br>
+                    <span>Yamen Doke Riba</span> | Certified Buyer | 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Nice product</span><br>
+                    I felt the quality of the toy is good. We can buy it....👍<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Option Gallery Emotional Octopus Reversible Octopus -->
+        <div class="product">
+            <a href="ps4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kohigsw0/stuffed-toy/x/w/c/emotional-octopus-reversible-octopus-15-cm-pink-light-blue-15-original-imag2xgr4g9bhqhy.jpeg?q=90" alt="Option Gallery Emotional Octopus Reversible Octopus - 15 cm">
+            </a>
+            <div class="product-details">
+                <a href="ps4.html">
+                    <div class="product-header">4. Option Gallery Emotional Octopus Reversible Octopus - 15 cm (Pink - Light Blue)</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 2,054 Ratings & 123 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">80% off</div>
+                <div>Character: Octopus<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    Osm product tnk u flipkart 😍<br>
+                    <span>Flipkart Nila</span> | Certified Buyer | Dec, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Utterly Disappointed</span><br>
+                    Quality and size both are not good enough as per price and there is no return policy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: AVS Stuffed and Spongy Shizuka Soft Toy - 45 cm -->
+        <div class="product">
+            <a href="ps5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/stuffed-toy/j/v/d/stuffed-and-spongy-shizuka-soft-toy-45-avshub-original-imahyay3ww83yzvx.jpeg?q=90" alt="AVS Stuffed and Spongy Shizuka Soft Toy - 45 cm">
+            </a>
+            <div class="product-details">
+                <a href="ps5.html">
+                    <div class="product-header">5. AVS Stuffed and Spongy Shizuka Soft Toy - 45 cm</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 145 Ratings & 10 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">70% off</div>
+                <div>Character: Shizuka<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Decent product</span><br>
+                    Very good and perfect size soft doll.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Decent product</span><br>
+                    Very good and perfect size soft doll.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

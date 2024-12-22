@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Mr. Men My Complete Collection Box Set -->
+        <div class="product">
+            <a href="pcn1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/k/e/n/mr-men-my-complete-collection-box-set-original-imaggmj2bergbggh.jpeg?q=70&crop=false" alt="Mr. Men My Complete Collection Box Set">
+            </a>
+            <div class="product-details">
+                <a href="pcn1.html">
+                    <div class="product-header">1. Mr. Men My Complete Collection Box Set</div>
+                </a>
+                <div class="rating">4.84★ &nbsp; 1 Review</div>
+                <div class="product-price">₹4,605</div>
+                <div class="product-discount">2% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: Egmont UK Ltd</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Received it brand new with the plastic wrapping.<br>
+                    Been wanting this set for my kid since forever.<br>
+                    Thank you Flipkart.<br>
+                    <span>Sagir Safar</span> | Certified Buyer | Jun, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Received it brand new with the plastic wrapping.<br>
+                    Been wanting this set for my kid since forever.<br>
+                    Thank you Flipkart.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Premara Paribhasa (Poetry Collection) -->
+        <div class="product">
+            <a href="pcn2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/t/2/l/premara-paribhasa-poetry-collection-original-imagvdpkpw4fvbng.jpeg?q=70&crop=false" alt="Premara Paribhasa (Poetry Collection)">
+            </a>
+            <div class="product-details">
+                <a href="pcn2.html">
+                    <div class="product-header">2. Premara Paribhasa (Poetry Collection)</div>
+                </a>
+                <div class="rating">5★ &nbsp; 51 Ratings & 1 Review</div>
+                <div class="product-price">₹155</div>
+                <div class="product-discount">22% off</div>
+                <div>Binding: Paperback<br>Publisher: DHARA SHREE RADHA TRUST, Bhubaneswar, Odisha.<br>ISBN: 9789393383969</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    I really appreciate.... It's so meaningful.....<br>
+                    <span>Lalit Prusty</span> | Certified Buyer | Nov, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    I really appreciate.... It's so meaningful.....<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Kavya Kunj Kalika (Poetry Collection) -->
+        <div class="product">
+            <a href="pcn3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/y/b/y/kavya-kunj-kalika-poetry-collection-original-imaghgcfmkp6nhn5.jpeg?q=70&crop=false" alt="Kavya Kunj Kalika (Poetry Collection)">
+            </a>
+            <div class="product-details">
+                <a href="pcn3.html">
+                    <div class="product-header">3. Kavya Kunj Kalika (Poetry Collection) / काव्य कुंज कलिका ( कविता संग्रह )</div>
+                </a>
+                <div class="rating">5★ &nbsp; 514 Ratings & 8 Reviews</div>
+                <div class="product-price">₹125</div>
+                <div class="product-discount">16% off</div>
+                <div>Language: Hindi<br>Binding: Paperback<br>Publisher: Notion Press</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    Very nice book 😊😊😊😊😊😊<br>
+                    <span>ADITYA Raj</span> | Certified Buyer | Sep, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    This book of poetry is very good.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Popular Poetry Collection Combo: PANCHA PAKHUDA -->
+        <div class="product">
+            <a href="pcn4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kqttg280/regionalbooks/a/i/8/popular-poetry-collection-combo-pancha-pakhuda-original-imag4rcu6haafyjv.jpeg?q=70&crop=false" alt="Popular Poetry Collection Combo: PANCHA PAKHUDA">
+            </a>
+            <div class="product-details">
+                <a href="pcn4.html">
+                    <div class="product-header">4. Popular Poetry Collection Combo : PANCHA PAKHUDA</div>
+                </a>
+                <div class="rating">3.38★ &nbsp; 1 Review</div>
+                <div class="product-price">₹650</div>
+                <div class="product-discount">No discount</div>
+                <div>Author: Prakash Ranjan Parida, Ram Prasad Bisoi, Sadananda Sahoo, Sarta Kumar Das<br>500 Pages<br>Language: Odia</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Waste products. Don't waste your money.<br>
+                    <span>Jitendra Pradhan</span> | Certified Buyer | Oct, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Useless product</span><br>
+                    Waste products. Don't waste your money.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: SANCHAYITA | All Poetry Collection Of Rabindranath Tagore -->
+        <div class="product">
+            <a href="pcn5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jsw3yq80/regionalbooks/a/h/k/sanchayita-all-poetry-collection-of-rabindranath-tagor-famous-original-imafecfrmcmqsmpe.jpeg?q=70&crop=false" alt="SANCHAYITA | All Poetry Collection Of Rabindranath Tagore">
+            </a>
+            <div class="product-details">
+                <a href="pcn5.html">
+                    <div class="product-header">5. SANCHAYITA | All Poetry Collection Of Rabindranath Tagore | Famous Bengali Book</div>
+                </a>
+                <div class="rating">3.95★ &nbsp; 3 Ratings & 5 Reviews</div>
+                <div class="product-price">₹225</div>
+                <div class="product-discount">55% off</div>
+                <div>Author: Rabindranath Tagore<br>664 Pages<br>Language: Bengali</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Good</span><br>
+                    Printing quality and paper could have been better.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Feb, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Excellent Book.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

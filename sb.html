@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: RK EMPIRE Plastic Grocery Container -->
+        <div class="product">
+            <a href="sb1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/container/w/v/2/24-kichen-container-kichen-storage-box-storage-container-storage-original-imahf78zuczr3x4c.jpeg?q=90" alt="RK EMPIRE Plastic Grocery Container">
+            </a>
+            <div class="product-details">
+                <a href="sb1.html">
+                    <div class="product-header">1. RK EMPIRE Plastic Grocery Container - 1200 ml, 650 ml, 350 ml, 250 ml</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 5,534 Ratings & 1,732 Reviews</div>
+                <div class="product-price">₹469</div>
+                <div class="product-discount">70% off</div>
+                <div>Type: Grocery Container<br>Material: Plastic<br>Airtight</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Delightful</span><br>
+                    Came very nice, just a little small but good value for money, thanks Flipkart😇<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Sep, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Product is very good but size is small
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: VR Plastic 3 Pieces Medium Size Multipurpose Solitaire Storage Basket -->
+        <div class="product">
+            <a href="sb2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/storage-basket/l/m/f/3-plastic-3-pieces-medium-size-multipurpose-solitaire-storage-original-imah5zanchh9vwyn.jpeg?q=90" alt="VR Plastic 3 Pieces Medium Size Multipurpose Solitaire Storage Basket">
+            </a>
+            <div class="product-details">
+                <a href="sb2.html">
+                    <div class="product-header">2. VR Plastic 3 Pieces Medium Size Multipurpose Solitaire Storage Basket (Pack of 3)</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 135 Ratings & 1 Review</div>
+                <div class="product-price">₹229</div>
+                <div class="product-discount">79% off</div>
+                <div>Material: Plastic<br>Color: Multicolor<br>Dimensions: W x H x D: 70 x 70 x 50 mm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Poor quality<br>
+                    <span>AKHIL SS</span> | Certified Buyer | 10 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Poor quality
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: HANGERILLA Plastic Extra Small Size Multipurpose Solitaire with Lid Storage Basket -->
+        <div class="product">
+            <a href="sb3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/storage-basket/z/f/l/3-l-3basket-hangerilla-original-imahyh37ahhnhazh.jpeg?q=90" alt="HANGERILLA Plastic Extra Small Size Multipurpose Solitaire with Lid Storage Basket">
+            </a>
+            <div class="product-details">
+                <a href="sb3.html">
+                    <div class="product-header">3. HANGERILLA Plastic Extra Small Size Multipurpose Solitaire with Lid Storage Basket</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 2,458 Ratings & 130 Reviews</div>
+                <div class="product-price">₹239</div>
+                <div class="product-discount">75% off</div>
+                <div>Material: Plastic<br>Color: Brown<br>Dimensions: W x H x D: 70 x 70 x 50 mm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Good choice</span><br>
+                    Nice, but very small size.<br>
+                    <span>Anand Sam</span> | Certified Buyer | Jun, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Terrible product</span><br>
+                    Very small size than its looking in image
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: KUBER INDUSTRIES Plastic 3 Pieces Extra Small Size Multipurpose Solitaire Storage Basket with Lid (Multi) -->
+        <div class="product">
+            <a href="sb4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/storage-basket/2/p/v/3-ctltc010896-kuber-industries-original-imah52gfgzwf2r4t.jpeg?q=90" alt="KUBER INDUSTRIES Plastic 3 Pieces Extra Small Size Multipurpose Solitaire Storage Basket with Lid (Multi) - CTKTC23261">
+            </a>
+            <div class="product-details">
+                <a href="sb4.html">
+                    <div class="product-header">4. KUBER INDUSTRIES Plastic 3 Pieces Extra Small Size Multipurpose Solitaire Storage Basket with Lid (Multi) - CTKTC23261</div>
+                </a>
+                <div class="rating">4★ &nbsp; 41,432 Ratings & 137 Reviews</div>
+                <div class="product-price">₹417</div>
+                <div class="product-discount">47% off</div>
+                <div>Material: Plastic<br>Color: Multicolor<br>Dimensions: W x H x D: 17 x 9 x 9 mm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Really Nice</span><br>
+                    Quality of material is good.. it would be really great if 3 different colours was given<br>
+                    <span>Mallikarjuna P</span> | Certified Buyer | Aug, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Pretty good</span><br>
+                    Product is good and useful
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: UK ZONE Plastic Storage Basket -->
+        <div class="product">
+            <a href="sb5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/storage-basket/t/u/d/3-452865325352-underzone-original-imahyauhvxthtz7t.jpeg?q=90" alt="UK ZONE Plastic Storage Basket">
+            </a>
+            <div class="product-details">
+                <a href="sb5.html">
+                    <div class="product-header">5. UK ZONE Plastic Storage Basket</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 415 Ratings & 43 Reviews</div>
+                <div class="product-price">₹329</div>
+                <div class="product-discount">68% off</div>
+                <div>Material: Plastic<br>Color: Clear<br>Dimensions: W x H x D: 200 x 100 x 200 mm</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    This product is good, we like it. Thank you Flipkart<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Aug, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Very very useful, must buy
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Stark 24k Gold Plated Artificial Flora with Red Rose Anniversary Gift -->
+        <div class="product">
+            <a href="r1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/b/c/h/1-s-golden-red-rose-stark-original-imah6eq7gkpazzcg.jpeg?q=90" alt="Stark 24k Gold Plated Artificial Flora with Red Rose Anniversary Gift">
+            </a>
+            <div class="product-details">
+                <a href="r1.html">
+                    <div class="product-header">1. Stark 24k Gold Plated Artificial Flora with Red Rose Anniversary Gift with Carry Bag Gold, Red Rose Artificial Flower</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 154 Ratings & 1 Review</div>
+                <div class="product-price">₹1,399</div>
+                <div class="product-discount">63% off</div>
+                <div>Type: Rose<br>Flower Material: Plastic<br>Length: 12 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    So Beautiful 😍 Full this Flower 🌹<br>
+                    <span>Abhay Chavhan</span> | Certified Buyer | 15 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    So Beautiful 😍 Full this Flower 🌹<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: KAYKON Beautiful Artificial Yellow Red Orchid Flower Bunch For Vase -->
+        <div class="product">
+            <a href="r2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/jwi518w0/artificial-flower/r/w/s/beautiful-artificial-flowers-bunch-for-home-decor-pack-of-2-original-imaf248vsrg6sg5p.jpeg?q=90" alt="KAYKON Beautiful Artificial Yellow Red Orchid Flower Bunch For Vase">
+            </a>
+            <div class="product-details">
+                <a href="r2.html">
+                    <div class="product-header">2. KAYKON Beautiful Artificial Yellow Red Orchid Flower Bunch For Vase - 50 CM Yellow, Red Orchids Artificial Flower</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 583 Ratings & 61 Reviews</div>
+                <div class="product-price">₹2,896</div>
+                <div class="product-discount">67% off</div>
+                <div>Type: Orchids<br>Flower Material: Fabric<br>Length: 20 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    A must buy😍 beautiful flowers 👌🏻👌🏻😍😍<br>
+                    <span>Moumita Paul</span> | Certified Buyer | Nov, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Very beautiful showing as expected<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: KanRaj Artificial Plant For Home/Office Table Decoration or Gift -->
+        <div class="product">
+            <a href="r3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/2/4/0/4-af1001red-adirsa-original-imagyjexjpcyyjpj.jpeg?q=90" alt="KanRaj Artificial Plant For Home/Office Table Decoration or Gift">
+            </a>
+            <div class="product-details">
+                <a href="r3.html">
+                    <div class="product-header">3. KanRaj Artificial Plant For Home/Office Table Decoration or Gift Multicolor, Pink Rose Artificial Flower with Pot</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 103 Ratings & 4 Reviews</div>
+                <div class="product-price">₹1,988</div>
+                <div class="product-discount">83% off</div>
+                <div>Type: Rose<br>Flower Material: Plastic<br>Vase Included</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Very nice product no Flipkart<br>
+                    <span>Md kamal Raza</span> | Certified Buyer | 17 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Very nice product no Flipkart<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: ADIRSA Stylish Looking RED Color Decorative Piece Rose Flower Set -->
+        <div class="product">
+            <a href="r4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/artificial-flower/2/4/0/4-af1001red-adirsa-original-imagyjexjpcyyjpj.jpeg?q=90" alt="ADIRSA Stylish Looking RED Color Decorative Piece Rose Flower Set">
+            </a>
+            <div class="product-details">
+                <a href="r4.html">
+                    <div class="product-header">4. ADIRSA Stylish Looking RED Color Decorative Piece Rose Flower Set Red Wild Flower Artificial Flower with Pot</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 349 Ratings & 5 Reviews</div>
+                <div class="product-price">₹2,997</div>
+                <div class="product-discount">70% off</div>
+                <div>Type: Wild Flower<br>Vase Included<br>Flower Material: Plastic, Vase Material: Plastic</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Best product in this price range, flower is looking very cute 🥺🥰<br>
+                    <span>Priyanshu Bhandari</span> | Certified Buyer | 1 month ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Best product in this price range, flower is looking very cute 🥺<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: ANSHKIT Valentine flower golden with red flower gift -->
+        <div class="product">
+            <a href="r5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kjym9ow0/artificial-flower/y/y/8/valentine-rose-with-teddy-for-loved-one-special-gift-for-someone-original-imafzf77sg7r73kj.jpeg?q=90" alt="ANSHKIT Valentine flower golden with red flower gift">
+            </a>
+            <div class="product-details">
+                <a href="r5.html">
+                    <div class="product-header">5. ANSHKIT Valentine flower golden with red flower gift For girlfriend, Boyfriend, wife, husband or someone special by giving golden red rose as Gift Gold, Red Rose Artificial Flower</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 256 Ratings & 11 Reviews</div>
+                <div class="product-price">₹1,858</div>
+                <div class="product-discount">81% off</div>
+                <div>Type: Rose<br>Flower Material: Plastic<br>Length: 9 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Good but price is worst<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Sep, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Good but price is worst<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

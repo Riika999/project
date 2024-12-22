@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: PEACORA 12 Pcs Artist Sketch Pencil Set -->
+        <div class="product">
+            <a href="psn1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/art-set/s/q/f/12-pcs-artist-sketch-pencil-set-for-artist-drawing-sketching-original-imagyfjuqvqysmg7.jpeg?q=70&crop=false" alt="PEACORA 12 Pcs Artist Sketch Pencil Set">
+            </a>
+            <div class="product-details">
+                <a href="psn1.html">
+                    <div class="product-header">1. PEACORA 12 Pcs Artist Sketch Pencil Set For Artist Drawing Sketching Pencil Set</div>
+                </a>
+                <div class="rating">4.21★ &nbsp; 199 Ratings & 8 Reviews</div>
+                <div class="product-price">₹199</div>
+                <div class="product-discount">3% off</div>
+                <div>Type: Sketching Pencil<br>Set of 12<br>Series: 12 Pcs Artist Sketch Pencil Set For Artist Drawing Sketching Pencil Set</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Pretty good</span><br>
+                    Overall nice product but 2 pencils are missing.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Pretty good</span><br>
+                    Overall nice product but 2 pencils are missing.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: MGS Unicorn Art Drawing and Painting Set with Aluminum Box for Kids (145Piece) -->
+        <div class="product">
+            <a href="psn2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/art-set/t/p/g/unicorn-art-drawing-and-painting-set-with-aluminum-box-for-kids-original-imagkzp255bj8gha.jpeg?q=70&crop=false" alt="MGS Unicorn Art Drawing and Painting Set">
+            </a>
+            <div class="product-details">
+                <a href="psn2.html">
+                    <div class="product-header">2. MGS Unicorn Art Drawing and Painting Set with Aluminum Box for Kids (145Piece)</div>
+                </a>
+                <div class="rating">4.43★ &nbsp; 315 Ratings & 25 Reviews</div>
+                <div class="product-price">₹1,100</div>
+                <div class="product-discount">77% off</div>
+                <div>Type: Art Set<br>Color: Blue<br>Series: Kids Art Drawing Set Art and Craft Supplies Drawing and Painting Set Great Birthday Gift for Boys Girls Children (145 Pcs Art Set)</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    Best product for kids. I gifted it to my niece.<br>
+                    <span>Pragnesh Patel</span> | Certified Buyer | 10 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Lovely product thank you Flipkart ❤️<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: DOMS 14 Poster Colours -->
+        <div class="product">
+            <a href="psn3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jwqpocw0/paint/h/z/e/14-poster-colours-doms-original-imafhaj6yzeq8v5b.jpeg?q=70&crop=false" alt="DOMS 14 Poster Colours">
+            </a>
+            <div class="product-details">
+                <a href="psn3.html">
+                    <div class="product-header">3. DOMS 14 Poster Colours</div>
+                </a>
+                <div class="rating">4.42★ &nbsp; 943 Ratings & 288 Reviews</div>
+                <div class="product-price">₹220</div>
+                <div class="product-discount">No discount</div>
+                <div>Number of Paint Shades: 14<br>Quantity: 10 ml<br>Paint Medium: Poster Color</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    It is awesome.. The paints are very vibrant, bright, and beautiful.. Definitely my go-to paint .....I love it.. Worth the money<br>
+                    <span>Sharon Roselyn</span> | Certified Buyer | Nov, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    Just wow this product.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Target Publications Drawing Book A4 Size -->
+        <div class="product">
+            <a href="psn4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/sketch-pad/z/g/m/108-drawing-book-a4-size-approx-sketch-pad-for-kids-students-and-original-imah7hahgxkb4e9r.jpeg?q=70&crop=false" alt="Target Publications Drawing Book A4 Size">
+            </a>
+            <div class="product-details">
+                <a href="psn4.html">
+                    <div class="product-header">4. Target Publications Drawing Book A4 Size Approx | Sketch Pad for Kids, Students and Artists | 34 White Blank Pages | 29.5 cm x 21 cm Approx | Soft Cover | Best Premium Experience for Drawing, Colouring and Painting | Pack of 3 Sketch Pad</div>
+                </a>
+                <div class="rating">4.33★ &nbsp; 328 Ratings & 24 Reviews</div>
+                <div class="product-price">₹140</div>
+                <div class="product-discount">15% off</div>
+                <div>Multicolor<br>100 GSM<br>W x L: 11.6 x 8.27 inch</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Quality is more than I expected, loved it.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jan, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    Quality is more than I expected, loved it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: ibox Reusable Magic Water Painting Book -->
+        <div class="product">
+            <a href="psn5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/art-set/y/q/q/magic-water-book-quick-dry-book-water-coloring-book-with-magic-original-imaghb6khsranxu6.jpeg?q=70&crop=false" alt="ibox Reusable Magic Water Painting Book">
+            </a>
+            <div class="product-details">
+                <a href="psn5.html">
+                    <div class="product-header">5. ibox Reusable Magic Water Painting Book Magic Doodle Pen Magic Water Book For Kid's</div>
+                </a>
+                <div class="rating">4.31★ &nbsp; 648 Ratings & 218 Reviews</div>
+                <div class="product-price">₹120</div>
+                <div class="product-discount">86% off</div>
+                <div>Type: Water Magic Book<br>Set of 2<br>Color: Multicolor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    I got the genuine product. Thanks to Flipkart.<br>
+                    <span>Habib Mondal</span> | Certified Buyer | Oct, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Decent product</span><br>
+                    Good for kids and knowledgeable.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1 - Oddy ORIGAMI SHEET PLANE -->
+        <div class="product">
+            <a href="oas1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kex5ci80/paper/p/m/b/os-5c-20-origami-paper-oddy-original-imafvgfq6zhrd3kd.jpeg?q=70&crop=false" alt="Oddy ORIGAMI SHEET PLANE 6 X 680 gsm Origami Paper">
+            </a>
+            <div class="product-details">
+                <a href="oas1.html">
+                    <div class="product-header">1. Oddy ORIGAMI SHEET PLANE 6" X 6" 80 gsm Origami Paper</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 134 Ratings & 4 Reviews</div>
+                <div class="product-price">₹190</div>
+                <div class="product-discount">5% off</div>
+                <div>200 Sheets<br>Paper Density: 80 gsm<br>Paper Size: 6" X 6"</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    Very good, favorable and ocm<br>
+                    <span>Kushant Kumar</span> | Certified Buyer Sep, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    Amazing, beautiful and excellent 👌 the Kami origami paper was very nice 💯💯💯<br>
+                    <span>Anonymous</span> | Certified Buyer Sep, 2021
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 - DOMS Art Strokes Kit -->
+        <div class="product">
+            <a href="oas2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/art-set/8/0/d/-original-imagqzfwrjgjuqbf.jpeg?q=70&crop=false" alt="DOMS Art Strokes Kit">
+            </a>
+            <div class="product-details">
+                <a href="oas2.html">
+                    <div class="product-header">2. DOMS Art Strokes Kit</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 8,065 Ratings & 754 Reviews</div>
+                <div class="product-price">₹149</div>
+                <div class="product-discount">No discount</div>
+                <div>Type: Art Kit<br>Set of 8<br>Series: ART STROKES</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Terrific purchase</span><br>
+                    It is good I like it so much please buy this product<br>
+                    <span>Laksh Vashishtha</span> | Certified Buyer Mar, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    As per the price, the item is ok<br>
+                    <span>Debosmita Halder</span> | Certified Buyer 7 days ago
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 - DSR A4 Color Paper -->
+        <div class="product">
+            <a href="oas3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/paper/e/u/8/color-sheets-copy-printing-papers-art-and-craft-paper-a4-sheets-original-imah59z8qvg2c2qg.jpeg?q=70&crop=false" alt="DSR A4 Color Paper 40 Sheets">
+            </a>
+            <div class="product-details">
+                <a href="oas3.html">
+                    <div class="product-header">3. DSR A4 Color Paper 40 Sheets (Yellow) Premium Colour 180 GSM Pack for Copy Printing, DIY Art & Craft, Projects, Decoration, Other Office Printing</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 6 Ratings & 1 Review</div>
+                <div class="product-price">₹189</div>
+                <div class="product-discount">52% off</div>
+                <div>40 Sheets<br>Paper Density: 180 gsm<br>Paper Size: A4</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Good products I will order more for my school use<br>
+                    <span>Kushal Debbarma</span> | Certified Buyer Oct, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Good products I will order more for my school use<br>
+                    <span>Anonymous</span> | Certified Buyer Oct, 2021
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 - Talukdar Lifestyle 100 pcs UNRULED A4 80 gsm Origami Paper -->
+        <div class="product">
+            <a href="oas4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/km9ht3k0/paper/r/s/b/100-pcs-color-sheets-copy-printing-papers-art-and-craft-paper-a4-original-imagf7hs8tgf2kcg.jpeg?q=70&crop=false" alt="Talukdar Lifestyle 100 pcs UNRULED A4 80 gsm Origami Paper">
+            </a>
+            <div class="product-details">
+                <a href="oas4.html">
+                    <div class="product-header">4. Talukdar Lifestyle 100 pcs UNRULED A4 80 gsm Origami Paper</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 577 Ratings & 43 Reviews</div>
+                <div class="product-price">₹225</div>
+                <div class="product-discount">54% off</div>
+                <div>100 Sheets<br>Paper Density: 80 gsm<br>Paper Size: A4</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    All paper full 100 paper. Very nice<br>
+                    <span>Flipkart Customer</span> | Certified Buyer Jun, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">3★ Decent product</span><br>
+                    Colours are not bright<br>
+                    <span>Flipkart Customer</span> | Certified Buyer May, 2023
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 - KRASHTIC Craft Origami Sheets -->
+        <div class="product">
+            <a href="oas5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/l13whow0/paper/r/a/q/small-paper-set-of-100-1-origami-paper-krashtic-original-imagcq7gpwrzdvnn.jpeg?q=70&crop=false" alt="KRASHTIC Craft Origami Sheets Pack Of 100 Sheets">
+            </a>
+            <div class="product-details">
+                <a href="oas5.html">
+                    <div class="product-header">5. KRASHTIC Craft Origami Sheets Pack Of 100 Sheets, Eye Catching Color Size 15X15 Cm</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 105 Ratings & 6 Reviews</div>
+                <div class="product-price">₹159</div>
+                <div class="product-discount">76% off</div>
+                <div>100 Sheets<br>Paper Density: 70 gsm<br>Paper Size: 15X15 CM</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Just okay</span><br>
+                    Colour of sheets is a dusky one, not the neon and glowing colour sheets, so... I would rate it low.<br>
+                    <span>Nisha Karel</span> | Certified Buyer Aug, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Hated it!</span><br>
+                    Poor and paper are not colourful, most of them are white.<br>
+                    <span>Anonymous</span> | Certified Buyer Aug, 2022
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

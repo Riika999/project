@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: 500 Dessert Recipes -->
+        <div class="product">
+            <a href="rb1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/book/2/4/5/500-dessert-recipes-an-incredible-collection-of-tempting-ways-to-original-imadqdh5zdr4dtt2.jpeg?q=70&crop=false" alt="500 Dessert Recipes">
+            </a>
+            <div class="product-details">
+                <a href="rb1.html">
+                    <div class="product-header">1. 500 Dessert Recipes</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 16 Ratings & 1 Review</div>
+                <div class="product-price">₹631</div>
+                <div class="product-discount">19% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: Anness Publishing</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Great<br>
+                    <span>Raj Ahirwar</span> | Certified Buyer | May, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Great product</span><br>
+                    Great<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: 500 CAKE RECIPES -->
+        <div class="product">
+            <a href="rb2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jhs0o7k0/book/1/8/4/500-cake-recipes-original-imaf5ppzpbzunmjw.jpeg?q=70&crop=false" alt="500 CAKE RECIPES">
+            </a>
+            <div class="product-details">
+                <a href="rb2.html">
+                    <div class="product-header">2. 500 CAKE RECIPES</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 21 Ratings & 2 Reviews</div>
+                <div class="product-price">₹689</div>
+                <div class="product-discount">No discount</div>
+                <div>Language: English<br>Binding: NA<br>Publisher: NA</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Best book ever 👍<br>
+                    <span>Sonam Singh</span> | Certified Buyer | May, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    Best book ever 👍<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Beauty Recipes -->
+        <div class="product">
+            <a href="rb3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/ko8xtow0/book/p/c/8/beauty-recipes-original-imag2r5dq3uuswyu.jpeg?q=70&crop=false" alt="Beauty Recipes">
+            </a>
+            <div class="product-details">
+                <a href="rb3.html">
+                    <div class="product-header">3. Beauty Recipes</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 1,351 Ratings & 103 Reviews</div>
+                <div class="product-price">₹331</div>
+                <div class="product-discount">5% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: Navneet Publications Ltd</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Classy product</span><br>
+                    superbbbbbb book<br>
+                    <span>RAKESH PANCHAL</span> | Certified Buyer | Oct, 2019
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Brilliant</span><br>
+                    Very helpful book thank you so much Flipkart I am so happy 🥰🥰🥰🥰💗<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: 400 Chinese & Thai Delicious Recipes for Healthy Living -->
+        <div class="product">
+            <a href="rb4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/kk1h5e80/book/r/c/f/400-chinese-thai-delicious-recipes-for-healthy-living-original-imafzh8dcmwwg27d.jpeg?q=70&crop=false" alt="400 Chinese & Thai Delicious Recipes for Healthy Living">
+            </a>
+            <div class="product-details">
+                <a href="rb4.html">
+                    <div class="product-header">4. 400 Chinese & Thai Delicious Recipes for Healthy Living</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 11 Ratings & 2 Reviews</div>
+                <div class="product-price">₹705</div>
+                <div class="product-discount">11% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: Anness Publishing</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    Good and helpful. But book binding is not good<br>
+                    <span>UJJAL NATUA</span> | Certified Buyer | Jun, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Worth the money</span><br>
+                    Good and helpful. But book binding is not good<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: 101 Recipes for Soups and Salads -->
+        <div class="product">
+            <a href="rb5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/jpsnma80/book/1/7/8/101-recipes-for-soups-and-salads-original-imafbyd9yzfzkddj.jpeg?q=70&crop=false" alt="101 Recipes for Soups and Salads">
+            </a>
+            <div class="product-details">
+                <a href="rb5.html">
+                    <div class="product-header">5. 101 Recipes for Soups and Salads</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 7 Ratings & 2 Reviews</div>
+                <div class="product-price">₹117</div>
+                <div class="product-discount">26% off</div>
+                <div>Language: English<br>Binding: Paperback<br>Publisher: Pustak Mahal</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">2★ Expected a better product</span><br>
+                    We can't make any recipe<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Sep, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Expected a better product</span><br>
+                    We can't make any recipe<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

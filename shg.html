@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: The Ultimate Guide to Success -->
+        <div class="product">
+            <a href="shg.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/b/s/z/how-to-develop-self-confidence-and-improve-public-speaking-original-imaghab6fvz5rnj9.jpeg?q=70&crop=false" alt="The Ultimate Guide to Success">
+            </a>
+            <div class="product-details">
+                <a href="shg.html">
+                    <div class="product-header">1. The Ultimate Guide to Success</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 165 Ratings & 12 Reviews</div>
+                <div class="product-price">₹104</div>
+                <div class="product-discount">30% off</div>
+                <div>Language: Hindi<br>Binding: Paperback<br>Publisher: Prakash Books</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    It's really helpful for success purpose.<br>
+                    <span>Raghvendra Singh Rathor</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Like this book. I am so happy 😊 Thanks Flipkart.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: The Ultimate Guide to Success -->
+        <div class="product">
+            <a href="shg2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kqidx8w0/book/n/j/8/the-ultimate-guide-to-success-original-imag4g3zzvgdgzgj.jpeg?q=90" alt="The Ultimate Guide to Success">
+            </a>
+            <div class="product-details">
+                <a href="shg2.html">
+                    <div class="product-header">2. The Ultimate Guide to Success</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 165 Ratings & 12 Reviews</div>
+                <div class="product-price">₹104</div>
+                <div class="product-discount">30% off</div>
+                <div>Language: Hindi<br>Binding: Paperback<br>Publisher: Prakash Books</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Super!</span><br>
+                    It's really helpful for success purpose.<br>
+                    <span>Raghvendra Singh Rathor</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Must buy!</span><br>
+                    Like this book. I am so happy 😊 Thanks Flipkart.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: The NO-BS Self-Help Book: The No-Fluff Guide to Self-Mastery -->
+        <div class="product">
+            <a href="shg3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/book/i/2/c/the-no-bs-self-help-book-the-no-fluff-guide-to-self-mastery-original-imagy3yfjsckywth.jpeg?q=90" alt="The NO-BS Self-Help Book: The No-Fluff Guide to Self-Mastery">
+            </a>
+            <div class="product-details">
+                <a href="shg3.html">
+                    <div class="product-header">3. The NO-BS Self-Help Book: The No-Fluff Guide to Self-Mastery</div>
+                </a>
+                <div class="rating">3.2★ &nbsp; 32 Ratings & 1 Reviews</div>
+                <div class="product-price">₹496</div>
+                <div>Binding: Paperback<br>Publisher: SANAGE PUBLISHING HOUSE LLP<br>ISBN: 9788197022203</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Utterly Disappointed</span><br>
+                    Worst. The book is not worth it. Nor the content nor the quality. Please don't waste your money on it.<br>
+                    <span>Psi</span> | Certified Buyer | 6 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Utterly Disappointed</span><br>
+                    Worst. The book is not worth it. Nor the content nor the quality. Please don't waste your money on it.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Rich Dad's Guide To Investing (Marathi) -->
+        <div class="product">
+            <a href="shg4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/jcw9ifk0/book/5/0/2/guntavanukicha-margadarshak-original-imaffwdn5zc2hdsf.jpeg?q=90" alt="Rich Dad's Guide To Investing (Marathi)">
+            </a>
+            <div class="product-details">
+                <a href="shg4.html">
+                    <div class="product-header">4. Rich Dad's Guide To Investing (Marathi)</div>
+                </a>
+                <div class="rating">4.7★ &nbsp; 90 Ratings & 7 Reviews</div>
+                <div class="product-price">₹687</div>
+                <div class="product-discount">1% off</div>
+                <div>Language: Marathi<br>Binding: Paperback<br>Publisher: Manjul Publishing House</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Nice because this book teaches/guides about business and investment in the share market/real estate.<br>
+                    <span>Mayur Ghatbandhe</span> | Certified Buyer | May, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Nice because this book teaches/guides about business and investment in the share market/real estate.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Investonomy Ameer Banane Ki Stock Market Guide -->
+        <div class="product">
+            <a href="shg5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/book/b/x/o/investonomy-original-imagpu4jjhmqauhc.jpeg?q=90" alt="Investonomy Ameer Banane Ki Stock Market Guide">
+            </a>
+            <div class="product-details">
+                <a href="shg5.html">
+                    <div class="product-header">5. Investonomy Ameer Banane Ki Stock Market Guide</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 1,014 Ratings & 74 Reviews</div>
+                <div class="product-price">₹183</div>
+                <div class="product-discount">4% off</div>
+                <div>Language: Hindi<br>Binding: Paperback<br>Publisher: Prabhat Prakashan</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Pretty good</span><br>
+                    Book translation is a little difficult to read, but the book is nice and very informative.<br>
+                    <span>Smit Ahir</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Best book for investment knowledge purpose.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

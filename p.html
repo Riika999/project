@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: 4700BC Cheese Popcorn -->
+        <div class="product">
+            <a href="p1.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/koenl3k0/popcorn/i/f/b/na-microwave-4700bc-original-imag2vdjcjqyznfq.jpeg?q=90" alt="4700BC Cheese Popcorn">
+            </a>
+            <div class="product-details">
+                <a href="p1.html">
+                    <div class="product-header">1. 4700BC Cheese Popcorn</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 1159 Ratings & 13 Reviews</div>
+                <div class="product-price">₹80</div>
+                <div class="product-discount">No discount</div>
+                <div>Delicious Cheese flavored popcorn</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    So tasty .....Worth the cost ...Go for it<br>
+                    <span>Visishra N</span> | Certified Buyer | Dec, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    So tasty .....Worth the cost ...Go for it<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: ACT II Popcorn - Golden Sizzle Party Pack -->
+        <div class="product">
+            <a href="p2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kgtqhe80/popcorn/z/s/u/120-party-pack-1-microwave-act-ii-original-imafwywycvg83zhh.jpeg?q=90" alt="ACT II Popcorn - Golden Sizzle Party Pack">
+            </a>
+            <div class="product-details">
+                <a href="p2.html">
+                    <div class="product-header">2. ACT II Popcorn - Golden Sizzle Party Pack Golden Sizzle Popcorn</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 140 Ratings & 2 Reviews</div>
+                <div class="product-price">₹283</div>
+                <div class="product-discount">9% off</div>
+                <div>Great for parties, a perfect mix of buttery and cheesy flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    A little salty but overall good<br>
+                    <span>Anshad B</span> | Certified Buyer | Nov, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Very Good</span><br>
+                    A little salty but overall good<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: ACT II Instant Family Pack Classic Salted Popcorn -->
+        <div class="product">
+            <a href="p3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/jbfe7ww0/popcorn/d/p/z/90-pop-corn-instant-act-ii-original-imafyr8vtgbmkkgm.jpeg?q=90" alt="ACT II Instant Family Pack Classic Salted Popcorn">
+            </a>
+            <div class="product-details">
+                <a href="p3.html">
+                    <div class="product-header">3. ACT II Instant Family Pack Classic Salted Popcorn</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 225 Ratings & 2 Reviews</div>
+                <div class="product-price">₹301</div>
+                <div class="product-discount">6% off</div>
+                <div>Perfect for family get-togethers with classic salted flavor</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Good choice</span><br>
+                    Nice<br>
+                    <span>Samatha reddy Jakka</span> | Certified Buyer | Jul, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Good choice</span><br>
+                    Nice<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: PRODUCER Premium Popcorn Kernel Seeds, 500g Natural Popcorn -->
+        <div class="product">
+            <a href="p4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/kp2y2kw0/popcorn/t/u/d/7-premium-popcorn-kernel-seeds-7kg-7-instant-producer-original-imag3eez49fvntsn.jpeg?q=90" alt="PRODUCER Premium Popcorn Kernel Seeds, 500g Natural Popcorn">
+            </a>
+            <div class="product-details">
+                <a href="p4.html">
+                    <div class="product-header">4. PRODUCER Premium Popcorn Kernel Seeds, 500g Natural Popcorn</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 280 Ratings & 25 Reviews</div>
+                <div class="product-price">₹149</div>
+                <div class="product-discount">62% off</div>
+                <div>Natural popcorn kernels, perfect for making fresh popcorn at home</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Excellent</span><br>
+                    It's amazing unbelievable products & very fast service thanks Flipkart<br>
+                    <span>Divya Kharadi</span> | Certified Buyer | Sep, 2021
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    The results are really good. Worth purchasing. The results are good. Worth purchasing.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: PIPO Peri Peri Popcorn -->
+        <div class="product">
+            <a href="p5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/popcorn/r/r/r/-original-imagrf62z3ha2wzg.jpeg?q=90" alt="PIPO Peri Peri Popcorn">
+            </a>
+            <div class="product-details">
+                <a href="p5.html">
+                    <div class="product-header">5. PIPO Peri Peri Popcorn</div>
+                </a>
+                <div class="rating">3.9★ &nbsp; 74 Ratings & 4 Reviews</div>
+                <div class="product-price">₹39</div>
+                <div class="product-discount">No discount</div>
+                <div>Spicy and flavorful peri peri popcorn</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Best quality must be ordered<br>
+                    <span>Sunny Verma</span> | Certified Buyer | 9 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Highly recommended</span><br>
+                    Best quality must be ordered<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

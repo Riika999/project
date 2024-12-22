@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 1: Webby Cute Star Plush Pillow Stuffed Toy -->
+        <div class="product">
+            <a href="pt1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/stuffed-toy/z/h/j/cute-star-plush-pillows-stuffed-toy-45-webby-original-imagpgvzbnbpebaw.jpeg?q=70&crop=false" alt="Webby Cute Star Plush Pillow Stuffed Toy">
+            </a>
+            <div class="product-details">
+                <a href="pt1.html">
+                    <div class="product-header">1. Webby Cute Star Plush Pillow Stuffed Toy - 45 cm</div>
+                </a>
+                <div class="rating">4.4★ &nbsp; 470 Ratings & 7 Reviews</div>
+                <div class="product-price">₹405</div>
+                <div class="product-discount">18% off</div>
+                <div>Age: 1+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Superb soft toy ...... amazing quality<br>
+                    <span>Joseph Earnest</span> | Certified Buyer | Mar, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Superb soft toy ...... amazing quality<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Webby Big Size Plush Husky Dog Stuffed Animal -->
+        <div class="product">
+            <a href="pt2.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/l4x2rgw0/stuffed-toy/f/y/3/big-size-plush-husky-dog-stuffed-animal-soft-toy-gifts-for-kids-original-imagfppmqbzhrmjb.jpeg?q=90" alt="Webby Big Size Plush Husky Dog Stuffed Animal">
+            </a>
+            <div class="product-details">
+                <a href="pt2.html">
+                    <div class="product-header">2. Webby Big Size Plush Husky Dog Stuffed Animal Soft Toy, Gifts for Kids and Adult - 40 cm</div>
+                </a>
+                <div class="rating">4.5★ &nbsp; 829 Ratings & 56 Reviews</div>
+                <div class="product-price">₹465</div>
+                <div class="product-discount">22% off</div>
+                <div>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Mind-blowing purchase</span><br>
+                    Soft and silky products I got according to my expectations match with this product thank you Flipkart.<br>
+                    <span>MOHD TABISH</span> | Certified Buyer | Sep, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    My dog loved him and my dog thinks that this toy is his new friend 🥺🥺❤️❤️<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Bhairavi Sales BS Sitting Tiger Animal Stuffed Soft Plush Toy -->
+        <div class="product">
+            <a href="pt3.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/k7531jk0/stuffed-toy/5/h/k/bs-sitting-tiger-animal-stuffed-soft-plush-toy-with-strong-hard-original-imafpfy8rqsvzgza.jpeg?q=90" alt="Bhairavi Sales BS Sitting Tiger Animal Stuffed Soft Plush Toy">
+            </a>
+            <div class="product-details">
+                <a href="pt3.html">
+                    <div class="product-header">3. Bhairavi Sales BS Sitting Tiger Animal Stuffed Soft Plush Toy with Strong Hard Head, Home Decor, Cuddle for Kids - 34 cm</div>
+                </a>
+                <div class="rating">3.7★ &nbsp; 76 Ratings & 4 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">57% off</div>
+                <div>Character: Hard Lion Toy<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Soooo nice product thank you Shopsy.<br>
+                    <span>Flipkart Customer</span> | Certified Buyer | Jun, 2022
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Best in the market!</span><br>
+                    Soooo nice product thank you Shopsy.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Eston Combo of 8 Soft and Stuffed Toys -->
+        <div class="product">
+            <a href="pt4.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/stuffed-toy/e/p/t/combo-of-unicorn-kitty-penguin-rabbit-pikachu-white-elephant-original-imah6pqzmnrbmpaw.jpeg?q=90" alt="Eston Combo of 8 Soft and Stuffed Toys for Birthday Gift for Girls/Wife, Boyfriend/Husband">
+            </a>
+            <div class="product-details">
+                <a href="pt4.html">
+                    <div class="product-header">4. Eston Combo of (Unicorn, Kitty, Penguin, Rabbit, Pikachu, White Elephant, Parrot, Balloon Teddy, Cap Teddy, Heart Pillow) Soft and Stuffed Toys for Birthday Gift for Girls/Wife, Boyfriend/Husband, Soft Toys Wedding/Anniversary Gift for Couple Special, Baby Toys Gift Items - 30 cm</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 27,840 Ratings & 2,224 Reviews</div>
+                <div class="product-price">₹359</div>
+                <div class="product-discount">24% off</div>
+                <div>Pack of 8<br>Age: 1+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Just wow!</span><br>
+                    Super...soft toys.....my son loves so much and playing joyful.<br>
+                    <span>Molagavalli Gopala Krishna</span> | Certified Buyer | Feb, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Awesome product 👌🏻. The quality is very good..so soft and kids love to play with these toys.<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Swag Traders Long Soft Lovable Huggable Cute Giant Life Size Teddy Bear -->
+        <div class="product">
+            <a href="pt5.html">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/stuffed-toy/1/b/j/soft-90-centimeter-long-huge-red-teddy-bear-best-with-stuffing-original-imahyheasxsd8vhm.jpeg?q=90" alt="Swag Traders Long Soft Lovable Huggable Cute Giant Life Size Teddy Bear">
+            </a>
+            <div class="product-details">
+                <a href="pt5.html">
+                    <div class="product-header">5. Swag Traders Long Soft Lovable Huggable Cute Giant Life Size Teddy Bear washable Child Safe Best for Birthday Gift Valentine Gift for Girlfriend - 6 FEET (182 cm)</div>
+                </a>
+                <div class="rating">4.1★ &nbsp; 281 Ratings & 14 Reviews</div>
+                <div class="product-price">₹1,299</div>
+                <div class="product-discount">56% off</div>
+                <div>Character: Teddy Bear<br>Washable<br>Age: 2+ Years</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Worth every penny</span><br>
+                    Brought for my nephew... She likes it<br>
+                    <span>Rakesh Buragohain</span> | Certified Buyer | Dec, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">4★ Delightful</span><br>
+                    Product is Good but actual size varies it's actually 5 Feet instead of 6 Feet.<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

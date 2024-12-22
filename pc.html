@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex: 2;
+            margin-right: 15px;
+        }
+
+        .reviews {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .review {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .emoji {
+            color: #ff4081;
+        }
+
+        .review:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-footer {
+            margin-top: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reviews {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .product img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product 6: Fablue Back Cover for Nothing Phone (2a) -->
+        <div class="product">
+            <a href="pc1.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cases-covers/back-cover/v/2/h/fbl-alf-nothing-phone-2a-5g-fablue-original-imah7fnhttt5e5y2.jpeg?q=70&crop=false" alt="Fablue Back Cover">
+            </a>
+            <div class="product-details">
+                <a href="pc1.html">
+                    <div class="product-header">1. Fablue Back Cover for Nothing Phone (2a)</div>
+                </a>
+                <div class="rating">4.18★ &nbsp; 854 Ratings & 49 Reviews</div>
+                <div class="product-price">₹200</div>
+                <div class="product-discount">89% off</div>
+                <div>Suitable For: Mobile<br>Material: Fiber<br>Theme: No Theme</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Very good quality product.. unexpectedly good<br>
+                    <span>Soumodeep Patra</span> | Certified Buyer 4 days ago
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Wonderful</span><br>
+                    Very good quality product.. unexpectedly good<br>
+                    <span>Soumodeep Patra</span> | Certified Buyer 4 days ago
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 7: Flipkart SmartBuy Back Cover for OnePlus 7T -->
+        <div class="product">
+            <a href="pc2.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cases-covers/back-cover/7/g/c/yhdjf968-flipkart-smartbuy-original-imah222cph9rwquz.jpeg?q=70&crop=false" alt="Flipkart SmartBuy Back Cover">
+            </a>
+            <div class="product-details">
+                <a href="pc2.html">
+                    <div class="product-header">2. Flipkart SmartBuy Back Cover for OnePlus 7T</div>
+                </a>
+                <div class="rating">4.46★ &nbsp; 632 Ratings & 72 Reviews</div>
+                <div class="product-price">₹395</div>
+                <div class="product-discount">43% off</div>
+                <div>Suitable For: Mobile<br>Material: Rubber, Plastic, Polycarbonate<br>Theme: No Theme</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">5★ Awesome</span><br>
+                    Superb quality.. Go for it<br>
+                    <span>Shawn Monteiro</span> | Certified Buyer Feb, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Perfect product!</span><br>
+                    Nice quality and perfect fit.<br>
+                    <span>Abhijeet Lenka</span> | Certified Buyer May, 2023
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 8: Telecase Flip Cover for Infinix Note 40 Pro 5G -->
+        <div class="product">
+            <a href="pc3.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cases-covers/flip-cover/z/x/y/sbmsflip-infinix-note-40-pro-5g-mat-tan-1-sbms-original-imahy322gbtym7j7.jpeg?q=70&crop=false" alt="Telecase Flip Cover">
+            </a>
+            <div class="product-details">
+                <a href="pc3.html">
+                    <div class="product-header">3. Telecase Flip Cover for Infinix Note 40 Pro 5G</div>
+                </a>
+                <div class="rating">3.8★ &nbsp; 24 Reviews</div>
+                <div class="product-price">₹399</div>
+                <div class="product-discount">75% off</div>
+                <div>Suitable For: Mobile<br>Material: Artificial Leather<br>Theme: No Theme</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">3★ Does the job</span><br>
+                    Covered not a proper finishing<br>
+                    <span>NITISH SINGH</span> | Certified Buyer 2 months ago
+                </div>
+                <div class="review">
+                    <span class="rating">2★ Could be way better</span><br>
+                    Not clear fitting so leather is bigger than mobile size..<br>
+                    <span>Jainilkumar Joshi</span> | Certified Buyer 6 days ago
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 9: Coverage Back Cover for Mi Redmi 8A -->
+        <div class="product">
+            <a href="pc4.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/k45x0nk0/cases-covers/back-cover/v/y/k/coverage-dcf322656f99911335-original-imafk59hcqpgrqcg.jpeg?q=70&crop=false" alt="Coverage Back Cover for Mi Redmi 8A">
+            </a>
+            <div class="product-details">
+                <a href="pc4.html">
+                    <div class="product-header">4. Coverage Back Cover for Mi Redmi 8A</div>
+                </a>
+                <div class="rating">4.2★ &nbsp; 230 Ratings & 5 Reviews</div>
+                <div class="product-price">₹299</div>
+                <div class="product-discount">70% off</div>
+                <div>Suitable For: Mobile<br>Material: Rubber<br>Theme: No Theme</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Worst product it's not fitting to my phone<br>
+                    <span>Manu Walker</span> | Certified Buyer Mar, 2020
+                </div>
+                <div class="review">
+                    <span class="rating">1★ Did not meet expectations</span><br>
+                    Worst product it's not fitting to my phone<br>
+                    <span>Manu Walker</span> | Certified Buyer Mar, 2020
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Product 10: ZYNK CASE Back Cover for Poco M6 Pro 5G -->
+        <div class="product">
+            <a href="pc5.html">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/cases-covers/back-cover/m/i/3/rlm5pro-29-zynk-case-original-imagugrevseyy2zs.jpeg?q=70&crop=false" alt="ZYNK CASE Back Cover for Poco M6 Pro 5G">
+            </a>
+            <div class="product-details">
+                <a href="pc5.html">
+                    <div class="product-header">5. ZYNK CASE Back Cover for Poco M6 Pro 5G</div>
+                </a>
+                <div class="rating">4.3★ &nbsp; 161 Ratings & 6 Reviews</div>
+                <div class="product-price">₹241</div>
+                <div class="product-discount">79% off</div>
+                <div>Suitable For: Mobile<br>Material: Silicon<br>Theme: No Theme</div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <span class="rating">4★ Value-for-money</span><br>
+                    New look back cover POCO M6 PRO 5G<br>
+                    <span>Manish Kumar</span> | Certified Buyer Dec, 2023
+                </div>
+                <div class="review">
+                    <span class="rating">5★ Fabulous!</span><br>
+                    Good poco m6 5g cover very very good quality<br>
+                    <span>MUNUKAN SINGNAR</span> | Certified Buyer Dec, 2023
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
